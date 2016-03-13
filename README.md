@@ -71,8 +71,8 @@ on functionality and simplicity
 
 # SDK Versions
  
-Grails 2.2.2
-Java 1.7
+        Grails 2.2.2
+        Java 1.7
 
 # Pluggin Versions
  
