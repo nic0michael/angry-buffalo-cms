@@ -25,35 +25,35 @@ Nico even placed his wife's business on Joomla until one day when the site was h
 
 # Leassons learned
  
-1)When working on the Vignette CMS Nico had to write a program the "Auto-Cacher" to allow a very large website to have all
+        1)When working on the Vignette CMS Nico had to write a program the "Auto-Cacher" to allow a very large website to have all
   its new content cached so as not to give the Banks customers degraded web page performance on paged with new content 
-2)Most CMS systems out there require a developer with special skills to write new templates
-3)Many CMS systems can be broken into by hackers (with Brute force and other hacking penetration techniques ,  Kalilinix)
+        2)Most CMS systems out there require a developer with special skills to write new templates
+        3)Many CMS systems can be broken into by hackers (with Brute force and other hacking penetration techniques ,  Kalilinix)
 
 Nico wanted his CMS project to get arround all of these problems
 
 # Features
  
-1) An easy to use Joomla lookalike (But thats where the similarities end) 
-2) Better security using a login page with a Capcha image to block bruteforce 
-3) Most CMS applications feature Templates that require a fair amount of Coding skills HTML PHP Java ...etc
+        1) An easy to use Joomla lookalike (But thats where the similarities end) 
+        2) Better security using a login page with a Capcha image to block bruteforce 
+        3) Most CMS applications feature Templates that require a fair amount of Coding skills HTML PHP Java ...etc
    We provide a way to define Templates based on existing building blocks without having to write complex code
-4) Using a template manager The administrator can create Templates without writing a line of code
+        4) Using a template manager The administrator can create Templates without writing a line of code
    Just choosing from 15 the BaseTemplate  (tableTemplate or divTemplate) Associating banner and other imges and styles
-5) A move away from PHP based CMS's which seem to be targeted by Hackers we have moved to Java WAR file that can be
+        5) A move away from PHP based CMS's which seem to be targeted by Hackers we have moved to Java WAR file that can be
    deployed on Tomcat or Glassfish web servers
-6) We have chosen the Groovy Language written on the Grails platform
-7) Some of the Comercial CMS programs do not allow the Webmaster to cache the content. We added two Cache Buttons.
+        6) We have chosen the Groovy Language written on the Grails platform
+        7) Some of the Comercial CMS programs do not allow the Webmaster to cache the content. We added two Cache Buttons.
    So you don't have to wait for the pages to be loaded before they are cached
-8) The Cached content is stored as encoded files not HTML text files making it a bit harder for hackers to modify
+        8) The Cached content is stored as encoded files not HTML text files making it a bit harder for hackers to modify
 
 # Wish List
  
-1) To save the IP address of the user making a failed login and when that IP has 3 failed loggins to block that user for 24 hours
-2) create Divtemplates to use in addition to the tableTemplate creating wenb pages with Div tags instead of Teble Tags
+        1) To save the IP address of the user making a failed login and when that IP has 3 failed loggins to block that user for 24 hours
+        2) create Divtemplates to use in addition to the tableTemplate creating wenb pages with Div tags instead of Teble Tags
    (We already have the DivTemplate we just need to integraye it and to test it
-3) The vestigial NicoCMS files to be renamed to ABCms files
-4) To encrypt the Cached files to make them harder to modify by Hackers 
+        3) The vestigial NicoCMS files to be renamed to ABCms files
+        4) To encrypt the Cached files to make them harder to modify by Hackers 
 
 # Websites
  
