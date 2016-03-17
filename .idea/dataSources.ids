@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source name="NicosCMS dev" uuid="fe1332b7-347a-4d72-9afc-1f132f265016">
+    <database-info product="MySQL" version="5.6.26-74.0" jdbc-version="4.0" driver-name="MySQL-AB JDBC Driver" driver-version="mysql-connector-java-5.1.22 ( Revision: ${bzr.revision-id} )">
+      <extra-name-characters>#@</extra-name-characters>
+      <identifier-quote-string>`</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="exact" quoted-identifiers="exact"/>
+    <schema name="" catalog="nicocms"/>
+    <table name="banner" schema="" catalog="nicocms" type="TABLE">
+      <column name="id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5" autoIncrement="true"/>
+      <column name="version" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5"/>
+      <column name="banner_css_class" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <column name="banner_id" sqlType="VARCHAR" precision="45" scale="0" nullable="false" jdbcType="12"/>
+      <column name="banner_title" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <column name="image_id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5"/>
+      <column name="published" sqlType="BIT" precision="1" scale="0" nullable="false" jdbcType="-7"/>
+      <column name="use_site_title" sqlType="BIT" precision="1" scale="0" nullable="false" jdbcType="-7"/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <foreign-key name="FKACC57F2CE8B8D2E8" columns="image_id" ref-table="images" ref-schema="" ref-catalog="nicocms" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
+      <exported-key name="FKB13ACC7AC8CBF717" table="template" schema="" catalog="nicocms" columns="bottom_banner_id"/>
+      <exported-key name="FKB13ACC7ADF00B1C1" table="template" schema="" catalog="nicocms" columns="top_banner_id"/>
+      <index name="banner_id" unique="true" columns="banner_id"/>
+      <index name="FKACC57F2CE8B8D2E8" unique="false" columns="image_id"/>
+    </table>
+    <table name="categories" schema="" catalog="nicocms" type="TABLE">
+      <column name="id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5" autoIncrement="true"/>
+      <column name="version" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5"/>
+      <column name="category_id" sqlType="VARCHAR" precision="45" scale="0" nullable="false" jdbcType="12"/>
+      <column name="description" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <column name="published" sqlType="BIT" precision="1" scale="0" nullable="false" jdbcType="-7"/>
+      <column name="title" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <exported-key name="FK34628F4C425B89" table="page" schema="" catalog="nicocms" columns="category_id"/>
+      <index name="category_id" unique="true" columns="category_id"/>
+    </table>
+    <table name="edit_parameters" schema="" catalog="nicocms" type="TABLE">
+      <column name="id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5" autoIncrement="true"/>
+      <column name="version" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5"/>
+      <column name="catgory_id" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <column name="description" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <column name="is_side_menu" sqlType="BIT" precision="1" scale="0" nullable="false" jdbcType="-7"/>
+      <column name="is_top_menu" sqlType="BIT" precision="1" scale="0" nullable="false" jdbcType="-7"/>
+      <column name="menu_id" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <column name="menu_label" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <column name="menu_page_id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5"/>
+      <column name="published" sqlType="BIT" precision="1" scale="0" nullable="false" jdbcType="-7"/>
+      <column name="text_content_id" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <column name="text_content_text" sqlType="LONGTEXT" precision="2147483647" scale="0" nullable="true" jdbcType="-1"/>
+      <column name="text_content_type" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <column name="title" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <foreign-key name="FK5AA65F3F2288B2AB" columns="menu_page_id" ref-table="page" ref-schema="" ref-catalog="nicocms" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
+      <index name="FK5AA65F3F2288B2AB" unique="false" columns="menu_page_id"/>
+    </table>
+    <table name="file_content" schema="" catalog="nicocms" type="TABLE">
+      <column name="id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5" autoIncrement="true"/>
+      <column name="version" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5"/>
+      <column name="description" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <column name="file_code" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <column name="file_content_id" sqlType="VARCHAR" precision="15" scale="0" nullable="false" jdbcType="12"/>
+      <column name="file_name" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <column name="file_path" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <column name="file_type" sqlType="VARCHAR" precision="14" scale="0" nullable="false" jdbcType="12"/>
+      <column name="file_url" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <index name="file_content_id" unique="true" columns="file_content_id"/>
+    </table>
+    <table name="images" schema="" catalog="nicocms" type="TABLE">
+      <column name="id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5" autoIncrement="true"/>
+      <column name="version" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5"/>
+      <column name="image_file_name" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <column name="image_id" sqlType="VARCHAR" precision="45" scale="0" nullable="false" jdbcType="12"/>
+      <column name="image_path" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <column name="image_title" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <column name="published" sqlType="BIT" precision="1" scale="0" nullable="false" jdbcType="-7"/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <exported-key name="FKACC57F2CE8B8D2E8" table="banner" schema="" catalog="nicocms" columns="image_id"/>
+      <index name="image_id" unique="true" columns="image_id"/>
+    </table>
+    <table name="menu" schema="" catalog="nicocms" type="TABLE">
+      <column name="id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5" autoIncrement="true"/>
+      <column name="version" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5"/>
+      <column name="is_side_menu" sqlType="BIT" precision="1" scale="0" nullable="false" jdbcType="-7"/>
+      <column name="is_top_menu" sqlType="BIT" precision="1" scale="0" nullable="false" jdbcType="-7"/>
+      <column name="label" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <column name="menu_id" sqlType="VARCHAR" precision="45" scale="0" nullable="false" jdbcType="12"/>
+      <column name="page_id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5"/>
+      <column name="url_page_id_parameter" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <foreign-key name="FK33155FD645C58B" columns="page_id" ref-table="page" ref-schema="" ref-catalog="nicocms" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
+      <exported-key name="FKC54EB7556913BEAE" table="menu_hierarchy" schema="" catalog="nicocms" columns="child_id"/>
+      <index name="menu_id" unique="true" columns="menu_id"/>
+      <index name="FK33155FD645C58B" unique="false" columns="page_id"/>
+    </table>
+    <table name="menu_hierarchy" schema="" catalog="nicocms" type="TABLE">
+      <column name="id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5" autoIncrement="true"/>
+      <column name="version" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5"/>
+      <column name="child_id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5"/>
+      <column name="parent_page_id" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <foreign-key name="FKC54EB7556913BEAE" columns="child_id" ref-table="menu" ref-schema="" ref-catalog="nicocms" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
+      <index name="parent_page_id" unique="true" columns="parent_page_id,child_id"/>
+      <index name="FKC54EB7556913BEAE" unique="false" columns="child_id"/>
+    </table>
+    <table name="page" schema="" catalog="nicocms" type="TABLE">
+      <column name="id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5" autoIncrement="true"/>
+      <column name="version" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5"/>
+      <column name="access_id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5"/>
+      <column name="author_id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5"/>
+      <column name="category_id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5"/>
+      <column name="page_id" sqlType="VARCHAR" precision="45" scale="0" nullable="false" jdbcType="12"/>
+      <column name="page_url" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <column name="published" sqlType="BIT" precision="1" scale="0" nullable="false" jdbcType="-7"/>
+      <column name="template_id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5"/>
+      <column name="title" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <foreign-key name="FK34628F41C5792B" columns="template_id" ref-table="template" ref-schema="" ref-catalog="nicocms" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
+      <foreign-key name="FK34628F4C425B89" columns="category_id" ref-table="categories" ref-schema="" ref-catalog="nicocms" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
+      <foreign-key name="FK34628F5E215E4B" columns="author_id" ref-table="user" ref-schema="" ref-catalog="nicocms" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
+      <foreign-key name="FK34628F8C7CCB09" columns="access_id" ref-table="permissions" ref-schema="" ref-catalog="nicocms" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
+      <exported-key name="FK5AA65F3F2288B2AB" table="edit_parameters" schema="" catalog="nicocms" columns="menu_page_id"/>
+      <exported-key name="FK33155FD645C58B" table="menu" schema="" catalog="nicocms" columns="page_id"/>
+      <exported-key name="FKB16FA367D645C58B" table="text_content" schema="" catalog="nicocms" columns="page_id"/>
+      <index name="page_id" unique="true" columns="page_id"/>
+      <index name="FK34628F8C7CCB09" unique="false" columns="access_id"/>
+      <index name="FK34628F4C425B89" unique="false" columns="category_id"/>
+      <index name="FK34628F5E215E4B" unique="false" columns="author_id"/>
+      <index name="FK34628F41C5792B" unique="false" columns="template_id"/>
+    </table>
+    <table name="permissions" schema="" catalog="nicocms" type="TABLE">
+      <column name="id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5" autoIncrement="true"/>
+      <column name="version" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5"/>
+      <column name="access_level" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="description" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <column name="disabled" sqlType="BIT" precision="1" scale="0" nullable="false" jdbcType="-7"/>
+      <column name="is_administrator" sqlType="BIT" precision="1" scale="0" nullable="false" jdbcType="-7"/>
+      <column name="is_editor" sqlType="BIT" precision="1" scale="0" nullable="false" jdbcType="-7"/>
+      <column name="is_publisher" sqlType="BIT" precision="1" scale="0" nullable="false" jdbcType="-7"/>
+      <column name="is_visitor" sqlType="BIT" precision="1" scale="0" nullable="false" jdbcType="-7"/>
+      <column name="permission_id" sqlType="VARCHAR" precision="25" scale="0" nullable="false" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <exported-key name="FK34628F8C7CCB09" table="page" schema="" catalog="nicocms" columns="access_id"/>
+      <exported-key name="FKE27720C88C7CCB09" table="user_groups" schema="" catalog="nicocms" columns="access_id"/>
+      <index name="permission_id" unique="true" columns="permission_id"/>
+    </table>
+    <table name="setup" schema="" catalog="nicocms" type="TABLE">
+      <column name="id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5" autoIncrement="true"/>
+      <column name="version" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5"/>
+      <column name="enabled" sqlType="BIT" precision="1" scale="0" nullable="false" jdbcType="-7"/>
+      <column name="home_page_text_id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5"/>
+      <column name="home_page_title" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <column name="menu_background_colour" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <column name="menu_colour" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <column name="menu_hover_colour" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <column name="menu_selected_colour" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <column name="setup_id" sqlType="VARCHAR" precision="25" scale="0" nullable="false" jdbcType="12"/>
+      <column name="sitecsscode" sqlType="LONGTEXT" precision="2147483647" scale="0" nullable="false" jdbcType="-1"/>
+      <column name="site_copyright" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <column name="site_template_id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5"/>
+      <column name="site_title" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <foreign-key name="FK6843A7DB68B258" columns="home_page_text_id" ref-table="text_content" ref-schema="" ref-catalog="nicocms" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
+      <foreign-key name="FK6843A7DBE680433" columns="site_template_id" ref-table="template" ref-schema="" ref-catalog="nicocms" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
+      <index name="setup_id" unique="true" columns="setup_id"/>
+      <index name="FK6843A7DBE680433" unique="false" columns="site_template_id"/>
+      <index name="FK6843A7DB68B258" unique="false" columns="home_page_text_id"/>
+    </table>
+    <table name="template" schema="" catalog="nicocms" type="TABLE">
+      <column name="id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5" autoIncrement="true"/>
+      <column name="version" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5"/>
+      <column name="bottom_banner_id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5"/>
+      <column name="css_path" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <column name="published" sqlType="BIT" precision="1" scale="0" nullable="false" jdbcType="-7"/>
+      <column name="template_id" sqlType="VARCHAR" precision="45" scale="0" nullable="false" jdbcType="12"/>
+      <column name="template_jsp_file" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <column name="template_name" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <column name="top_banner_id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5"/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <foreign-key name="FKB13ACC7AC8CBF717" columns="bottom_banner_id" ref-table="banner" ref-schema="" ref-catalog="nicocms" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
+      <foreign-key name="FKB13ACC7ADF00B1C1" columns="top_banner_id" ref-table="banner" ref-schema="" ref-catalog="nicocms" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
+      <exported-key name="FK34628F41C5792B" table="page" schema="" catalog="nicocms" columns="template_id"/>
+      <exported-key name="FK6843A7DBE680433" table="setup" schema="" catalog="nicocms" columns="site_template_id"/>
+      <index name="template_id" unique="true" columns="template_id"/>
+      <index name="FKB13ACC7AC8CBF717" unique="false" columns="bottom_banner_id"/>
+      <index name="FKB13ACC7ADF00B1C1" unique="false" columns="top_banner_id"/>
+    </table>
+    <table name="text_content" schema="" catalog="nicocms" type="TABLE">
+      <column name="id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5" autoIncrement="true"/>
+      <column name="version" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5"/>
+      <column name="add_tofront_page" sqlType="BIT" precision="1" scale="0" nullable="false" jdbcType="-7"/>
+      <column name="encoding" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="home_page_order" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="last_changed_date" sqlType="DATETIME" precision="19" scale="0" nullable="false" jdbcType="93"/>
+      <column name="page_id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5"/>
+      <column name="page_order" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="text_content_id" sqlType="VARCHAR" precision="45" scale="0" nullable="false" jdbcType="12"/>
+      <column name="text_content_text" sqlType="LONGTEXT" precision="2147483647" scale="0" nullable="false" jdbcType="-1"/>
+      <column name="text_content_type" sqlType="VARCHAR" precision="4" scale="0" nullable="false" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <foreign-key name="FKB16FA367D645C58B" columns="page_id" ref-table="page" ref-schema="" ref-catalog="nicocms" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
+      <exported-key name="FK6843A7DB68B258" table="setup" schema="" catalog="nicocms" columns="home_page_text_id"/>
+      <index name="text_content_id" unique="true" columns="text_content_id"/>
+      <index name="FKB16FA367D645C58B" unique="false" columns="page_id"/>
+    </table>
+    <table name="user" schema="" catalog="nicocms" type="TABLE">
+      <column name="id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5" autoIncrement="true"/>
+      <column name="version" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5"/>
+      <column name="cell_phone" sqlType="VARCHAR" precision="12" scale="0" nullable="false" jdbcType="12"/>
+      <column name="email_address" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <column name="full_name" sqlType="VARCHAR" precision="25" scale="0" nullable="false" jdbcType="12"/>
+      <column name="last_changed" sqlType="DATETIME" precision="19" scale="0" nullable="false" jdbcType="93"/>
+      <column name="password" sqlType="VARCHAR" precision="15" scale="0" nullable="false" jdbcType="12"/>
+      <column name="user_group_id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5"/>
+      <column name="user_id" sqlType="VARCHAR" precision="45" scale="0" nullable="false" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <foreign-key name="FK36EBCBED2A7BF" columns="user_group_id" ref-table="user_groups" ref-schema="" ref-catalog="nicocms" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
+      <exported-key name="FK34628F5E215E4B" table="page" schema="" catalog="nicocms" columns="author_id"/>
+      <index name="user_id" unique="true" columns="user_id"/>
+      <index name="FK36EBCBED2A7BF" unique="false" columns="user_group_id"/>
+    </table>
+    <table name="user_groups" schema="" catalog="nicocms" type="TABLE">
+      <column name="id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5" autoIncrement="true"/>
+      <column name="version" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5"/>
+      <column name="access_id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5"/>
+      <column name="last_changed" sqlType="DATETIME" precision="19" scale="0" nullable="false" jdbcType="93"/>
+      <column name="user_group_id" sqlType="VARCHAR" precision="45" scale="0" nullable="false" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <foreign-key name="FKE27720C88C7CCB09" columns="access_id" ref-table="permissions" ref-schema="" ref-catalog="nicocms" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
+      <exported-key name="FK36EBCBED2A7BF" table="user" schema="" catalog="nicocms" columns="user_group_id"/>
+      <index name="user_group_id" unique="true" columns="user_group_id"/>
+      <index name="FKE27720C88C7CCB09" unique="false" columns="access_id"/>
+    </table>
+  </data-source>
+</component>

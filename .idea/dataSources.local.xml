@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="NicosCMS dev" uuid="fe1332b7-347a-4d72-9afc-1f132f265016">
+      <user-name>root</user-name>
+      <user-password>dffadfeadf9fdf9fdfdddf9adfd8dfce</user-password>
+      <schema-pattern>nicocms.*</schema-pattern>
+      <default-schemas>nicocms.*</default-schemas>
+    </data-source>
+  </component>
+</project>
