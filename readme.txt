@@ -40,31 +40,41 @@ Features
 
 8) The Cached content is stored as encoded files not HTML text files making it a bit harder for hackers to modify
 
+9) To save the IP address of the user making a failed login and when that IP has 3 failed loggins to block that user for 3 minutes
+
+
 Wish List
 =========
-1) To save the IP address of the user making a failed login and when that IP has 3 failed loggins to block that user for 24 hours
+1) create Divtemplates to use in addition to the tableTemplate creating wenb pages with Div tags instead of Teble Tags (We already have the DivTemplate we just need to integraye it and to test it
+   we have one created by Tonia Michael but have not integrated it yet
 
-2) create Divtemplates to use in addition to the tableTemplate creating wenb pages with Div tags instead of Teble Tags (We already have the DivTemplate we just need to integraye it and to test it
+2) DONE : The vestigial NicoCMS files to be renamed to ABCms files
 
-3) The vestigial NicoCMS files to be renamed to ABCms files
+3) BUSY: To encrypt the Cached files to make them harder to modify by Hackers
 
-4) To encrypt the Cached files to make them harder to modify by Hackers
+4) to upgrade the Java JDK version and the Grails JDK version and appropriate pluggins
 
 Websites
 ========
 http://www.arduino.org.za/angry-buffalo-cms/
 
+To Join the project send email to
+=================================
+nico.michael AT arduino DOT org DOT za
+
 To login go to:
 ===============
 http://localhost:8080/Angry_Buffalo_CMS/admin
 
-We have recently release a stable version of NicosCMS and completed the first set of easy to read and comprehensive documentation for the Administrator and the developer In short we have taken a few CMS systems looked at their features and their dissadvantages and came up with a new approach with the emphasis on functionality and simplicity
+We have recently release a stable version of ABCMS and completed the first set of easy to read and comprehensive documentation for the Administrator and the developer In short we have taken a few CMS systems looked at their features and their dissadvantages and came up with a new approach with the emphasis on functionality and simplicity
 
 SDK Versions
 ============
     Grails 2.2.2
     Java 1.7
+
 Pluggin Versions
+================
     runtime ":hibernate:$grailsVersion"
     runtime ":jquery:1.8.3"
     runtime ":resources:1.1.6"
