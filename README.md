@@ -70,8 +70,7 @@ Nico wanted his CMS project to get arround all of these problems
 
 # Wish List
  
-1) create Divtemplates to use in addition to the tableTemplate creating wenb pages with Div tags instead of Teble Tags (We already have the DivTemplate we just need to integraye it and to test it
-   we have one created by Tonia Michael but have not integrated it yet
+1) create Divtemplates to use in addition to the tableTemplate creating wenb pages with Div tags instead of Table Tags (We already have the DivTemplate we have one created by Tonia Michael but have not integrated it yet
 
 2) DONE : The vestigial NicoCMS files to be renamed to ABCms files
 
@@ -88,7 +87,11 @@ http://www.arduino.org.za/angry-buffalo-cms/
  
 http://localhost:8080/Angry_Buffalo_CMS/admin
 
-We have recently release a stable version of NicosCMS and completed the first set of easy to read and comprehensive documentation for the 
+# To Join the project send email to
+
+nico.michael AT arduino DOT org DOT za
+
+We have recently release a stable version of ABCMS and completed the first set of easy to read and comprehensive documentation for the 
 Administrator and the developer
 In short we have taken a few CMS systems looked at their features and their dissadvantages and came up with a new approach with the emphasis 
 on functionality and simplicity 
