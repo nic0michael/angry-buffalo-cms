@@ -25,11 +25,10 @@ class UserController {
         session.invalidate()
         redirect(action: "logon")
     }
-    def Administration() {
-        println("Administration")
-    }
-    def AdvancedAdministration() {}
-
+    def test(){}
+    def Administration(){println("Administration")}
+    def DetailedAdministration(){println("DetailedAdministration")}
+    def AdvancedAdministration() {println("AdvancedAdministration")}
     def controlPanel(){
 
     }
@@ -39,11 +38,25 @@ class UserController {
         String password=params.password
         String klidi=params.klidi
         String captcha=params.captcha
+        String ipAddress=request.getRemoteAddr()
+        String ip=request.getHeader("Client-IP")
+        if(ipAddress==null||ipAddress.isEmpty()){
+            ipAddress=ip
+        }
+
+        session.setAttribute("ipAddress",ipAddress);
+        FailedIPAddresses failedIPAddresses=FailedIPAddresses.findByIpAddress(ipAddress)
+        int nrFailedAttempts=failedIPAddresses.getNrFailedAttempts()
+
+        if(nrFailedAttempts>5){
+            session.invalidate()
+            redirect(action: "logon")
+        }
 
         try {
             sqlInjectionTrap(password)
             sqlInjectionTrap(loginname)
-            validateCaptcha(klidi,captcha)
+            validateCaptcha(klidi,captcha,ipAddress)
 
             def user = User.findByUserIdAndPassword(loginname, password)
 
@@ -60,27 +73,35 @@ class UserController {
                     redirect(action: "logon")
 
                 } else if (user.userGroup.access.isAdministrator) {
+                    FailedIPAddressesController controller=new FailedIPAddressesController()
+                    controller.resetNumberOfFailedAttempts()
                     session.setAttribute("isAdmin", "TRUE")
                     session.setAttribute("errorMessage", " ")
                     chain(action: "Administration")
 
                 } else {
+                    FailedIPAddressesController controller=new FailedIPAddressesController()
+                    controller.resetNumberOfFailedAttempts()
                     session.setAttribute("isAdmin", "FALSE")
                     session.setAttribute("errorMessage", " ")
                     chain(action: "Administration")
 
                 }
 
-            } else {
-                if ("klidi".equals(params.loginname) && "P@55w0rd".equals(params.password)) {
+            } else { // login failed
+                if ("klidi".equals(params.loginname) && "P@55w0rd".equals(params.password)) {// initial user must be disabled in database by administrator
                     session.setAttribute("userId",params.loginname)// "adminKl")
                     session.setAttribute("fullName", "Administrator")
                     session.setAttribute("isAdmin", "TRUE")
+                    FailedIPAddressesController controller=new FailedIPAddressesController()
+                    controller.resetNumberOfFailedAttempts()
                     chain(action: "Administration")
                 } else {
                     flash.message = "Sorry, ${params.userName}. Please try again."
                     println("sorry userId: ${params.loginname}  password : ${params.password}")
                     session.invalidate()
+                    FailedIPAddressesController controller=new FailedIPAddressesController()
+                    controller.updateNumberOfFailedAttempts(ipAddress)
                     redirect(action: "logon")
                 }
             }
@@ -93,13 +114,15 @@ class UserController {
         }
     }
 
-    void validateCaptcha(String klidi,String captcha) throws Exception{
+    void validateCaptcha(String klidi,String captcha,String ipAddress) throws Exception{
         int key =klidi.toInteger()
         int value=captcha.toInteger()
         key=9999-key
         if (key==value){
             println("Captcha validated")
         }  else{
+            FailedIPAddressesController controller=new FailedIPAddressesController()
+            controller.updateNumberOfFailedAttempts(ipAddress)
             throw new Exception("Captcha not validated")
         }
 

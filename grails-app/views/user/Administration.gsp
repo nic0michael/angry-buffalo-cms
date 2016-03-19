@@ -13,18 +13,25 @@
     <title>Administration Panel</title>
 </head>
 <body>
-<h1>&nbsp;&nbsp;&nbsp;Angry Buffalo CMS | Administration Panel</h1>
-<table width="600">
+<!--userId: ${session.userId} -->
+<!--ipAddress: ${session.ipAddress} -->
+<h1>&nbsp;&nbsp;&nbsp;Angry Buffalo CMS | Simple Administration Panel</h1>
+<table width="560">
     <tag:isAdmin userId="${session.userId}">
         <tr>
             <td>
+
+        <TR VALIGN=TOP ALIGN=center>
+            <TD>
+                <h2><g:link action="DetailedAdministration" >Expand this page</g:link></h2>
+            </TD>
+        </TR>
 
         <TR VALIGN=TOP ALIGN=LEFT>
             <tag:notInitialized>
                 <TD WIDTH=70 HEIGHT=20>
                     <table  WIDTH=70 HEIGHT=70 class="buttonHeading" onMouseOver="this.className='buttonMouseOverHeading'" onMouseOut="this.className='buttonHeading'" border="0">
                         <tr>
-
                             <td align="center"> <g:link controller="setup" action="presetTheData"  class="logon"><strong>Preset The System Data</strong></g:link><br>
                         </tr>
                     </table>
@@ -35,20 +42,10 @@
         <TR VALIGN=TOP ALIGN=LEFT>
 
 
-            <TD WIDTH=70 HEIGHT=80>
-                <table  WIDTH=70 HEIGHT=70 class="buttonHeading" onMouseOver="this.className='buttonMouseOverHeading'" onMouseOut="this.className='buttonHeading'" border="0">
+            <TD WIDTH=50 HEIGHT=20>
+                <table  WIDTH=50 HEIGHT=70 class="buttonHeading" onMouseOver="this.className='buttonMouseOverHeading'" onMouseOut="this.className='buttonHeading'" border="0">
                     <tr>
-
-                        <td align="center"> <g:link controller="homepage" action="index" class="logon" target="_blank"><g:img uri="/images/nicoscmsViewWebContentBtn.jpg" width="130" height="130" /><!-- strong>View_CMS Web_Content</strong></strong --></g:link><br></td>
-                    </tr>
-                </table>
-            </TD>
-
-            <TD WIDTH=70 HEIGHT=20>
-                <table  WIDTH=70 HEIGHT=70 class="buttonHeading" onMouseOver="this.className='buttonMouseOverHeading'" onMouseOut="this.className='buttonHeading'" border="0">
-                    <tr>
-
-                        <td align="center"> <g:link controller="categories" action="categoryManager"  class="logon" ><g:img uri="/images/nicoscmsCategoryManagerBtn.jpg" width="130" height="130" /><!-- strong>1_Category Manager</strong --></g:link></td>
+                        <td align="center"> <g:link controller="categories" action="categoryManager"  class="logon" ><g:img uri="/images/nicoscmsCategoryManagerBtn.jpg" width="120" height="130" /><!-- strong>1_Category Manager</strong --></g:link></td>
                     </tr>
                 </table>
             </TD>
@@ -71,73 +68,15 @@
                 </table>
             </TD>
 
-            <TD WIDTH=70 HEIGHT=20>
+
+            <TD WIDTH=70 HEIGHT=80>
                 <table  WIDTH=70 HEIGHT=70 class="buttonHeading" onMouseOver="this.className='buttonMouseOverHeading'" onMouseOut="this.className='buttonHeading'" border="0">
                     <tr>
 
-                        <td align="center"> <g:link controller="menu" action="menuManager"  class="logon"><g:img uri="/images/nicoscmsMenuManagerBtn.jpg" width="130" height="130" /><!-- strong>4_Menu Manager</strong --></g:link></td>
+                        <td align="center"> <g:link controller="homepage" action="index" class="logon" target="_blank"><g:img uri="/images/nicoscmsViewWebContentBtn.jpg" width="130" height="130" /><!-- strong>View_CMS Web_Content</strong></strong --></g:link><br></td>
                     </tr>
                 </table>
             </TD>
-
-        </TR>
-
-
-        <TR VALIGN=TOP ALIGN=LEFT>
-
-
-        <TD WIDTH=70 HEIGHT=20>
-            <table  WIDTH=70 HEIGHT=70 class="buttonHeading" onMouseOver="this.className='buttonMouseOverHeading'" onMouseOut="this.className='buttonHeading'" border="0">
-                <tr>
-
-                    <td align="center"> <g:link controller="page" action="frontPageManager"  class="logon" ><g:img uri="/images/nicoscmsFrontPageBtn.jpg" width="130" height="130" /><!-- strong>8_Front_Page Manager</strong --></g:link></td>
-                </tr>
-            </table>
-        </TD>
-
-        <TD WIDTH=70 HEIGHT=20>
-            <table  WIDTH=70 HEIGHT=70 class="buttonHeading" onMouseOver="this.className='buttonMouseOverHeading'" onMouseOut="this.className='buttonHeading'" border="0">
-                <tr>
-
-                    <td align="center"> <g:link controller="images" action="imageManager"  class="logon" ><g:img uri="/images/nicoscmsImageManagerBtn.jpg" width="130" height="130" /><!-- strong>5_Image Manager</strong --></g:link></td>
-                </tr>
-            </table>
-        </TD>
-
-        <TD WIDTH=70 HEIGHT=20>
-            <table  WIDTH=70 HEIGHT=70 class="buttonHeading" onMouseOver="this.className='buttonMouseOverHeading'" onMouseOut="this.className='buttonHeading'" border="0">
-                <tr>
-
-                    <td align="center"> <g:link controller="banner" action="bannerManager"  class="logon" ><g:img uri="/images/nicoscmsBannerManagerBtn.jpg" width="130" height="130" /><!-- strong>6_Banner &nbsp; Manager</strong --></g:link></td>
-                </tr>
-            </table>
-        </TD>
-
-        <TD WIDTH=70 HEIGHT=20>
-            <table  WIDTH=70 HEIGHT=70 class="buttonHeading" onMouseOver="this.className='buttonMouseOverHeading'" onMouseOut="this.className='buttonHeading'" border="0">
-                <tr>
-
-                    <td align="center"> <g:link controller="template" action="templateManager"  class="logon" ><g:img uri="/images/nicoscmsTemplateManager.jpg" width="130" height="130" /><!-- strong>7_Template Manager</strong --></g:link></td>
-                </tr>
-            </table>
-        </TD>
-
-
-
-
-        <TD WIDTH=70 HEIGHT=20>
-            <table  WIDTH=70 HEIGHT=70 class="buttonHeading" onMouseOver="this.className='buttonMouseOverHeading'" onMouseOut="this.className='buttonHeading'" border="0">
-                 <tr>
-
-                        <td align="center"> <g:link controller="user" action="AdvancedAdministration"  class="logon" ><g:img uri="/images/nicoscmsScaffoldBtn.jpg" width="130" height="130" /><!-- strong>Advanced_Administration Grails Scaffold</strong --></g:link></td>
-                 </tr>
-            </table>
-        </TD>
-
-        </TR>
-
-        <TR VALIGN=TOP ALIGN=LEFT>
-
 
             <TD WIDTH=70 HEIGHT=115>
                 <table  WIDTH=110 HEIGHT=110 class="buttonHeading" onMouseOver="this.className='buttonMouseOverHeading'" onMouseOut="this.className='buttonHeading'" border="0">
@@ -148,73 +87,27 @@
                 </table>
             </TD>
 
-            <TD WIDTH=70 HEIGHT=20>
-                <table  WIDTH=90 HEIGHT=110 class="buttonHeading" onMouseOver="this.className='buttonMouseOverHeading'" onMouseOut="this.className='buttonHeading'" border="0">
-                    <tr>
-
-                        <td align="center">
-                            <a href="http://www.flamingtext.com/All-Logos" class="logon"  target="_blank"  ><g:img uri="/images/nicoscmsLogoMakerBtn.jpg" width="130" height="130" /><!-- strong>Logo_Maker1</strong --></a><br>
-                            %{--<a href="http://logotypemaker.com/logo-maker" class="logon"  target="_blank"  ><strong>Logo_Maker2</strong></a>--}%
-                        </td>
-                    </tr>
-                </table>
-                <!-- http://www.freelogoservices.com/step1 -->
-                <!-- http://logotypemaker.com/logo-maker -->
-            </TD>
-            <TD WIDTH=70 HEIGHT=20>
-                <table  WIDTH=80 HEIGHT=110 class="buttonHeading" onMouseOver="this.className='buttonMouseOverHeading'" onMouseOut="this.className='buttonHeading'" border="0">
-                    <tr>
-                        <td align="center">
-                            <a href="http://www.bannerfans.com/banner_maker.php" class="logon"  target="_blank"  ><g:img uri="/images/nicoscmsBannerMakerBtn.jpg" width="130" height="130" /><!-- strong>Banner_Maker_1</strong --></a><br>
-                            %{--<a href="http://www.webbanner24.com/" class="logon"  target="_blank"  ><strong>Banner_Maker_2</strong></a>--}%
-                        </td>
-                    </tr>
-                </table>
-            </TD>
-
-
-            <TD WIDTH=70 HEIGHT=20>
-                <table  WIDTH=80 HEIGHT=110 class="buttonHeading" onMouseOver="this.className='buttonMouseOverHeading'" onMouseOut="this.className='buttonHeading'" border="0">
-                    <tr>
-
-                        <td align="center"> <a href="http://www.phpform.org/" class="logon"  target="_blank"  ><g:img uri="/images/nicoscmsFormBuilderBtn.jpg" width="130" height="130" /><!-- strong>Online_Form Builder</strong --></a></td>
-                    </tr>
-                </table>
-            </TD>
-
-
-
-
-            <TD WIDTH=70 HEIGHT=20>
-                <table  WIDTH=70 HEIGHT=70 class="buttonHeading" onMouseOver="this.className='buttonMouseOverHeading'" onMouseOut="this.className='buttonHeading'" border="0">
-                    <tr>
-
-                        <td align="center"> <g:link controller="homepage" action="cacheContent"  class="logon" ><g:img uri="/images/nicoscmsCacheContent_.jpg" width="130" height="130" /><!-- strong>Advanced_Administration Grails Scaffold</strong --></g:link></td>
-                    </tr>
-                </table>
-            </TD>
-
-
-            <!-- http://www.webbanner24.com/ -->
-            <!-- http://mybannermaker.com/ -->
-            <!-- http://www.bannerfans.com/banner_maker.php -->
-
-
-
         </TR>
+
+
 
         </td>
     </tr>
     </tag:isAdmin>
     <tr>
         <td>
-            <a href="/NicosCMS/content/help/NicosCMS_EditorsGuide.pdf" target="_blank"><h2><strong>Editors Guide</strong></h2></a>
+            <a href="../content/help/NicosCMS_EditorsGuide.pdf" target="_blank"><h2><strong>Editors Guide</strong></h2></a><br>
+            <A href="http://www.webbanner24.com/" target="_blank">http://www.webbanner24.com/</A><br>
+            <A href="http://mybannermaker.com/" target="_blank">http://mybannermaker.com/</A><br>
+            <A href="http://www.bannerfans.com/banner_maker.php" target="_blank">http://www.bannerfans.com/banner_maker.php</A><br>
             <g:link controller="user" action="logon">Logon</g:link><br>
             <g:link controller="user" action="logout">Logout</g:link><br>
         </td>
 
     </tr>
 </table>
+<br>
+
 
 <tag:isNotAuthenticated  userId="${session.userId}">
     <tag:redirectLogonPage/>

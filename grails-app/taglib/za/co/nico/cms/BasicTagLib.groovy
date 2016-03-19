@@ -66,6 +66,20 @@ class BasicTagLib {
         }
     }
 
+
+    def notLockedOut = { attrs, body ->
+        FailedIPAddresses failedIPAddresses=FailedIPAddresses.findByIpAddress(attrs.ipAddress)
+        int nrFailedAttempts=failedIPAddresses.getNrFailedAttempts()
+        int nrSecondsSinceLastLogon=failedIPAddresses.getNrSecondsSinceLastLogon()
+        int difference =   (new Date().time - failedIPAddresses.getDate().time)/1000
+        println("difference : "+difference)
+        println("nrFailedAttempts :"+nrFailedAttempts)
+        println("nrSecondsSinceLastLogon :"+nrSecondsSinceLastLogon)
+        if (nrSecondsSinceLastLogon>180 || nrFailedAttempts<5 || difference>180) {
+            out << body()
+        }
+    }
+
     def redirectMainPage = {
         response.sendRedirect("${request.contextPath}/homepage/")
     }

@@ -73,7 +73,8 @@
                     <li class="buttons">
                         <input type="hidden" name="form_id" value="860091" />
 
-                        <input id="saveForm" class="button_text" type="submit" name="submit" value="Submit" />
+                        <input id="saveForm" class="button_text" type="submit" name="submit" value="Submit" />&nbsp;&nbsp;
+                        <a href="../user/administration"><img src="${resource(dir: 'images', file: 'CancelButton55.jpg')}"/></a>
                     </li>
                 </ul>
             </g:form>

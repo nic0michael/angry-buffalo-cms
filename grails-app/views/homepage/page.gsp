@@ -12,6 +12,13 @@
 </head>
 <body>
 <%
+    String ipAddress=request.getRemoteAddr()
+    String ip=request.getHeader("Client-IP")
+    if(ipAddress==null||ipAddress.isEmpty()){
+        ipAddress=ip
+    }
+    session.setAttribute("ipAddress",ipAddress);
+
     if(templateGspFile==null || templateGspFile.length()<3 ) {
 %>
 <g:render template="templates/tableTemplate" var="hc"  ></g:render>

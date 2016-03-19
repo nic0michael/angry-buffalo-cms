@@ -38,6 +38,7 @@
                             <span class="required-indicator">*</span>
                         </label>
                         <input type="text" name="pageId" maxlength="15" required="" value="${page?.pageId}" id="pageId" />
+                        &nbsp;(Keep this short  like this : MY_ARTICLE_NICKNAME)
                     </div>
 
                     <div class="fieldcontain  ">
@@ -134,11 +135,13 @@
 
                         </label>
                         <input type="text" name="title" value="${page?.title}" id="title" />
+                        &nbsp; Keep this long its displayed on the top of the page
                     </div>
 
                 </fieldset>
                 <fieldset class="buttons">
-                    <input type="submit" name="create" class="save" value="Submit" id="create" />
+                    <input type="submit" name="create" class="save" value="Submit" id="create" />&nbsp;&nbsp;
+                    <a href="../user/administration"><img src="${resource(dir: 'images', file: 'CancelButton55.jpg')}"/></a>
                 </fieldset>
             </g:form>
         </td>

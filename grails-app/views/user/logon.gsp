@@ -7,6 +7,7 @@
 --%>
 
 <%@ page contentType="text/html;charset=UTF-8" %>
+<%@ page import="za.co.nico.cms.FailedIPAddresses; za.co.nico.cms.FailedIPAddressesController; za.co.nico.cms.BasicTagLib" %>
 <%@ page import="za.co.nico.cms.BasicTagLib" %>
 <html>
 <head>
@@ -14,7 +15,25 @@
     <meta name="layout" content="main"/>
 </head>
 <body>
-<h1>Angry Buffalo CMS | User Logon | ${session?.userId}</h1>
+<%
+    String ipAddress=request.getRemoteAddr()
+    String ip=request.getHeader("Client-IP")
+    int nrFailedAttempts
+    int nrSecondsSinceLastLogon
+    if(ipAddress==null||ipAddress.isEmpty()){
+        ipAddress=ip
+    }
+
+    za.co.nico.cms.FailedIPAddresses failedIPAddresses=FailedIPAddresses.findByIpAddress(ipAddress)
+     nrFailedAttempts=failedIPAddresses.getNrFailedAttempts()
+     nrSecondsSinceLastLogon=failedIPAddresses.getNrSecondsSinceLastLogon()
+    int difference =   (new Date().time - failedIPAddresses.getDate().time)/1000
+    session.setAttribute("ipAddress",ipAddress);
+%>
+<!--ipAddress: ${session.ipAddress} -->
+<!--nrFailedAttempts: ${nrFailedAttempts} -->
+<!--nrSecondsSinceLastLogon: ${nrSecondsSinceLastLogon} -->
+<h1>Angry Buffalo CMS | User Logon | ${session?.userId} </h1>
 <g:form name="myForm" url="[action:'user',controller:'user']">
     <table>
         <tr>
@@ -38,9 +57,9 @@
         <tr>
             <td></td>
             <td>
-                <recaptcha:ifEnabled>
-                    <recaptcha:recaptcha theme="blackglass"/>
-                </recaptcha:ifEnabled>
+                %{--<recaptcha:ifEnabled>--}%
+                    %{--<recaptcha:recaptcha theme="blackglass"/>--}%
+                %{--</recaptcha:ifEnabled>--}%
 
 
             </td>
@@ -111,7 +130,11 @@
         <tr>
             <td></td>
             <td></td>
-            <td><g:submitButton name="login" class="save" value="Login" /></td>
+            <td>
+                <tag:notLockedOut ipAddress="${ipAddress}">
+                <g:submitButton name="login" class="save" value="Login" />
+                </tag:notLockedOut>
+            </td>
 
         </tr>
         <tr>
@@ -127,7 +150,6 @@
 
         </tr>
     </table><br>
-    <!-- input type="submit" value="Submit" name="B1" -->
     
 
 </g:form>
@@ -136,5 +158,6 @@
 
 
 <br><br><br><br><br><br><br><br><br><br><br>
+| ${session.ipAddress}  &nbsp; | &nbsp; ${nrFailedAttempts} &nbsp; | &nbsp; ${difference} |
 </body>
 </html>

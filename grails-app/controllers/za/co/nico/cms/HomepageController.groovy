@@ -4,7 +4,7 @@ import java.text.SimpleDateFormat
 import java.text.DateFormat
 
 class HomepageController {
-    Base64Wrapper base64= new Base64Wrapper()
+
     Setup setup
     List<Setup> setups = Setup.findAllByEnabled(true)
     static final int NOT_ENCODED=0
@@ -101,7 +101,8 @@ class HomepageController {
             if(fileExists(filename)){
                 text=readFile(filename)
                 println("Render content from file :"+filename)
-                return base64.decode(text)
+                return decryptDecode(text);
+
             }
            println("Render Homepage : pageId : null : Home Page")
             sb.append(homePageContent())
@@ -111,7 +112,7 @@ class HomepageController {
             if(fileExists(filename)){
                 text=readFile(filename)
                 println("Render content from file :"+filename)
-                return base64.decode(text)
+                return decryptDecode(text)
             }
 
             sb.append(contentForPageOnMenu( pageId))
@@ -128,7 +129,7 @@ class HomepageController {
 
 
         text=sb.toString()
-        text=base64.encode(text)
+        text=encryptEncode(text)
         writeToFile(filename,text)
 
         return sb.toString()
@@ -198,7 +199,7 @@ class HomepageController {
                         println("Display content from :  pageId : "+page.pageId+" textContentId: "+content.textContentId)
                         String textContentText //=homePageText?.textContentText
                         if (content?.encoding==BASE64){
-                            textContentText= base64.decode(content?.textContentText)
+                            textContentText= decryptDecode(content?.textContentText)
                         } else{
                             textContentText= content?.textContentText
                         }
@@ -232,7 +233,7 @@ class HomepageController {
         TextContent homePageText=setup?.homePageText
         String textContentText //=homePageText?.textContentText
         if (homePageText?.encoding==BASE64){
-            textContentText= base64.decode(homePageText?.textContentText)
+            textContentText= decryptDecode(homePageText?.textContentText)
         } else{
             textContentText= homePageText?.textContentText
         }
@@ -241,7 +242,7 @@ class HomepageController {
 
         String filename="homepage.bin"
         String text=sb.toString()
-        text=base64.encode(text)
+        text=encryptEncode(text)
         writeToFile(filename,text)
 
         filename=swapSpacesWithUnderscore("homepage.qtr")
@@ -394,7 +395,7 @@ class HomepageController {
                 List<TextContent> pageContents = TextContent.findAllByPage(page)
                 if (pageContents!=null){
                     for (TextContent content:pageContents){
-                        sb.append(base64.decode(content.textContentText))
+                        sb.append(decryptDecode(content.textContentText))
                         content.lastChangedDate=date
                         content.save(flush: true)
                     }
@@ -405,7 +406,7 @@ class HomepageController {
 
         String filename=swapSpacesWithUnderscore(pageId)+".bin"
         String text=sb.toString()
-        text=base64.encode(text)
+        text=encryptEncode(text)
         writeToFile(filename,text)
 
         filename=swapSpacesWithUnderscore(pageId)+".qtr"
@@ -419,13 +420,13 @@ class HomepageController {
     String readCachedFileContent(String pageId){
         String filename=swapSpacesWithUnderscore(pageId)+".bin"
         String text=readFile( filename)
-        return base64.decode(text)
+        return decryptDecode(text)
     }
 
 
     String readCachedFile(String filename){
         String text=readFile( filename)
-        return base64.decode(text)
+        return decryptDecode(text)
     }
 
     private void cacheAllContent(){
@@ -465,5 +466,15 @@ class HomepageController {
     String swapSpacesWithUnderscore(String text){
         text.replaceAll(" ","_")
         return text
+    }
+
+    public static String decryptDecode(String text){
+        Base64Wrapper base64= new Base64Wrapper()
+        return base64.decode(text)
+    }
+
+    public static String encryptEncode(String text){
+        Base64Wrapper base64= new Base64Wrapper()
+        return base64.encode(text);
     }
 }

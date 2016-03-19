@@ -49,7 +49,7 @@ class TextContentController {
             textContent.page=page
             textContent.encoding=BASE64
             if (textContent.encoding==BASE64){
-                textContent.textContentText=base64.encode(textContentText)
+                textContent.textContentText=HomepageController.encryptEncode(textContentText)
             } else{
                 textContent.textContentText= textContentText
             }
@@ -69,7 +69,7 @@ class TextContentController {
             textContent.encoding=BASE64
             textContent.textContentId=textContentId
             if (textContent.encoding==BASE64){
-                textContent.textContentText=base64.encode(textContentText)
+                textContent.textContentText=HomepageController.encryptEncode(textContentText)
             } else{
                 textContent.textContentText= textContentText
             }
@@ -132,7 +132,7 @@ class TextContentController {
         String textContentText
 
         if (textContent?.encoding==BASE64){
-            textContentText= base64.decode(textContent?.textContentText)
+            textContentText=HomepageController.decryptDecode(textContent?.textContentText)
         } else{
             textContentText= textContent?.textContentText
         }
@@ -164,7 +164,7 @@ class TextContentController {
 
         String textContentText
         if (textContent.encoding==BASE64){
-            textContentText= base64.decode(textContent?.textContentText)
+            textContentText= HomepageController.decryptDecode(textContent?.textContentText)
         } else{
             textContentText= textContent?.textContentText
         }
@@ -201,7 +201,7 @@ class TextContentController {
             textCt.encoding=BASE64
 
             if (textCt.encoding==BASE64){
-                textCt.textContentText=base64.encode(textContentText)
+                textCt.textContentText=HomepageController.encryptEncode(textContentText)
             } else{
                 textCt.textContentText=textContentText
             }

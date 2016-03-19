@@ -37,11 +37,11 @@
 
             <h1>Text Content Details Editor</h1>
 
+
             <g:actionSubmitImage value="Edit" action="saveTextContentDetails"
                                  src="${resource(dir: 'images', file: 'SaveButton55.jpg')}"  /> &nbsp;&nbsp;
 
-                <g:actionSubmitImage value="Cancel" action="cancelTextContentDetails"
-                                     src="${resource(dir: 'images', file: 'CancelButton55.jpg')}" />  &nbsp;&nbsp;
+            <a href="../user/administration"><img src="${resource(dir: 'images', file: 'CancelButton55.jpg')}"/></a>
 
 
                 <input type="hidden" value="${operation }"  name="operation" id="operation"/>

@@ -37,9 +37,10 @@
                 <g:actionSubmitImage value="Edit" action="editText"
                                      src="${resource(dir: 'images', file: 'ButtonEdit55.jpg')}" />  &nbsp;&nbsp;
                 <g:actionSubmitImage value="Delete" action="delete"
-                                     src="${resource(dir: 'images', file: 'ButtonDelete55.jpg')}" />
+                                     src="${resource(dir: 'images', file: 'ButtonDelete55.jpg')}" /> &nbsp;&nbsp;
                 <g:actionSubmitImage value="Cache" action="cacheContent"
                                      src="${resource(dir: 'images', file: 'ButtonCache55.jpg')}" />  &nbsp;&nbsp;
+                <a href="../user/administration"><img src="${resource(dir: 'images', file: 'CancelButton55.jpg')}"/></a>
                 <ul >
 
                     <ul id="li_2" >
