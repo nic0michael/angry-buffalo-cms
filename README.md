@@ -91,10 +91,11 @@ http://localhost:8080/Angry_Buffalo_CMS/admin
 
 nico.michael AT arduino DOT org DOT za
 
-We have recently release a stable version of ABCMS and completed the first set of easy to read and comprehensive documentation for the 
-Administrator and the developer
-In short we have taken a few CMS systems looked at their features and their dissadvantages and came up with a new approach with the emphasis 
-on functionality and simplicity 
+# News
+
+We have recently release a stable version of ABCMS and completed the first set of easy to read and comprehensive documentation for the Administrator and the developer
+
+In short we have taken a few CMS systems looked at their features and their dissadvantages and came up with a new approach with the emphasis on functionality and simplicity 
 
 # SDK Versions
  
