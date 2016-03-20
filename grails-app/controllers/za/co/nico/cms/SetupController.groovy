@@ -175,7 +175,9 @@ class SetupController {
 
         Menu menu=Menu.findByMenuId('MENU_ITEM_PAGE1')
 
-
+        Encryption encryption=new Encryption()
+        encryption.writeEncryptionKey(Encryption.ENCRYPTION_KEY_1)
+        encryption.writeEncryptionKey(Encryption.ENCRYPTION_KEY_2)
 
         chain(controller: "user", action: "Administration")
     }

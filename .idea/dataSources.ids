@@ -53,6 +53,15 @@
       <foreign-key name="FK5AA65F3F2288B2AB" columns="menu_page_id" ref-table="page" ref-schema="" ref-catalog="nicocms" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
       <index name="FK5AA65F3F2288B2AB" unique="false" columns="menu_page_id"/>
     </table>
+    <table name="failedipaddresses" schema="" catalog="nicocms" type="TABLE">
+      <column name="id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5" autoIncrement="true"/>
+      <column name="version" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5"/>
+      <column name="date" sqlType="DATETIME" precision="19" scale="0" nullable="false" jdbcType="93"/>
+      <column name="ip_address" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <column name="nr_failed_attempts" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="nr_seconds_since_last_logon" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <primary-key name="PRIMARY" columns="id"/>
+    </table>
     <table name="file_content" schema="" catalog="nicocms" type="TABLE">
       <column name="id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5" autoIncrement="true"/>
       <column name="version" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5"/>

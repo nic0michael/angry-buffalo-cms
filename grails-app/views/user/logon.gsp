@@ -18,17 +18,21 @@
 <%
     String ipAddress=request.getRemoteAddr()
     String ip=request.getHeader("Client-IP")
-    int nrFailedAttempts
-    int nrSecondsSinceLastLogon
+    int nrFailedAttempts=0
+    int nrSecondsSinceLastLogon=0
+    int difference=0
     if(ipAddress==null||ipAddress.isEmpty()){
         ipAddress=ip
     }
-
-    za.co.nico.cms.FailedIPAddresses failedIPAddresses=FailedIPAddresses.findByIpAddress(ipAddress)
-     nrFailedAttempts=failedIPAddresses.getNrFailedAttempts()
-     nrSecondsSinceLastLogon=failedIPAddresses.getNrSecondsSinceLastLogon()
-    int difference =   (new Date().time - failedIPAddresses.getDate().time)/1000
-    session.setAttribute("ipAddress",ipAddress);
+    try {
+        za.co.nico.cms.FailedIPAddresses failedIPAddresses = FailedIPAddresses.findByIpAddress(ipAddress)
+        if(failedIPAddresses!=null) {
+            nrFailedAttempts = failedIPAddresses.getNrFailedAttempts()
+            nrSecondsSinceLastLogon= failedIPAddresses.getNrSecondsSinceLastLogon()
+            difference = (new Date().time - failedIPAddresses.getDate().time) / 1000
+        }
+        session.setAttribute("ipAddress",ipAddress);
+    } catch(Exception e){ }
 %>
 <!--ipAddress: ${session.ipAddress} -->
 <!--nrFailedAttempts: ${nrFailedAttempts} -->
@@ -68,6 +72,7 @@
         </tr>
         <tr>
             <td></td>
+
             <g:if test="${randonNr==0}">
                     <td><img src="${resource(dir: 'images/captcha', file: '65435775600.jpg')}" alt="0"/>
                         <input type="hidden" name="klidi" value="9961">

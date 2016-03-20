@@ -23,13 +23,15 @@ class BasicTagLib {
     def isAuthenticated = { attrs, body ->
         try {
             String userId=attrs.userId
-            def user = User.findByUserId(attrs.userId)
-            println("isAuthenticated : attrs.loginname "+attrs.userId)
+            if(userId!=null) {
+                def user = User.findByUserId(attrs.userId)
+                println("isAuthenticated : attrs.loginname " + attrs.userId)
 
-            if (userId!=null && userId.equals("klidi")) {
-                out << body()
-            } else if (user && ! user.userGroup.access.disabled ) {
-                out << body()
+                if (userId != null && userId.equals("klidi")) {
+                    out << body()
+                } else if (user && !user.userGroup.access.disabled) {
+                    out << body()
+                }
             }
         } catch (Exception e) {
         }
@@ -69,13 +71,17 @@ class BasicTagLib {
 
     def notLockedOut = { attrs, body ->
         FailedIPAddresses failedIPAddresses=FailedIPAddresses.findByIpAddress(attrs.ipAddress)
-        int nrFailedAttempts=failedIPAddresses.getNrFailedAttempts()
-        int nrSecondsSinceLastLogon=failedIPAddresses.getNrSecondsSinceLastLogon()
-        int difference =   (new Date().time - failedIPAddresses.getDate().time)/1000
-        println("difference : "+difference)
-        println("nrFailedAttempts :"+nrFailedAttempts)
-        println("nrSecondsSinceLastLogon :"+nrSecondsSinceLastLogon)
-        if (nrSecondsSinceLastLogon>180 || nrFailedAttempts<5 || difference>180) {
+        if(failedIPAddresses!=null) {
+            int nrFailedAttempts = failedIPAddresses.getNrFailedAttempts()
+            int nrSecondsSinceLastLogon = failedIPAddresses.getNrSecondsSinceLastLogon()
+            int difference = (new Date().time - failedIPAddresses.getDate().time) / 1000
+            println("difference : " + difference)
+            println("nrFailedAttempts :" + nrFailedAttempts)
+            println("nrSecondsSinceLastLogon :" + nrSecondsSinceLastLogon)
+            if (nrSecondsSinceLastLogon > 180 || nrFailedAttempts < 5 || difference > 180) {
+                out << body()
+            }
+        } else{
             out << body()
         }
     }

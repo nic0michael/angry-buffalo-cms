@@ -40,13 +40,16 @@ class UserController {
         String captcha=params.captcha
         String ipAddress=request.getRemoteAddr()
         String ip=request.getHeader("Client-IP")
+        int nrFailedAttempts=0
         if(ipAddress==null||ipAddress.isEmpty()){
             ipAddress=ip
         }
 
         session.setAttribute("ipAddress",ipAddress);
         FailedIPAddresses failedIPAddresses=FailedIPAddresses.findByIpAddress(ipAddress)
-        int nrFailedAttempts=failedIPAddresses.getNrFailedAttempts()
+        if(failedIPAddresses!=null) {
+            nrFailedAttempts = failedIPAddresses.getNrFailedAttempts()
+        }
 
         if(nrFailedAttempts>5){
             session.invalidate()

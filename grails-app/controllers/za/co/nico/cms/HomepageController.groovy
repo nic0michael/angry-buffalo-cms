@@ -4,6 +4,7 @@ import java.text.SimpleDateFormat
 import java.text.DateFormat
 
 class HomepageController {
+    static encryptionKeyLoaded=false
 
     Setup setup
     List<Setup> setups = Setup.findAllByEnabled(true)
@@ -20,6 +21,14 @@ class HomepageController {
 
 
     def index() {
+//        if(!encryptionKeyLoaded){
+//            Encryption encryption=new Encryption()
+////            encryption.writeEncryptionKey(Encryption.ENCRYPTION_KEY_1)
+//            encryption.loadEncryptionKey(Encryption.ENCRYPTION_KEY_1)
+//            encryptionKeyLoaded=true
+//        }
+
+
         String thePageId=params.page_id;
         String templateGspFile=templateGspFile()
         String bottomBanner =getBottomBannerUrl( thePageId)
