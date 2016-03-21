@@ -21,12 +21,14 @@
     <tr>
 
     <TR VALIGN=TOP ALIGN=center>
-        <TD>
+        <TD colspan="5">
             <h2><g:link action="Administration" >Simplify this page</g:link></h2>
         </TD>
     </TR>        <td>
 
     <TR VALIGN=TOP ALIGN=LEFT>
+
+
 
 
     <TD WIDTH=70 HEIGHT=80>
@@ -79,6 +81,16 @@
     <TR VALIGN=TOP ALIGN=LEFT>
 
 
+
+        <TD WIDTH=70 HEIGHT=20>
+            <table  WIDTH=70 HEIGHT=70 class="buttonHeading" onMouseOver="this.className='buttonMouseOverHeading'" onMouseOut="this.className='buttonHeading'" border="0">
+                <tr>
+
+                    <td align="center"> <g:link controller="user" action="AdvancedAdministration"  class="logon" ><g:img uri="/images/nicoscmsScaffoldBtn.jpg" width="130" height="130" /><!-- strong>Advanced_Administration Grails Scaffold</strong --></g:link></td>
+                </tr>
+            </table>
+        </TD>
+
         <TD WIDTH=70 HEIGHT=20>
             <table  WIDTH=70 HEIGHT=70 class="buttonHeading" onMouseOver="this.className='buttonMouseOverHeading'" onMouseOut="this.className='buttonHeading'" border="0">
                 <tr>
@@ -118,18 +130,10 @@
 
 
 
-        <TD WIDTH=70 HEIGHT=20>
-            <table  WIDTH=70 HEIGHT=70 class="buttonHeading" onMouseOver="this.className='buttonMouseOverHeading'" onMouseOut="this.className='buttonHeading'" border="0">
-                <tr>
-
-                    <td align="center"> <g:link controller="user" action="AdvancedAdministration"  class="logon" ><g:img uri="/images/nicoscmsScaffoldBtn.jpg" width="130" height="130" /><!-- strong>Advanced_Administration Grails Scaffold</strong --></g:link></td>
-                </tr>
-            </table>
-        </TD>
-
     </TR>
 
     <TR VALIGN=TOP ALIGN=LEFT>
+
 
 
         <TD WIDTH=70 HEIGHT=115>
@@ -195,7 +199,7 @@
 </tr>
 </tag:isAdmin>
     <tr>
-        <td>
+        <td colspan="5">
             <a href="../content/help/NicosCMS_EditorsGuide.pdf" target="_blank"><h2><strong>Editors Guide</strong></h2></a><br>
             <A href="http://www.webbanner24.com/" target="_blank">http://www.webbanner24.com/</A><br>
             <A href="http://mybannermaker.com/" target="_blank">http://mybannermaker.com/</A><br>

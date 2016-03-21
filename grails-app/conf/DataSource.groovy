@@ -3,16 +3,19 @@ import za.co.nico.cms.ExternalProperties
 
 dataSource {
     pooled = true
+/////////////////// used for light version
 //    driverClassName = "org.h2.Driver"
 //    username = "sa"
 //    password = ""
+/////////////////// used for full version
     driverClassName = "com.mysql.jdbc.Driver"
     username = "buffalo"
     password = "P@55w0rd"
-    username = ExternalProperties.getUsername()
-    password = ExternalProperties.getPassword()
-    println(username)
-    println(password)
+//    username = ExternalProperties.getUsername()
+//    password = ExternalProperties.getPassword()
+//    println(username)
+//    println(password)
+/////////////////// end used for full version
     println("read propertiesfile : "+ExternalProperties.getPropertiesFile())
 }
 hibernate {
@@ -25,13 +28,13 @@ environments {
     development {
         dataSource {
 //            dbCreate = "create-drop" // one of 'create', 'create-drop', 'update', 'validate', ''
-//            url = "jdbc:h2:mem:devDb;MVCC=TRUE;LOCK_TIMEOUT=10000"
-//            dbCreate = "create-drop" // the database tables will be dropped and then recreated
+            url = "jdbc:h2:mem:devDb;MVCC=TRUE;LOCK_TIMEOUT=10000"
+            dbCreate = "create-drop" // the database tables will be dropped and then recreated
             // when you start the server
             dbCreate = "update"
-            url = "jdbc:mysql://localhost/nicocms?useUnicode=yes&characterEncoding=UTF-8"
-            username = "root"
-            password = "P@55w0rd"
+//            url = "jdbc:mysql://localhost/nicocms?useUnicode=yes&characterEncoding=UTF-8"
+//            username = "root"
+//            password = "P@55w0rd"
         }
     }
     test {
@@ -43,8 +46,11 @@ environments {
     production {
         dataSource {
             dbCreate = "update"
+/////////////////// used for light version
 //            url = "jdbc:h2:prodDb;MVCC=TRUE;LOCK_TIMEOUT=10000"
+/////////////////// used for full version
             url = "jdbc:mysql://localhost/nicocms?useUnicode=yes&characterEncoding=UTF-8"
+/////////////////// end used for full version
             pooled = true
             properties {
                maxActive = -1
