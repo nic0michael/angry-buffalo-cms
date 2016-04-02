@@ -29,6 +29,7 @@ class UserController {
     def Administration(){println("Administration")}
     def DetailedAdministration(){println("DetailedAdministration")}
     def AdvancedAdministration() {println("AdvancedAdministration")}
+    def simple(){println("simple")}
     def controlPanel(){
 
     }

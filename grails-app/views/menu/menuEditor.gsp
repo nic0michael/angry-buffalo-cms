@@ -6,8 +6,13 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%
-    List<Page>pages=Page.findAll([sort: "pageId", order: "asc"]) ;
+    List<Page> pages = Page.findAll([sort: "pageId", order: "asc"]);
+    String menuIdValue = menu?.menuId
+    if (menuIdValue == null || menuIdValue.isEmpty()) {
+        menuIdValue = "";
+    }
 %>
+<!-- MenuId->${menuIdValue}<-  -->
 <%@ page import="za.co.nico.cms.*" %>
 <%@ page contentType="text/html;charset=UTF-8" %>
 <meta name="layout" content="main"/>
@@ -17,6 +22,7 @@
     <title>Menu Editor</title>
 
 </head>
+
 <body>
 <h1>Angry Buffalo CMS | Menu Editor</h1>
 <table>
@@ -30,76 +36,69 @@
         <td>
 
             <h1>Menu Editor</h1>
-            <h3>Operation :${operation }</h3>
+
+            <h3>Operation :${operation}</h3>
 
             <g:form controller="menu" action="menuSave" method="post">
 
-
                 <g:actionSubmitImage value="Edit" action="saveMenuDetails"
-                                     src="${resource(dir: 'images', file: 'SaveButton55.jpg')}"  /> &nbsp;&nbsp;
+                                     src="${resource(dir: 'images', file: 'SaveButton55.jpg')}"/> &nbsp;&nbsp;
                 <g:actionSubmitImage value="Cancel" action="cancelMenuDetails"
-                                     src="${resource(dir: 'images', file: 'CancelButton55.jpg')}" />  &nbsp;&nbsp;
+                                     src="${resource(dir: 'images', file: 'CancelButton55.jpg')}"/>  &nbsp;&nbsp;
 
-                <input type="hidden" value="${operation }"  name="operation" id="operation"/>
+                <input type="hidden" value="${operation}" name="operation" id="operation"/>
                 <fieldset class="form">
 
 
                     <div class="fieldcontain  required">
-                        <label for="page">
+                        <label for="pageId">
                             Text Content(Page) :
                             <span class="required-indicator">*</span>
                         </label>
                         <select id="pageId" name="pageId" required="" class="many-to-one" >
                             <option value="${menu?.page?.pageId}" selected="selected" >${menu?.page?.toString()}</option>
                 <%
-                    for(Page page:pages){
+                    for (Page page : pages) {
                 %>
 
-                <option value="${page?.pageId}"  >${page?.toString()}</option>
+                <option value="${page?.pageId}">${page?.toString()}</option>
                 <%
                     }
                 %>
                 </select>
                 </div>
 
-                    <div class="fieldcontain  required">
-                        <label for="menuId">
-                            Short Name (Menu Id) :
-                            <span class="required-indicator">*</span>
-                        </label>
-                        <input type="text" name="menuId" maxlength="15" required="" value="${menu?.menuId}" id="menuId" />
-                    </div>
+                <div class="fieldcontain  required">
+                    <label for="menuId">
+                        Short Name (Menu Id) :
+                        <span class="required-indicator">*</span>
+                    </label>
+                    <input type="text" name="menuId" maxlength="15" required="true" value="${menuIdValue}" id="menuId"/>
+                </div>
 
-                    <div class="fieldcontain  ">
-                        <label for="isSideMenu">
-                            Is Side Menu
 
-                        </label>
-                        <input type="hidden" name="_isSideMenu" /><input type="checkbox" name="isSideMenu" checked="checked" id="isSideMenu"  />
-                    </div>
+                <div class="fieldcontain  ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Please note you cant have an item on the top menu if its not on the side menu<br>
+                    <label for="isTopMenu">Is in &nbsp;Top Menu</label>
+                    <g:checkBox name="isTopMenu" id="isTopMenu" value="${menu?.isTopMenu}" default="Applied"/>
+                </div>
 
-                    <div class="fieldcontain  ">
-                        <label for="isTopMenu">
-                            Is Top Menu
+                <div class="fieldcontain  ">
+                    <label for="isSideMenu">Is in Side Menu</label>
+                    <g:checkBox name="isSideMenu" id="isSideMenu" value="${menu?.isSideMenu}" default="Applied"/>
 
-                        </label>
-                        <input type="hidden" name="_isTopMenu" /><input type="checkbox" name="isTopMenu" checked="checked" id="isTopMenu"  />
-                    </div>
+                </div>
 
-                    <div class="fieldcontain  ">
-                        <label for="label">
-                            Label
-
-                        </label>
-                        <input type="text" name="label" value="${menu?.label}" id="label" />
-                    </div>
+                <div class="fieldcontain  ">
+                    <label for="label">Label</label>
+                    <input type="text" name="label" value="${menu?.label}" id="label"/>
+                </div>
 
 
 
-                %{--</fieldset>--}%
-                %{--<fieldset class="buttons">--}%
-                    %{--<input type="submit" name="create" class="save" value="Submit" id="create" />--}%
-                %{--</fieldset>--}%
+            %{--</fieldset>--}%
+            %{--<fieldset class="buttons">--}%
+            %{--<input type="submit" name="create" class="save" value="Submit" id="create" />--}%
+            %{--</fieldset>--}%
             </g:form>
         </td>
         <td></td>

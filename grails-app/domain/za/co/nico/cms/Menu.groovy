@@ -12,7 +12,7 @@ class Menu {
         menuId(blank:false, nullable:false, unique:true, maxSize:45)
         urlPageIdParameter(blank:false, nullable:false)
     }
-    String toString(){return "${menuId} | ${label}"}
+    String toString(){return "menuId: ${menuId} | label: ${label} | urlPageIdParameter: ${urlPageIdParameter}"}
 
 
 }

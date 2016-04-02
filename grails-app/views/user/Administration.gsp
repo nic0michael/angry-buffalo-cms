@@ -16,6 +16,11 @@
 <!--userId: ${session.userId} -->
 <!--ipAddress: ${session.ipAddress} -->
 <h1>&nbsp;&nbsp;&nbsp;Angry Buffalo CMS | Simple Administration Panel</h1>
+
+<tag:isAdvancedAdmin  expanded="${session.expanded}">
+<tag:redirectDetailedAdministrationPage/>
+</tag:isAdvancedAdmin>
+
 <table width="650">
     <tag:isAdmin userId="${session.userId}">
         <tr>

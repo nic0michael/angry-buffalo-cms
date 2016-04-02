@@ -61,6 +61,19 @@ class BasicTagLib {
     }
 
 
+    def isAdvancedAdmin = { attrs, body ->
+        try {
+            String expanded=attrs.expanded
+            def user = User.findByUserId(attrs.userId)
+            println("expanded : attrs.expanded "+attrs.expanded)
+            if (expanded!=null && expanded.equals("true")) {
+                out << body()
+            }
+        } catch (Exception e) {
+            out << body()
+        }
+    }
+
     def notInitialized = { attrs, body ->
         Setup setup =Setup.findBySetupId("MASTER_RECORD")
         if (setup==null) {
@@ -86,10 +99,31 @@ class BasicTagLib {
         }
     }
 
+    def isTopMenuItem= { attrs, body ->
+        String isOnTopMenu=attrs.isOnTopMenu
+        if(isOnTopMenu!=null&& isOnTopMenu.equalsIgnoreCase("TRUE")) {
+            out << body()
+        }
+    }
+
+
+
+    def isSideMenuItem= { attrs, body ->
+        String isOnSideMenu=attrs.isOnSideMenu
+        if(isOnSideMenu!=null&& isOnSideMenu.equalsIgnoreCase("TRUE")) {
+            out << body()
+        }
+    }
+
+
     def redirectMainPage = {
         response.sendRedirect("${request.contextPath}/homepage/")
     }
 
+
+    def redirectDetailedAdministrationPage = {
+        response.sendRedirect("${request.contextPath}/user/DetailedAdministration")
+    }
 
     def redirectAdminPage = {
         response.sendRedirect("${request.contextPath}/user/Administration")

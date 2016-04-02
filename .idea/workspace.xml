@@ -2,348 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c477c4dd-9ca1-47b2-b4bf-953780edb515" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/AngryBuffaloCMSLite_V1.0.war" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/AngryBuffaloCMS_V1.0.war" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_adminindex_gsp$_run_closure1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_adminindex_gsp$_run_closure1_closure2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_adminindex_gsp.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_adminindex_gsp_html.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_adminindex_gsp_linenumbers.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_bannerbannerEditor_gsp$_run_closure1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_bannerbannerEditor_gsp$_run_closure1_closure3.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_bannerbannerEditor_gsp$_run_closure2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_bannerbannerEditor_gsp$_run_closure2_closure4.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_bannerbannerEditor_gsp.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_bannerbannerEditor_gsp_html.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_bannerbannerEditor_gsp_linenumbers.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_bannerbannerManager_gsp$_run_closure1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_bannerbannerManager_gsp$_run_closure1_closure3.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_bannerbannerManager_gsp$_run_closure2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_bannerbannerManager_gsp$_run_closure2_closure4.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_bannerbannerManager_gsp.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_bannerbannerManager_gsp_html.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_bannerbannerManager_gsp_linenumbers.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_categoriescategoryEditor_gsp$_run_closure1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_categoriescategoryEditor_gsp$_run_closure1_closure3.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_categoriescategoryEditor_gsp$_run_closure2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_categoriescategoryEditor_gsp$_run_closure2_closure4.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_categoriescategoryEditor_gsp.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_categoriescategoryEditor_gsp_html.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_categoriescategoryEditor_gsp_linenumbers.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_categoriescategoryManager_gsp$_run_closure1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_categoriescategoryManager_gsp$_run_closure1_closure3.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_categoriescategoryManager_gsp$_run_closure2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_categoriescategoryManager_gsp$_run_closure2_closure4.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_categoriescategoryManager_gsp.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_categoriescategoryManager_gsp_html.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_categoriescategoryManager_gsp_linenumbers.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_editorindex_gsp$_run_closure1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_editorindex_gsp$_run_closure1_closure3.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_editorindex_gsp$_run_closure2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_editorindex_gsp$_run_closure2_closure4.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_editorindex_gsp$_run_closure2_closure4_closure5.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_editorindex_gsp.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_editorindex_gsp_html.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_editorindex_gsp_linenumbers.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_editorlandingPage_gsp$_run_closure1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_editorlandingPage_gsp$_run_closure1_closure3.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_editorlandingPage_gsp$_run_closure2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_editorlandingPage_gsp$_run_closure2_closure4.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_editorlandingPage_gsp$_run_closure2_closure5.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_editorlandingPage_gsp.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_editorlandingPage_gsp_html.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_editorlandingPage_gsp_linenumbers.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_editorold_gsp$_run_closure1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_editorold_gsp$_run_closure1_closure3.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_editorold_gsp$_run_closure2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_editorold_gsp$_run_closure2_closure4.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_editorold_gsp$_run_closure2_closure4_closure5.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_editorold_gsp.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_editorold_gsp_html.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_editorold_gsp_linenumbers.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_homepage_templates_divTemplate2_gsp.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_homepage_templates_divTemplate2_gsp_html.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_homepage_templates_divTemplate2_gsp_linenumbers.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_homepage_templates_htmlTableTemplateGreen_gsp.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_homepage_templates_htmlTableTemplateGreen_gsp_html.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_homepage_templates_htmlTableTemplateGreen_gsp_linenumbers.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_homepage_templates_tableTemplateBlue_gsp.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_homepage_templates_tableTemplateBlue_gsp_html.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_homepage_templates_tableTemplateBlue_gsp_linenumbers.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_homepage_templates_tableTemplateGold_gsp.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_homepage_templates_tableTemplateGold_gsp_html.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_homepage_templates_tableTemplateGold_gsp_linenumbers.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_homepage_templates_tableTemplateGreen_gsp.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_homepage_templates_tableTemplateGreen_gsp_html.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_homepage_templates_tableTemplateGreen_gsp_linenumbers.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_homepage_templates_tableTemplateLightBlue_gsp.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_homepage_templates_tableTemplateLightBlue_gsp_html.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_homepage_templates_tableTemplateLightBlue_gsp_linenumbers.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_homepage_templates_tableTemplateLightGreen_gsp.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_homepage_templates_tableTemplateLightGreen_gsp_html.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_homepage_templates_tableTemplateLightGreen_gsp_linenumbers.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_homepage_templates_tableTemplateLightRed_gsp.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_homepage_templates_tableTemplateLightRed_gsp_html.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_homepage_templates_tableTemplateLightRed_gsp_linenumbers.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_homepage_templates_tableTemplateOrange_gsp.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_homepage_templates_tableTemplateOrange_gsp_html.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_homepage_templates_tableTemplateOrange_gsp_linenumbers.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_homepage_templates_tableTemplateRed_gsp.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_homepage_templates_tableTemplateRed_gsp_html.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_homepage_templates_tableTemplateRed_gsp_linenumbers.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_homepage_templates_tableTemplate_gsp.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_homepage_templates_tableTemplate_gsp_html.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_homepage_templates_tableTemplate_gsp_linenumbers.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_homepage_templates_userTemplate1_gsp.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_homepage_templates_userTemplate1_gsp_html.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_homepage_templates_userTemplate1_gsp_linenumbers.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_homepage_templates_userTemplate2_gsp.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_homepage_templates_userTemplate2_gsp_html.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_homepage_templates_userTemplate2_gsp_linenumbers.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_homepage_templates_userTemplate3_gsp.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_homepage_templates_userTemplate3_gsp_html.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_homepage_templates_userTemplate3_gsp_linenumbers.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_homepage_templates_userTemplate4_gsp.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_homepage_templates_userTemplate4_gsp_html.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_homepage_templates_userTemplate4_gsp_linenumbers.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_homepage_templates_userTemplate5_gsp.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_homepage_templates_userTemplate5_gsp_html.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_homepage_templates_userTemplate5_gsp_linenumbers.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_homepage_templates_userTemplate6_gsp.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_homepage_templates_userTemplate6_gsp_html.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_homepage_templates_userTemplate6_gsp_linenumbers.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_homepageindex_gsp$_run_closure1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_homepageindex_gsp$_run_closure1_closure3.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_homepageindex_gsp$_run_closure1_closure3_closure4.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_homepageindex_gsp$_run_closure2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_homepageindex_gsp.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_homepageindex_gsp_html.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_homepageindex_gsp_linenumbers.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_homepagepage_gsp$_run_closure1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_homepagepage_gsp$_run_closure1_closure3.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_homepagepage_gsp$_run_closure1_closure3_closure4.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_homepagepage_gsp$_run_closure2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_homepagepage_gsp.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_homepagepage_gsp_html.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_homepagepage_gsp_linenumbers.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_imagesimageAddChange_gsp$_run_closure1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_imagesimageAddChange_gsp$_run_closure1_closure3.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_imagesimageAddChange_gsp$_run_closure2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_imagesimageAddChange_gsp$_run_closure2_closure4.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_imagesimageAddChange_gsp.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_imagesimageAddChange_gsp_html.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_imagesimageAddChange_gsp_linenumbers.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_imagesimageDelete_gsp$_run_closure1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_imagesimageDelete_gsp$_run_closure1_closure2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_imagesimageDelete_gsp.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_imagesimageDelete_gsp_html.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_imagesimageDelete_gsp_linenumbers.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_imagesimageManager_gsp$_run_closure1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_imagesimageManager_gsp$_run_closure1_closure3.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_imagesimageManager_gsp$_run_closure2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_imagesimageManager_gsp$_run_closure2_closure4.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_imagesimageManager_gsp.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_imagesimageManager_gsp_html.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_imagesimageManager_gsp_linenumbers.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_layoutsmain_gsp$_run_closure1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_layoutsmain_gsp$_run_closure1_closure3.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_layoutsmain_gsp$_run_closure1_closure3_closure4.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_layoutsmain_gsp$_run_closure2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_layoutsmain_gsp.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_layoutsmain_gsp_html.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_layoutsmain_gsp_linenumbers.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_layoutsnicoCmsMain_gsp$_run_closure1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_layoutsnicoCmsMain_gsp$_run_closure1_closure3.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_layoutsnicoCmsMain_gsp$_run_closure1_closure4.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_layoutsnicoCmsMain_gsp$_run_closure1_closure4_closure5.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_layoutsnicoCmsMain_gsp$_run_closure2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_layoutsnicoCmsMain_gsp.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_layoutsnicoCmsMain_gsp_html.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_layoutsnicoCmsMain_gsp_linenumbers.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_menuHierarchyinsert_gsp$_run_closure1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_menuHierarchyinsert_gsp$_run_closure1_closure3.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_menuHierarchyinsert_gsp$_run_closure2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_menuHierarchyinsert_gsp$_run_closure2_closure4.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_menuHierarchyinsert_gsp.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_menuHierarchyinsert_gsp_html.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_menuHierarchyinsert_gsp_linenumbers.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_menumenuEditor_gsp$_run_closure1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_menumenuEditor_gsp$_run_closure1_closure3.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_menumenuEditor_gsp$_run_closure2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_menumenuEditor_gsp$_run_closure2_closure4.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_menumenuEditor_gsp.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_menumenuEditor_gsp_html.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_menumenuEditor_gsp_linenumbers.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_menumenuManager_gsp$_run_closure1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_menumenuManager_gsp$_run_closure1_closure3.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_menumenuManager_gsp$_run_closure2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_menumenuManager_gsp$_run_closure2_closure4.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_menumenuManager_gsp.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_menumenuManager_gsp_html.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_menumenuManager_gsp_linenumbers.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_pagearticleDetailsEditor_gsp$_run_closure1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_pagearticleDetailsEditor_gsp$_run_closure1_closure3.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_pagearticleDetailsEditor_gsp$_run_closure2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_pagearticleDetailsEditor_gsp$_run_closure2_closure4.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_pagearticleDetailsEditor_gsp.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_pagearticleDetailsEditor_gsp_html.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_pagearticleDetailsEditor_gsp_linenumbers.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_pagearticleManager_gsp$_run_closure1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_pagearticleManager_gsp$_run_closure1_closure3.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_pagearticleManager_gsp$_run_closure2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_pagearticleManager_gsp$_run_closure2_closure4.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_pagearticleManager_gsp.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_pagearticleManager_gsp_html.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_pagearticleManager_gsp_linenumbers.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_pagefrontPageManager_gsp$_run_closure1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_pagefrontPageManager_gsp$_run_closure1_closure3.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_pagefrontPageManager_gsp$_run_closure2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_pagefrontPageManager_gsp$_run_closure2_closure4.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_pagefrontPageManager_gsp.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_pagefrontPageManager_gsp_html.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_pagefrontPageManager_gsp_linenumbers.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_pagefrontpageAddRemove_gsp$_run_closure1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_pagefrontpageAddRemove_gsp$_run_closure1_closure2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_pagefrontpageAddRemove_gsp.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_pagefrontpageAddRemove_gsp_html.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_pagefrontpageAddRemove_gsp_linenumbers.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_templatetemplateEditor_gsp$_run_closure1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_templatetemplateEditor_gsp$_run_closure1_closure3.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_templatetemplateEditor_gsp$_run_closure2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_templatetemplateEditor_gsp$_run_closure2_closure4.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_templatetemplateEditor_gsp.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_templatetemplateEditor_gsp_html.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_templatetemplateEditor_gsp_linenumbers.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_templatetemplateManager_gsp$_run_closure1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_templatetemplateManager_gsp$_run_closure1_closure3.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_templatetemplateManager_gsp$_run_closure2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_templatetemplateManager_gsp$_run_closure2_closure4.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_templatetemplateManager_gsp.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_templatetemplateManager_gsp_html.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_templatetemplateManager_gsp_linenumbers.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_textContentadd_gsp$_run_closure1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_textContentadd_gsp$_run_closure1_closure2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_textContentadd_gsp.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_textContentadd_gsp_html.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_textContentadd_gsp_linenumbers.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_textContentdelete_gsp$_run_closure1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_textContentdelete_gsp$_run_closure1_closure2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_textContentdelete_gsp.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_textContentdelete_gsp_html.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_textContentdelete_gsp_linenumbers.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_textContenteditText_gsp$_run_closure1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_textContenteditText_gsp$_run_closure1_closure2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_textContenteditText_gsp.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_textContenteditText_gsp_html.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_textContenteditText_gsp_linenumbers.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_textContenttextContentDetailsEditor_gsp$_run_closure1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_textContenttextContentDetailsEditor_gsp$_run_closure1_closure3.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_textContenttextContentDetailsEditor_gsp$_run_closure2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_textContenttextContentDetailsEditor_gsp$_run_closure2_closure4.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_textContenttextContentDetailsEditor_gsp$_run_closure2_closure4_closure5.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_textContenttextContentDetailsEditor_gsp.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_textContenttextContentDetailsEditor_gsp_html.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_textContenttextContentDetailsEditor_gsp_linenumbers.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_textContenttextContentEditor_gsp$_run_closure1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_textContenttextContentEditor_gsp$_run_closure1_closure3.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_textContenttextContentEditor_gsp$_run_closure2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_textContenttextContentEditor_gsp$_run_closure2_closure4.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_textContenttextContentEditor_gsp$_run_closure2_closure4_closure5.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_textContenttextContentEditor_gsp.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_textContenttextContentEditor_gsp_html.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_textContenttextContentEditor_gsp_linenumbers.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_textContenttextContentManager_gsp$_run_closure1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_textContenttextContentManager_gsp$_run_closure1_closure3.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_textContenttextContentManager_gsp$_run_closure2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_textContenttextContentManager_gsp$_run_closure2_closure4.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_textContenttextContentManager_gsp.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_textContenttextContentManager_gsp_html.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_textContenttextContentManager_gsp_linenumbers.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_userAdministration_gsp$_run_closure1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_userAdministration_gsp$_run_closure1_closure3.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_userAdministration_gsp$_run_closure2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_userAdministration_gsp$_run_closure2_closure4.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_userAdministration_gsp$_run_closure2_closure4_closure10.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_userAdministration_gsp$_run_closure2_closure4_closure11.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_userAdministration_gsp$_run_closure2_closure4_closure12.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_userAdministration_gsp$_run_closure2_closure4_closure13.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_userAdministration_gsp$_run_closure2_closure4_closure14.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_userAdministration_gsp$_run_closure2_closure4_closure15.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_userAdministration_gsp$_run_closure2_closure4_closure16.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_userAdministration_gsp$_run_closure2_closure4_closure17.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_userAdministration_gsp$_run_closure2_closure4_closure18.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_userAdministration_gsp$_run_closure2_closure4_closure6.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_userAdministration_gsp$_run_closure2_closure4_closure7.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_userAdministration_gsp$_run_closure2_closure4_closure8.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_userAdministration_gsp$_run_closure2_closure4_closure9.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_userAdministration_gsp$_run_closure2_closure5.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_userAdministration_gsp.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_userAdministration_gsp_html.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_userAdministration_gsp_linenumbers.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_userAdvancedAdministration_gsp$_run_closure1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_userAdvancedAdministration_gsp$_run_closure1_closure3.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_userAdvancedAdministration_gsp$_run_closure2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_userAdvancedAdministration_gsp$_run_closure2_closure4.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_userAdvancedAdministration_gsp$_run_closure2_closure5.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_userAdvancedAdministration_gsp$_run_closure2_closure5_closure7.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_userAdvancedAdministration_gsp$_run_closure2_closure5_closure8.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_userAdvancedAdministration_gsp$_run_closure2_closure6.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_userAdvancedAdministration_gsp.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_userAdvancedAdministration_gsp_html.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_userAdvancedAdministration_gsp_linenumbers.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_usercontrolPanel_gsp$_run_closure1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_usercontrolPanel_gsp$_run_closure1_closure3.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_usercontrolPanel_gsp$_run_closure2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_usercontrolPanel_gsp$_run_closure2_closure4.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_usercontrolPanel_gsp$_run_closure2_closure5.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_usercontrolPanel_gsp$_run_closure2_closure5_closure7.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_usercontrolPanel_gsp$_run_closure2_closure5_closure8.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_usercontrolPanel_gsp$_run_closure2_closure6.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_usercontrolPanel_gsp.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_usercontrolPanel_gsp_html.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_usercontrolPanel_gsp_linenumbers.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_userlogon_gsp$_run_closure1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_userlogon_gsp$_run_closure1_closure3.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_userlogon_gsp$_run_closure2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_userlogon_gsp$_run_closure2_closure4.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_userlogon_gsp$_run_closure2_closure4_closure5.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_userlogon_gsp$_run_closure2_closure4_closure6.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_userlogon_gsp.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_userlogon_gsp_html.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0_userlogon_gsp_linenumbers.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0error_gsp$_run_closure1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0error_gsp$_run_closure1_closure3.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0error_gsp$_run_closure1_closure3_closure4.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0error_gsp$_run_closure2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0error_gsp.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0error_gsp_html.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0error_gsp_linenumbers.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0index_gsp$_run_closure1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0index_gsp$_run_closure1_closure3.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0index_gsp$_run_closure2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0index_gsp$_run_closure2_closure4.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0index_gsp$_run_closure2_closure5.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0index_gsp$_run_closure2_closure5_closure8.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0index_gsp$_run_closure2_closure5_closure9.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0index_gsp$_run_closure2_closure6.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0index_gsp$_run_closure2_closure7.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0index_gsp.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0index_gsp_html.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_0index_gsp_linenumbers.data" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/za/co/nico/cms/AdminController.class" afterPath="$PROJECT_DIR$/target/classes/za/co/nico/cms/AdminController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ApplicationResources.class" afterPath="$PROJECT_DIR$/target/classes/ApplicationResources.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/za/co/nico/cms/Banner.class" afterPath="$PROJECT_DIR$/target/classes/za/co/nico/cms/Banner.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/za/co/nico/cms/BannerController.class" afterPath="$PROJECT_DIR$/target/classes/za/co/nico/cms/BannerController.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/grails-app/views/user/simple.gsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/za/co/nico/cms/BasicTagLib$_closure5.class" afterPath="$PROJECT_DIR$/target/classes/za/co/nico/cms/BasicTagLib$_closure5.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/za/co/nico/cms/BasicTagLib$_closure6.class" afterPath="$PROJECT_DIR$/target/classes/za/co/nico/cms/BasicTagLib$_closure6.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/za/co/nico/cms/BasicTagLib$_closure7.class" afterPath="$PROJECT_DIR$/target/classes/za/co/nico/cms/BasicTagLib$_closure7.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/za/co/nico/cms/BasicTagLib$_closure8.class" afterPath="$PROJECT_DIR$/target/classes/za/co/nico/cms/BasicTagLib$_closure8.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/za/co/nico/cms/BasicTagLib.class" afterPath="$PROJECT_DIR$/target/classes/za/co/nico/cms/BasicTagLib.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/BootStrap.class" afterPath="$PROJECT_DIR$/target/classes/BootStrap.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/BuildConfig.class" afterPath="$PROJECT_DIR$/target/classes/BuildConfig.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/za/co/nico/cms/Categories.class" afterPath="$PROJECT_DIR$/target/classes/za/co/nico/cms/Categories.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/za/co/nico/cms/CategoriesController.class" afterPath="$PROJECT_DIR$/target/classes/za/co/nico/cms/CategoriesController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Config.class" afterPath="$PROJECT_DIR$/target/classes/Config.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/DataSource$_run_closure1.class" afterPath="$PROJECT_DIR$/target/classes/DataSource$_run_closure1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/DataSource$_run_closure2.class" afterPath="$PROJECT_DIR$/target/classes/DataSource$_run_closure2.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/DataSource$_run_closure3.class" afterPath="$PROJECT_DIR$/target/classes/DataSource$_run_closure3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/DataSource$_run_closure3_closure4.class" afterPath="$PROJECT_DIR$/target/classes/DataSource$_run_closure3_closure4.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/DataSource$_run_closure3_closure4_closure7.class" afterPath="$PROJECT_DIR$/target/classes/DataSource$_run_closure3_closure4_closure7.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/DataSource$_run_closure3_closure5.class" afterPath="$PROJECT_DIR$/target/classes/DataSource$_run_closure3_closure5.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/DataSource$_run_closure3_closure5_closure8.class" afterPath="$PROJECT_DIR$/target/classes/DataSource$_run_closure3_closure5_closure8.class" />
@@ -351,50 +17,21 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/DataSource$_run_closure3_closure6_closure9.class" afterPath="$PROJECT_DIR$/target/classes/DataSource$_run_closure3_closure6_closure9.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/DataSource$_run_closure3_closure6_closure9_closure10.class" afterPath="$PROJECT_DIR$/target/classes/DataSource$_run_closure3_closure6_closure9_closure10.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/DataSource.class" afterPath="$PROJECT_DIR$/target/classes/DataSource.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/za/co/nico/cms/EditParameters.class" afterPath="$PROJECT_DIR$/target/classes/za/co/nico/cms/EditParameters.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/za/co/nico/cms/EditorController.class" afterPath="$PROJECT_DIR$/target/classes/za/co/nico/cms/EditorController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/za/co/nico/cms/ExternalProperties.class" afterPath="$PROJECT_DIR$/target/classes/za/co/nico/cms/ExternalProperties.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/za/co/nico/cms/FailedIPAddresses.class" afterPath="$PROJECT_DIR$/target/classes/za/co/nico/cms/FailedIPAddresses.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/za/co/nico/cms/FileContent.class" afterPath="$PROJECT_DIR$/target/classes/za/co/nico/cms/FileContent.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/za/co/nico/cms/FileContentController.class" afterPath="$PROJECT_DIR$/target/classes/za/co/nico/cms/FileContentController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/za/co/nico/cms/HomepageController.class" afterPath="$PROJECT_DIR$/target/classes/za/co/nico/cms/HomepageController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/za/co/nico/cms/Images.class" afterPath="$PROJECT_DIR$/target/classes/za/co/nico/cms/Images.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/za/co/nico/cms/ImagesController.class" afterPath="$PROJECT_DIR$/target/classes/za/co/nico/cms/ImagesController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/za/co/nico/cms/Menu.class" afterPath="$PROJECT_DIR$/target/classes/za/co/nico/cms/Menu.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/za/co/nico/cms/MenuController.class" afterPath="$PROJECT_DIR$/target/classes/za/co/nico/cms/MenuController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/za/co/nico/cms/MenuHierarchy.class" afterPath="$PROJECT_DIR$/target/classes/za/co/nico/cms/MenuHierarchy.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/za/co/nico/cms/MenuHierarchyController.class" afterPath="$PROJECT_DIR$/target/classes/za/co/nico/cms/MenuHierarchyController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/za/co/nico/cms/Page.class" afterPath="$PROJECT_DIR$/target/classes/za/co/nico/cms/Page.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/za/co/nico/cms/PageController.class" afterPath="$PROJECT_DIR$/target/classes/za/co/nico/cms/PageController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/za/co/nico/cms/Permissions.class" afterPath="$PROJECT_DIR$/target/classes/za/co/nico/cms/Permissions.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/za/co/nico/cms/PermissionsController.class" afterPath="$PROJECT_DIR$/target/classes/za/co/nico/cms/PermissionsController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/za/co/nico/cms/Setup.class" afterPath="$PROJECT_DIR$/target/classes/za/co/nico/cms/Setup.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/za/co/nico/cms/SetupController.class" afterPath="$PROJECT_DIR$/target/classes/za/co/nico/cms/SetupController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/nicoscms/TaskSchedulerJob.class" afterPath="$PROJECT_DIR$/target/classes/nicoscms/TaskSchedulerJob.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/za/co/nico/cms/Template.class" afterPath="$PROJECT_DIR$/target/classes/za/co/nico/cms/Template.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/za/co/nico/cms/TemplateController.class" afterPath="$PROJECT_DIR$/target/classes/za/co/nico/cms/TemplateController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/za/co/nico/cms/TextContent.class" afterPath="$PROJECT_DIR$/target/classes/za/co/nico/cms/TextContent.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/za/co/nico/cms/TextContentController.class" afterPath="$PROJECT_DIR$/target/classes/za/co/nico/cms/TextContentController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/UrlMappings.class" afterPath="$PROJECT_DIR$/target/classes/UrlMappings.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/za/co/nico/cms/User.class" afterPath="$PROJECT_DIR$/target/classes/za/co/nico/cms/User.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/za/co/nico/cms/UserController.class" afterPath="$PROJECT_DIR$/target/classes/za/co/nico/cms/UserController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/za/co/nico/cms/UserGroups.class" afterPath="$PROJECT_DIR$/target/classes/za/co/nico/cms/UserGroups.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/za/co/nico/cms/UserGroupsController.class" afterPath="$PROJECT_DIR$/target/classes/za/co/nico/cms/UserGroupsController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/za/co/nico/cms/Utils.class" afterPath="$PROJECT_DIR$/target/classes/za/co/nico/cms/Utils.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/gsp_ckeditorofm_gsp.class" afterPath="$PROJECT_DIR$/target/classes/gsp_ckeditorofm_gsp.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/gsp_databaseMigration_dbdoc_globalnav_gsp.class" afterPath="$PROJECT_DIR$/target/classes/gsp_databaseMigration_dbdoc_globalnav_gsp.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/gsp_databaseMigration_dbdoc_index_gsp.class" afterPath="$PROJECT_DIR$/target/classes/gsp_databaseMigration_dbdoc_index_gsp.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/gsp_databaseMigration_dbdoc_overview_summary_gsp.class" afterPath="$PROJECT_DIR$/target/classes/gsp_databaseMigration_dbdoc_overview_summary_gsp.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/gsp_databaseMigration_dbdoc_stylesheet_gsp.class" afterPath="$PROJECT_DIR$/target/classes/gsp_databaseMigration_dbdoc_stylesheet_gsp.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/resources.class" afterPath="$PROJECT_DIR$/target/classes/resources.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/user/Administration.gsp" afterPath="$PROJECT_DIR$/grails-app/views/user/Administration.gsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/taglib/za/co/nico/cms/BasicTagLib.groovy" afterPath="$PROJECT_DIR$/grails-app/taglib/za/co/nico/cms/BasicTagLib.groovy" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/conf/DataSource.groovy" afterPath="$PROJECT_DIR$/grails-app/conf/DataSource.groovy" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/user/DetailedAdministration.gsp" afterPath="$PROJECT_DIR$/grails-app/views/user/DetailedAdministration.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/ant.xml" afterPath="$PROJECT_DIR$/.idea/ant.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/domain/za/co/nico/cms/Menu.groovy" afterPath="$PROJECT_DIR$/grails-app/domain/za/co/nico/cms/Menu.groovy" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/controllers/za/co/nico/cms/MenuController.groovy" afterPath="$PROJECT_DIR$/grails-app/controllers/za/co/nico/cms/MenuController.groovy" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/controllers/za/co/nico/cms/UserController.groovy" afterPath="$PROJECT_DIR$/grails-app/controllers/za/co/nico/cms/UserController.groovy" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/homepage/templates/_tableTemplate.gsp" afterPath="$PROJECT_DIR$/grails-app/views/homepage/templates/_tableTemplate.gsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application.properties" afterPath="$PROJECT_DIR$/application.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/application.properties" afterPath="$PROJECT_DIR$/target/classes/application.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/menu/menuEditor.gsp" afterPath="$PROJECT_DIR$/grails-app/views/menu/menuEditor.gsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/menu/menuManager.gsp" afterPath="$PROJECT_DIR$/grails-app/views/menu/menuManager.gsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/stacktrace.log" afterPath="$PROJECT_DIR$/target/stacktrace.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/gsp/views.properties" afterPath="$PROJECT_DIR$/target/classes/gsp/views.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -934,11 +571,41 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="DataSource.groovy" pinned="false" current-in-tab="true">
+      <file leaf-file-name="DataSource.groovy" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/grails-app/conf/DataSource.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.34438777" vertical-offset="0" max-vertical-offset="1095">
-              <caret line="9" column="41" selection-start-line="9" selection-start-column="41" selection-end-line="9" selection-end-column="41" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="441" max-vertical-offset="1110">
+              <caret line="39" column="5" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_tableTemplate.gsp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/grails-app/views/homepage/templates/_tableTemplate.gsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.8256579" vertical-offset="2494" max-vertical-offset="3210">
+              <caret line="183" column="36" selection-start-line="183" selection-start-column="36" selection-end-line="183" selection-end-column="36" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MenuController.groovy" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/grails-app/controllers/za/co/nico/cms/MenuController.groovy">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-1.4705882" vertical-offset="90" max-vertical-offset="1830">
+              <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BasicTagLib.groovy" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/grails-app/taglib/za/co/nico/cms/BasicTagLib.groovy">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-8.321428" vertical-offset="1492" max-vertical-offset="2100">
+              <caret line="115" column="5" selection-start-line="115" selection-start-column="5" selection-end-line="115" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -947,8 +614,8 @@
       <file leaf-file-name="application.properties" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="165">
-              <caret line="3" column="24" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="45" max-vertical-offset="165">
+              <caret line="3" column="28" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -969,8 +636,6 @@
       <list>
         <option value="$PROJECT_DIR$/grails-app/views/page/frontPageManager.gsp" />
         <option value="$PROJECT_DIR$/grails-app/views/textContent/textContentEditor.gsp" />
-        <option value="$PROJECT_DIR$/grails-app/views/menu/menuEditor.gsp" />
-        <option value="$PROJECT_DIR$/grails-app/views/menu/menuManager.gsp" />
         <option value="$PROJECT_DIR$/grails-app/views/images/imageAddChange.gsp" />
         <option value="$PROJECT_DIR$/grails-app/views/images/imageManager.gsp" />
         <option value="$PROJECT_DIR$/grails-app/views/banner/bannerManager.gsp" />
@@ -998,12 +663,18 @@
         <option value="$PROJECT_DIR$/grails-app/controllers/za/co/nico/cms/HomepageController.groovy" />
         <option value="$PROJECT_DIR$/grails-app/controllers/za/co/nico/cms/FailedIPAddressesController.groovy" />
         <option value="$PROJECT_DIR$/grails-app/views/user/logon.gsp" />
-        <option value="$PROJECT_DIR$/grails-app/taglib/za/co/nico/cms/BasicTagLib.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/views/menu/menuManager.gsp" />
+        <option value="$PROJECT_DIR$/application.properties" />
+        <option value="$PROJECT_DIR$/grails-app/views/user/Administration.gsp" />
+        <option value="$PROJECT_DIR$/grails-app/views/user/simple.gsp" />
         <option value="$PROJECT_DIR$/grails-app/controllers/za/co/nico/cms/UserController.groovy" />
         <option value="$PROJECT_DIR$/grails-app/views/user/DetailedAdministration.gsp" />
-        <option value="$PROJECT_DIR$/grails-app/views/user/Administration.gsp" />
-        <option value="$PROJECT_DIR$/application.properties" />
+        <option value="$PROJECT_DIR$/grails-app/domain/za/co/nico/cms/Menu.groovy" />
         <option value="$PROJECT_DIR$/grails-app/conf/DataSource.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/taglib/za/co/nico/cms/BasicTagLib.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/controllers/za/co/nico/cms/MenuController.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/views/menu/menuEditor.gsp" />
+        <option value="$PROJECT_DIR$/grails-app/views/homepage/templates/_tableTemplate.gsp" />
       </list>
     </option>
   </component>
@@ -1033,7 +704,7 @@
     <option name="STATE" value="0" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
+    <navigator proportions="" version="1">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -1044,62 +715,7 @@
       <autoscrollFromSource />
       <sortByType />
     </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="NicosCMS" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="NicosCMS" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="NicosCMS" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="NicosCMS" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="NicosCMS" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="NicosCMS" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="NicosCMS" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
     <property name="GoToFile.includeJavaFiles" value="false" />
@@ -1428,8 +1044,14 @@
         <option name="TRANSPORT" value="0" />
         <option name="LOCAL" value="true" />
       </RunnerSettings>
+      <RunnerSettings RunnerId="GrailsMavenDebuggerRunner">
+        <option name="DEBUG_PORT" value="" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Debug" />
+      <ConfigurationWrapper RunnerId="GrailsMavenDebuggerRunner" />
       <ConfigurationWrapper RunnerId="Run" />
       <method>
         <option name="Make" enabled="false" />
@@ -1472,15 +1094,19 @@
       <workItem from="1458550061259" duration="773000" />
       <workItem from="1458561825567" duration="315000" />
       <workItem from="1458562417286" duration="5114000" />
+      <workItem from="1459427186183" duration="2784000" />
+      <workItem from="1459449961625" duration="7718000" />
+      <workItem from="1459492003222" duration="953000" />
+      <workItem from="1459601682603" duration="9757000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="78636000" />
+    <option name="totallyTimeSpent" value="99848000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="19" y="35" width="1347" height="708" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1492,20 +1118,20 @@
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
-      <window_info id="Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25311944" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Console" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25311944" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32922825" sideWeight="0.5514334" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24635457" sideWeight="0.4890511" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.45989305" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24635457" sideWeight="0.4890511" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4581105" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.54379565" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.43672013" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Grails View" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24021488" sideWeight="0.77697843" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Grails View" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2555641" sideWeight="0.77697843" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -1618,19 +1244,19 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/grails-app/controllers/za/co/nico/cms/MenuController.groovy</url>
-          <line>66</line>
+          <line>59</line>
           <properties />
           <option name="timeStamp" value="13" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/grails-app/controllers/za/co/nico/cms/MenuController.groovy</url>
-          <line>89</line>
+          <line>82</line>
           <properties />
           <option name="timeStamp" value="14" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/grails-app/controllers/za/co/nico/cms/MenuController.groovy</url>
-          <line>46</line>
+          <line>39</line>
           <properties />
           <option name="timeStamp" value="15" />
         </line-breakpoint>
@@ -1748,6 +1374,18 @@
           <properties />
           <option name="timeStamp" value="34" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/grails-app/controllers/za/co/nico/cms/MenuController.groovy</url>
+          <line>83</line>
+          <properties />
+          <option name="timeStamp" value="36" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/grails-app/views/homepage/templates/_tableTemplate.gsp</url>
+          <line>166</line>
+          <properties />
+          <option name="timeStamp" value="42" />
+        </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
         <breakpoint type="java-exception">
@@ -1755,7 +1393,7 @@
           <properties />
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="35" />
+      <option name="time" value="43" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1764,76 +1402,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/grails-app/views/textContent/add.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="345">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/user/controlPanel.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="26.382978" vertical-offset="1240" max-vertical-offset="4050">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/menu/menuEditor.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.106383" vertical-offset="107" max-vertical-offset="1800">
-          <caret line="20" column="21" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/menu/menuManager.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.8297873" vertical-offset="120" max-vertical-offset="1530">
-          <caret line="20" column="21" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/images/imageAddChange.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.382979" vertical-offset="17" max-vertical-offset="1620">
-          <caret line="18" column="21" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/images/imageDelete.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="343">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/images/imageManager.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.319149" vertical-offset="97" max-vertical-offset="1440">
-          <caret line="20" column="21" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/banner/bannerEditor.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="4.680851" vertical-offset="220" max-vertical-offset="1785">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/banner/bannerManager.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.8297873" vertical-offset="167" max-vertical-offset="1395">
-          <caret line="20" column="39" selection-start-line="20" selection-start-column="39" selection-end-line="20" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/template/templateManager.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.7021275" vertical-offset="0" max-vertical-offset="1395">
-          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/views/user/AdvancedAdministration.gsp">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33333334" vertical-offset="3470" max-vertical-offset="4050">
@@ -1876,40 +1444,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/conf/ApplicationResources.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="150">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/conf/BuildConfig.groovy">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-1.176781" vertical-offset="1001" max-vertical-offset="1380">
           <caret line="37" column="57" selection-start-line="37" selection-start-column="57" selection-end-line="37" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/conf/Config.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1722" max-vertical-offset="2130">
-          <caret line="117" column="9" selection-start-line="117" selection-start-column="9" selection-end-line="117" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/controllers/za/co/nico/cms/PageController.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.65217394" vertical-offset="1470" max-vertical-offset="1980">
-          <caret line="99" column="0" selection-start-line="99" selection-start-column="0" selection-end-line="99" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/homepage/templates/_tableTemplate.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.553191" vertical-offset="1398" max-vertical-offset="2880">
-          <caret line="120" column="53" selection-start-line="120" selection-start-column="53" selection-end-line="120" selection-end-column="53" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1960,14 +1498,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="59" max-vertical-offset="1800">
           <caret line="15" column="44" selection-start-line="15" selection-start-column="44" selection-end-line="15" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/homepage/index.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="73" max-vertical-offset="1815">
-          <caret line="23" column="2" selection-start-line="14" selection-start-column="0" selection-end-line="23" selection-end-column="2" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2026,21 +1556,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/controllers/za/co/nico/cms/TextContentController.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.9520548" vertical-offset="1267" max-vertical-offset="3330">
-          <caret line="103" column="0" selection-start-line="96" selection-start-column="19" selection-end-line="103" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/controllers/za/co/nico/cms/SetupController.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-18.391304" vertical-offset="2322" max-vertical-offset="2850">
-          <caret line="183" column="1" selection-start-line="183" selection-start-column="1" selection-end-line="183" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/conf/BootStrap.groovy">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="315">
@@ -2055,14 +1570,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/controllers/za/co/nico/cms/HomepageController.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="7410">
-          <caret line="28" column="11" selection-start-line="28" selection-start-column="11" selection-end-line="28" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/controllers/za/co/nico/cms/FailedIPAddressesController.groovy">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="855" max-vertical-offset="1410">
@@ -2070,33 +1577,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/user/logon.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1940" max-vertical-offset="2595">
-          <caret line="138" column="33" selection-start-line="138" selection-start-column="21" selection-end-line="138" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/taglib/za/co/nico/cms/BasicTagLib.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1073" max-vertical-offset="1590">
-          <caret line="84" column="25" selection-start-line="84" selection-start-column="25" selection-end-line="84" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/controllers/za/co/nico/cms/UserController.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="654" max-vertical-offset="2250">
-          <caret line="51" column="9" selection-start-line="51" selection-start-column="9" selection-end-line="51" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web-app/css/view.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-17.142857" vertical-offset="0" max-vertical-offset="13065">
           <caret line="32" column="9" selection-start-line="32" selection-start-column="4" selection-end-line="32" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2104,7 +1588,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-10.821428" vertical-offset="312" max-vertical-offset="9990">
           <caret line="41" column="13" selection-start-line="41" selection-start-column="8" selection-end-line="41" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2112,38 +1595,201 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3846154" vertical-offset="230" max-vertical-offset="510">
           <caret line="14" column="57" selection-start-line="14" selection-start-column="54" selection-end-line="14" selection-end-column="57" />
-          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/menu/menuManager.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="771" max-vertical-offset="1290">
+          <caret line="65" column="0" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/domain/za/co/nico/cms/Menu.groovy">
+      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.0384617" vertical-offset="0" max-vertical-offset="360">
+          <caret line="14" column="108" selection-start-line="14" selection-start-column="108" selection-end-line="14" selection-end-column="108" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/user/logon.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.02183406" vertical-offset="2075" max-vertical-offset="2595">
+          <caret line="138" column="33" selection-start-line="138" selection-start-column="21" selection-end-line="138" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/user/simple.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6724891" vertical-offset="86" max-vertical-offset="360">
+          <caret line="16" column="22" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/views/user/DetailedAdministration.gsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.8723404" vertical-offset="2867" max-vertical-offset="3315">
-          <caret line="197" column="5" selection-start-line="197" selection-start-column="5" selection-end-line="197" selection-end-column="5" />
-          <folding />
+        <state vertical-scroll-proportion="0.7638889" vertical-offset="270" max-vertical-offset="3360">
+          <caret line="29" column="21" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/user/Administration.gsp">
+    <entry file="file://$PROJECT_DIR$/grails-app/conf/ApplicationResources.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3433735" vertical-offset="1386" max-vertical-offset="1860">
-          <caret line="100" column="22" selection-start-line="100" selection-start-column="22" selection-end-line="100" selection-end-column="22" />
-          <folding />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="276">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/conf/Config.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="6.195652" vertical-offset="45" max-vertical-offset="2130">
+          <caret line="117" column="9" selection-start-line="117" selection-start-column="9" selection-end-line="117" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="165">
-          <caret line="3" column="24" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
+          <caret line="3" column="28" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/controllers/za/co/nico/cms/UserGroupsController.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.11811024" vertical-offset="0" max-vertical-offset="254">
+          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/controllers/za/co/nico/cms/UserController.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.4107884" vertical-offset="564" max-vertical-offset="2265">
+          <caret line="31" column="32" selection-start-line="31" selection-start-column="32" selection-end-line="31" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/controllers/za/co/nico/cms/TextContentController.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.4272301" vertical-offset="2170" max-vertical-offset="3330">
+          <caret line="96" column="19" selection-start-line="96" selection-start-column="19" selection-end-line="96" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/controllers/za/co/nico/cms/SetupController.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.7551867" vertical-offset="2322" max-vertical-offset="2850">
+          <caret line="183" column="1" selection-start-line="183" selection-start-column="1" selection-end-line="183" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/controllers/za/co/nico/cms/PermissionsController.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.11811024" vertical-offset="0" max-vertical-offset="254">
+          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/controllers/za/co/nico/cms/PageController.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="2.6150234" vertical-offset="928" max-vertical-offset="1980">
+          <caret line="99" column="0" selection-start-line="99" selection-start-column="0" selection-end-line="99" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/controllers/za/co/nico/cms/MenuHierarchyController.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.46460176" vertical-offset="0" max-vertical-offset="435">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/controllers/za/co/nico/cms/TemplateController.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.11811024" vertical-offset="0" max-vertical-offset="1260">
+          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/homepage/index.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.2391304" vertical-offset="75" max-vertical-offset="1815">
+          <caret line="24" column="36" selection-start-line="24" selection-start-column="36" selection-end-line="24" selection-end-column="36" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/conf/DataSource.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.34438777" vertical-offset="0" max-vertical-offset="1095">
-          <caret line="9" column="41" selection-start-line="9" selection-start-column="41" selection-end-line="9" selection-end-column="41" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="441" max-vertical-offset="1110">
+          <caret line="39" column="5" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/user/Administration.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.744681" vertical-offset="1671" max-vertical-offset="1935">
+          <caret line="120" column="4" selection-start-line="120" selection-start-column="4" selection-end-line="120" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../../developer/SDK/Grails/grails-2.2.2/lib/org.springframework/spring-webmvc/jars/spring-webmvc-3.1.4.RELEASE.jar!/org/springframework/web/servlet/DispatcherServlet.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.36653388" vertical-offset="4648" max-vertical-offset="9915">
+          <caret line="377" column="19" selection-start-line="377" selection-start-column="19" selection-end-line="377" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/controllers/za/co/nico/cms/HomepageController.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.48547718" vertical-offset="333" max-vertical-offset="7410">
+          <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/taglib/za/co/nico/cms/BasicTagLib.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.321428" vertical-offset="1492" max-vertical-offset="2100">
+          <caret line="115" column="5" selection-start-line="115" selection-start-column="5" selection-end-line="115" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/controllers/za/co/nico/cms/MenuController.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.4705882" vertical-offset="90" max-vertical-offset="1830">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/menu/menuEditor.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="2.2894738" vertical-offset="489" max-vertical-offset="1785">
+          <caret line="79" column="56" selection-start-line="79" selection-start-column="56" selection-end-line="79" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/homepage/templates/_tableTemplate.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8256579" vertical-offset="2494" max-vertical-offset="3210">
+          <caret line="183" column="36" selection-start-line="183" selection-start-column="36" selection-end-line="183" selection-end-column="36" />
           <folding />
         </state>
       </provider>

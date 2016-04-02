@@ -63,23 +63,7 @@
                         </div>
                     </ul>
 
-                    %{--<ul id="li_2b" >--}%
-                        %{--<label class="description" for="operation"><br>Select Operation to perform</label>--}%
-                        %{--<div>--}%
-                            %{--<select class="element select medium" id="operation" name="operation">--}%
-                                %{--<option value="" selected="selected">Selection please</option>--}%
-                                %{--<option value="EDIT" >Edit this Menu Item</option>--}%
-                                %{--<option value="ADD" >Add a New Menu Item</option>--}%
-                            %{--</select>--}%
-                        %{--</div>--}%
-                    %{--</ul>--}%
-                    %{--<br>--}%
 
-                    %{--<li class="buttons">--}%
-                        %{--<input type="hidden" name="form_id" value="860091" />--}%
-
-                        %{--<input id="saveForm" class="button_text" type="submit" name="submit" value="Submit" />--}%
-                    %{--</li>--}%
                 </ul>
             </g:form>
 

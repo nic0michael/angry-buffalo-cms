@@ -13,6 +13,9 @@
     <title>Administration Panel</title>
 </head>
 <body>
+<%
+    session.setAttribute("expanded","true");
+%>
 <!--userId: ${session.userId} -->
 <h1>&nbsp;&nbsp;&nbsp;Angry Buffalo CMS | Administration Panel Expanded</h1>
 <table width="600">
@@ -22,7 +25,7 @@
 
     <TR VALIGN=TOP ALIGN=center>
         <TD colspan="5">
-            <h2><g:link action="Administration" >Simplify this page</g:link></h2>
+            <h2><g:link action="simple" >Simplify this page</g:link></h2>
         </TD>
     </TR>        <td>
 
