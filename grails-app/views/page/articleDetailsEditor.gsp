@@ -56,14 +56,14 @@
                         </label>
                         <select id="permissionId" name="permissionId" required="" class="many-to-one" >
                             <option value="${page?.access?.permissionId}" selected="selected" >${page?.access?.toString()}</option>
-<%
-                List<Permissions> permissions =Permissions.findAll()
-                for(Permissions permission:permissions){
-%>
+                            <%
+                                List<Permissions> permissions =Permissions.findAll()
+                                for(Permissions permission:permissions){
+                            %>
                             <option value="${permission.permissionId}" >${permission.toString()}</option>
-<%
-                }
-%>
+                            <%
+                                }
+                            %>
                         </select>
                     </div>
 
@@ -74,14 +74,14 @@
                         </label>
                         <select id="userId" name="userId" required="" class="many-to-one" >
                             <option value="${page?.author?.userId}" selected="selected" >${page?.author?.toString()}</option>
-<%
-               List<User>authors =User.findAll()
-               for(User author:authors){
-%>
+                            <%
+                                List<User>authors =User.findAll()
+                                for(User author:authors){
+                            %>
                             <option value="${author?.userId}" >${author?.toString()}</option>
-<%
-               }
-%>
+                            <%
+                                }
+                            %>
                         </select>
                     </div>
 
@@ -92,14 +92,14 @@
                         </label>
                         <select id="templateId" name="templateId" required="" class="many-to-one" >
                             <option value="${page?.template?.templateId}" selected="selected" >${page?.template?.toString()}</option>
-<%
-                List<Template>templates =Template.findAll()
-                for(Template template:templates){
-%>
+                            <%
+                                List<Template>templates =Template.findAll()
+                                for(Template template:templates){
+                            %>
                             <option value="${template.templateId}" >${template?.toString()}</option>
-<%
-                }
-%>
+                            <%
+                                }
+                            %>
                         </select>
                     </div>
 
@@ -110,14 +110,14 @@
                         </label>
                         <select id="categoryId" name="categoryId" required="" class="many-to-one" >
                             <option value="${page?.category?.categoryId}" selected="selected" >${page?.category?.toString()}</option>
-<%
+                            <%
                                 List<Categories>categories =Categories.findAll()
                                 for(Categories category:categories){
-%>
+                            %>
                             <option value="${category?.categoryId}" >${category?.toString()}</option>
-<%
+                            <%
                                 }
-%>
+                            %>
                         </select>
                     </div>
 

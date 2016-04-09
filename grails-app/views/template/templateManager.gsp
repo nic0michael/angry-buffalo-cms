@@ -61,21 +61,21 @@
                         </span>
                     </ul>
                     %{--<ul id="li_2" >--}%
-                        %{--<br><label class="description" for="operation">Action to perform with above </label>--}%
-                        %{--<div>--}%
-                            %{--<select class="element select medium" id="operation" name="operation">--}%
-                                %{--<option value="" selected="selected">Selection please</option>--}%
-                                %{--<option value="ADD" >Add new Template</option>--}%
-                                %{--<option value="EDIT" >Edit Template</option>--}%
-                            %{--</select>--}%
-                        %{--</div>--}%
+                    %{--<br><label class="description" for="operation">Action to perform with above </label>--}%
+                    %{--<div>--}%
+                    %{--<select class="element select medium" id="operation" name="operation">--}%
+                    %{--<option value="" selected="selected">Selection please</option>--}%
+                    %{--<option value="ADD" >Add new Template</option>--}%
+                    %{--<option value="EDIT" >Edit Template</option>--}%
+                    %{--</select>--}%
+                    %{--</div>--}%
                     %{--</ul>--}%
                     %{--<br>--}%
                     %{--<ul class="buttons">--}%
 
-                        %{--<input type="hidden" name="form_id" value="860138" />--}%
+                    %{--<input type="hidden" name="form_id" value="860138" />--}%
 
-                        %{--<input id="saveForm" class="button_text" type="submit" name="submit" value="Submit" />--}%
+                    %{--<input id="saveForm" class="button_text" type="submit" name="submit" value="Submit" />--}%
                     %{--</ul>--}%
                 </ul>
             </g:form>

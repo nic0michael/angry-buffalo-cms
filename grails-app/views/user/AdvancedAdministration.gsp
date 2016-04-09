@@ -249,7 +249,7 @@
             </g:each>
         </ul>
     </tag:isAdmin>
-       <br>
+    <br>
     <g:link controller="user" action="logon"><strong>Logon</strong></g:link><br>
     <g:link controller="user" action="logout"><strong>Logout</strong></g:link>
 </div>

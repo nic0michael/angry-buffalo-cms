@@ -12,7 +12,7 @@
 <html>
 <head>
     <meta name="layout" content="main"/>
-  <title>Category Editor</title>
+    <title>Category Editor</title>
 </head>
 <body>
 
@@ -30,9 +30,9 @@
 
             <g:form id="form_860091" controller="categories" action="categorySave" method="post">
                 <input type="hidden" value="${operation }"  name="operation" id="operation"/>
-                %{--<div class="form_description">--}%
-                    %{--<h2>Category Editor</h2>--}%
-                %{--</div>--}%
+            %{--<div class="form_description">--}%
+            %{--<h2>Category Editor</h2>--}%
+            %{--</div>--}%
 
                 <div class="fieldcontain  required">
                     <label for="categoryId">

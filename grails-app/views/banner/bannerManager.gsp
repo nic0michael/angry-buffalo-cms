@@ -14,7 +14,7 @@
 <html>
 <head>
     <meta name="layout" content="main"/>
-  <title>Banner Manager</title>
+    <title>Banner Manager</title>
 </head>
 <body>
 
@@ -46,37 +46,37 @@
                         <br><label class="description" for="element_1">Choose content to add/remove to Frontpage </label>
                         <span>
                             <br>
-                            <%
+                <%
 
-                                for(Banner banner: banners) {
-                            %>
-                            <!-- ${banner?.bannerId} ||  -->
-                            <input type="radio" id="" name="bannerId" class="element radio"  value="${banner?.bannerId}" />
-                            <label class="choice" for="bannerId">${banner?.toString()}</label><br>
-                            <%
-                                }
-                            %>
+                    for(Banner banner: banners) {
+                %>
+                <!-- ${banner?.bannerId} ||  -->
+                <input type="radio" id="" name="bannerId" class="element radio"  value="${banner?.bannerId}" />
+                <label class="choice" for="bannerId">${banner?.toString()}</label><br>
+                <%
+                    }
+                %>
 
-                        </span>
-                    %{--</ul>--}%
-                    %{--<ul id="li_2" >--}%
-                        %{--<br><label class="description" for="element_2">Action to perform with above </label>--}%
-                        %{--<div>--}%
-                            %{--<select class="element select medium" id="operation" name="operation">--}%
-                                %{--<option value="" selected="selected">Selection please</option>--}%
-                                %{--<option value="ADD" >Add new Banner</option>--}%
-                                %{--<option value="EDIT" >Edit Banner</option>--}%
-                                %{--<option value="REMOVE" >Disable Banner</option>--}%
-                            %{--</select>--}%
-                        %{--</div>--}%
-                    %{--</ul>--}%
-                    %{--<br>--}%
-                    %{--<ul class="buttons">--}%
+                </span>
+            %{--</ul>--}%
+            %{--<ul id="li_2" >--}%
+            %{--<br><label class="description" for="element_2">Action to perform with above </label>--}%
+            %{--<div>--}%
+            %{--<select class="element select medium" id="operation" name="operation">--}%
+            %{--<option value="" selected="selected">Selection please</option>--}%
+            %{--<option value="ADD" >Add new Banner</option>--}%
+            %{--<option value="EDIT" >Edit Banner</option>--}%
+            %{--<option value="REMOVE" >Disable Banner</option>--}%
+            %{--</select>--}%
+            %{--</div>--}%
+            %{--</ul>--}%
+            %{--<br>--}%
+            %{--<ul class="buttons">--}%
 
-                        %{--<input type="hidden" name="form_id" value="860138" />--}%
+            %{--<input type="hidden" name="form_id" value="860138" />--}%
 
-                        %{--<input id="saveForm" class="button_text" type="submit" name="submit" value="Submit" />--}%
-                    %{--</ul>--}%
+            %{--<input id="saveForm" class="button_text" type="submit" name="submit" value="Submit" />--}%
+            %{--</ul>--}%
                 </ul>
             </g:form>
         </td>

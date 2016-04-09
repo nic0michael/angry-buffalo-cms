@@ -33,9 +33,9 @@ class SetupController {
         }
 
         UserGroups unassignedUG =new UserGroups(
-            userGroupId:'UNASSIGNED_UG'
-            ,access:unassignedP
-            ,lastChanged :new Date()  ).save(flush: true)
+                userGroupId:'UNASSIGNED_UG'
+                ,access:unassignedP
+                ,lastChanged :new Date()  ).save(flush: true)
 
         UserGroups editorsUG =new UserGroups(
                 userGroupId:'EDITORS_UG'
@@ -95,6 +95,8 @@ class SetupController {
         a1= new Images(imageId:'USERBANNER_3_720X90' ,imageTitle:'bottom banner image' ,imageFileName:BannerURL.USERBANNER_3_720X90_FILE    ,imagePath:BannerURL.USERBANNER_3_720X90_URL  ,published:true).save(flush: true)
         a1=  new Images(imageId:'NICOS_CMS_BANNER'     ,imageTitle:'bottom banner image',imageFileName:BannerURL.NICOSCMSBANNER_FILE  ,imagePath:BannerURL.NICOSCMSBANNER_URL  ,published:true).save(flush: true)
 
+
+
 //        Images TOP_BANNER_IMAGE =Images.findByImageId('LIGHT_GREEN_720X220')
 //        Images BOTTOM_BANNER_IMAGE =Images.findByImageId('LIGHT_GREEN_720X90')
         Images TOP_BANNER_IMAGE =Images.findByImageId('NICOS_CMS_BANNER')
@@ -137,7 +139,7 @@ class SetupController {
 
 
         Page homPg= new Page(
-                pageId    :'HOME_PAGE'
+                pageId    :'HOME&nbsp;PAGE'
                 ,title     :'Home Page'
                 ,pageUrl   :'url'
                 ,author    :unassignedU
@@ -146,7 +148,7 @@ class SetupController {
                 ,access    :unassignedP
                 ,published :true
         ).save(flush: true)
-        Page homePg=Page.findByPageId('HOME_PAGE')
+        Page homePg=Page.findByPageId('HOME&nbsp;PAGE')
 
         println("defaultP: ${defaultP?.pageId}")
 //        String testContent="Hello this page is under construction <br><br><br>(<b>Default content</b>) "
@@ -170,14 +172,40 @@ class SetupController {
                 ,menuBackgroundColour:"#6CA3FF",menuHoverColour:"#ffffff",menuSelectedColour:"#000088",menuColour:"#8aa3ff",enabled:true).save(flush: true)
         Setup setup =Setup.findBySetupId("MASTER_RECORD")
 
-        new Menu(menuId:'MENU_ITEM_PAGE1',label:'Page 1',urlPageIdParameter:'page1',page:defaultP,isTopMenu:true,isSideMenu:true).save(flush: true)
-        new Menu(menuId:'MENU_ITEM_PAGE2',label:'Page 2',urlPageIdParameter:'page2',page:defaultP,isTopMenu:true,isSideMenu:true).save(flush: true)
+        new Language(languageName: 'Afrikaans' ,internationalization: "afr").save(flush: true)
+        new Language(languageName: 'English' ,internationalization: "eng").save(flush: true)
+        new Language(languageName: 'French' ,internationalization: "fre").save(flush: true)
+        new Language(languageName: 'German' ,internationalization: "ger").save(flush: true)
+        new Language(languageName: 'Greek' ,internationalization: "gre").save(flush: true)
+        new Language(languageName: 'Ancient Greek' ,internationalization: "grc").save(flush: true)
+        new Language(languageName: 'Hebrew' ,internationalization: "heb").save(flush: true)
+        new Language(languageName: 'Hindi' ,internationalization: "hin").save(flush: true)
+        new Language(languageName: 'Italian' ,internationalization: "ita").save(flush: true)
+        new Language(languageName: 'Japanese' ,internationalization: "jpn").save(flush: true)
+        new Language(languageName: 'Latin' ,internationalization: "lat").save(flush: true)
+        new Language(languageName: 'Portuguese' ,internationalization: "por").save(flush: true)
+        new Language(languageName: 'Romanian' ,internationalization: "run").save(flush: true)
+        new Language(languageName: 'Russian' ,internationalization: "rus").save(flush: true)
+        new Language(languageName: 'Serbian' ,internationalization: "srp").save(flush: true)
+        new Language(languageName: 'Spanish' ,internationalization: "spa").save(flush: true)
+        new Language(languageName: 'Swahili' ,internationalization: "swa").save(flush: true)
+        new Language(languageName: 'Southern Sotho' ,internationalization: "sot").save(flush: true)
+        new Language(languageName: 'Tsonga' ,internationalization: "tso").save(flush: true)
+        new Language(languageName: 'Tswana' ,internationalization: "tsn").save(flush: true)
+        new Language(languageName: 'Venda' ,internationalization: "ven").save(flush: true)
+        new Language(languageName: 'Xhosa' ,internationalization: "xho").save(flush: true)
+        new Language(languageName: 'Zulu' ,internationalization: "zul").save(flush: true)
+        Language english=Language.findByLanguageName('English')
+
+        new Menu(language: english, menuId:'MENU_ITEM_PAGE1',label:'&nbsp;Page&nbsp;&nbsp;One&nbsp;',urlPageIdParameter:'page1',page:defaultP,isTopMenu:true,isSideMenu:true).save(flush: true)
+        new Menu(language: english,menuId:'MENU_ITEM_PAGE2',label:'&nbsp;Page&nbsp;&nbsp;Two&nbsp;',urlPageIdParameter:'page2',page:defaultP,isTopMenu:true,isSideMenu:true).save(flush: true)
 
         Menu menu=Menu.findByMenuId('MENU_ITEM_PAGE1')
 
         Encryption encryption=new Encryption()
         encryption.writeEncryptionKey(Encryption.ENCRYPTION_KEY_1)
         encryption.writeEncryptionKey(Encryption.ENCRYPTION_KEY_2)
+
 
         chain(controller: "user", action: "Administration")
     }

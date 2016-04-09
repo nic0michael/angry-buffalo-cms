@@ -43,11 +43,11 @@
 
 
 /*.buttonActiveHeading{*/
-    /*border-left:  solid LightBlue;*/
-    /*border-bottom:  solid Black;*/
-    /*border-right :   solid Gray;*/
-    /*border-top :   solid DarkGray;*/
-    /*background-color: #132baa;*/
+/*border-left:  solid LightBlue;*/
+/*border-bottom:  solid Black;*/
+/*border-right :   solid Gray;*/
+/*border-top :   solid DarkGray;*/
+/*background-color: #132baa;*/
 /*}*/
 
 .buttonHeading{
@@ -107,7 +107,7 @@
                                                     </tr>
                                                 </table>
                                             </td>
-                                            <td>
+                                        <td>
                                             <g:each in="${menus}" var="menu">
                                                 <%
                                                     String isOnTopMenu="FALSE"
@@ -119,19 +119,19 @@
                                                     }catch(Exception e){}
                                                 %>
                                                 <tag:isTopMenuItem isOnTopMenu="${isOnTopMenu}">
-                                                <td>
-                                                    <table WIDTH=90 HEIGHT=30 class="buttonHeading"
-                                                           onMouseOver="this.className = 'buttonMouseOverHeading'"
-                                                           onMouseOut="this.className = 'buttonHeading'" border="0">
-                                                        <tr>
-                                                            <td align="center"><a href="index?page_id=${menu?.urlPageIdParameter}"
-                                                                                   class="topMenuClass">${menu?.label}</a></td>
-                                                        </tr>
-                                                    </table>
-                                                </td>
+                                                    <td>
+                                                        <table WIDTH=90 HEIGHT=30 class="buttonHeading"
+                                                               onMouseOver="this.className = 'buttonMouseOverHeading'"
+                                                               onMouseOut="this.className = 'buttonHeading'" border="0">
+                                                            <tr>
+                                                                <td align="center"><a href="index?page_id=${menu?.urlPageIdParameter}"
+                                                                                      class="topMenuClass">${menu?.label}</a></td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
                                                 </tag:isTopMenuItem>
                                             </g:each>
-                                            </td>
+                                        </td>
                                         </tr>
                                     </table>
 
@@ -156,12 +156,12 @@
                                onMouseOver="this.className = 'buttonMouseOverHeading'"
                                onMouseOut="this.className = 'buttonHeading'" border="0">
                             <tr>
-                                <td align="center">[<a href="index" class="topMenuClass">Home_Page</a>]</td>
+                                <td align="center"><a href="index" class="topMenuClass">Home_Page</a></td>
                             </tr>
                         </table>
                     </td>
                 </tr>
-                <!-- SIDE MENU -->
+            <!-- SIDE MENU -->
                 <g:each in="${menus}" var="menu" >
                     <%
                         String isOnSideMenu="FALSE"
@@ -172,24 +172,24 @@
                         } catch(Exception e){}
                     %>
                     <tag:isSideMenuItem isOnSideMenu="${isOnSideMenu}">
-                    <tr>
-                        <td>
-                            <table WIDTH=90 HEIGHT=30 class="buttonHeading"
-                                   onMouseOver="this.className = 'buttonMouseOverHeading'"
-                                   onMouseOut="this.className = 'buttonHeading'" border="0">
-                                <tr>
-                                    <td align="center"><a href="index?page_id=${menu?.urlPageIdParameter}"
-                                                           class="topMenuClass">${menu?.label}</a></td>
-                                </tr>
-                            </table>
-                        </td>
-                    </tr>
+                        <tr>
+                            <td>
+                                <table WIDTH=90 HEIGHT=30 class="buttonHeading"
+                                       onMouseOver="this.className = 'buttonMouseOverHeading'"
+                                       onMouseOut="this.className = 'buttonHeading'" border="0">
+                                    <tr>
+                                        <td align="center"><a href="index?page_id=${menu?.urlPageIdParameter}"
+                                                              class="topMenuClass">${menu?.label}</a></td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
                     </tag:isSideMenuItem>
                 </g:each>
             </table>
         </td>
         <td style="background-color:#eeeeee;height:550px;width:85%;vertical-align:top;">
-<!-- pageContent inserted here -->
+            <!-- pageContent inserted here -->
             ${pageContent}
         </td>
     </tr>

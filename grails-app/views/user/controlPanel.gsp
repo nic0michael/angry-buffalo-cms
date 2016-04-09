@@ -89,7 +89,7 @@
 
     <tag:isAdmin userId="${session.userId}">
         <div id="controller-list">
-        %{--<div id="controller-list" role="navigation">--}%
+            %{--<div id="controller-list" role="navigation">--}%
 
 
             <table  WIDTH=70 HEIGHT=20 class="buttonHeading" onMouseOver="this.className='buttonMouseOverHeading'" onMouseOut="this.className='buttonHeading'" border="0">
@@ -216,25 +216,25 @@
     <g:link controller="user" action="logon"><strong>Logon</strong></g:link><br>
     <g:link controller="user" action="logout"><strong>Logout</strong></g:link>
 
-    %{--<ul>--}%
-        %{--<li>App version: <g:meta name="app.version"/></li>--}%
-        %{--<li>Grails version: <g:meta name="app.grails.version"/></li>--}%
-        %{--<li>Groovy version: ${GroovySystem.getVersion()}</li>--}%
-        %{--<li>JVM version: ${System.getProperty('java.version')}</li>--}%
-        %{--<li>Reloading active: ${grails.util.Environment.reloadingAgentEnabled}</li>--}%
-        %{--<li>Controllers: ${grailsApplication.controllerClasses.size()}</li>--}%
-        %{--<li>Domains: ${grailsApplication.domainClasses.size()}</li>--}%
-        %{--<li>Services: ${grailsApplication.serviceClasses.size()}</li>--}%
-        %{--<li>Tag Libraries: ${grailsApplication.tagLibClasses.size()}</li>--}%
-    %{--</ul>--}%
-    %{--<tag:isAdmin userId="${session.userId}">--}%
-        %{--<h1>Installed Plugins</h1>--}%
-        %{--<ul>--}%
-            %{--<g:each var="plugin" in="${applicationContext.getBean('pluginManager').allPlugins}">--}%
-                %{--<li>${plugin.name} - ${plugin.version}</li>--}%
-            %{--</g:each>--}%
-        %{--</ul>--}%
-    %{--</tag:isAdmin>--}%
+%{--<ul>--}%
+%{--<li>App version: <g:meta name="app.version"/></li>--}%
+%{--<li>Grails version: <g:meta name="app.grails.version"/></li>--}%
+%{--<li>Groovy version: ${GroovySystem.getVersion()}</li>--}%
+%{--<li>JVM version: ${System.getProperty('java.version')}</li>--}%
+%{--<li>Reloading active: ${grails.util.Environment.reloadingAgentEnabled}</li>--}%
+%{--<li>Controllers: ${grailsApplication.controllerClasses.size()}</li>--}%
+%{--<li>Domains: ${grailsApplication.domainClasses.size()}</li>--}%
+%{--<li>Services: ${grailsApplication.serviceClasses.size()}</li>--}%
+%{--<li>Tag Libraries: ${grailsApplication.tagLibClasses.size()}</li>--}%
+%{--</ul>--}%
+%{--<tag:isAdmin userId="${session.userId}">--}%
+%{--<h1>Installed Plugins</h1>--}%
+%{--<ul>--}%
+%{--<g:each var="plugin" in="${applicationContext.getBean('pluginManager').allPlugins}">--}%
+%{--<li>${plugin.name} - ${plugin.version}</li>--}%
+%{--</g:each>--}%
+%{--</ul>--}%
+%{--</tag:isAdmin>--}%
 </div>
 <div id="page-body" role="main">
     <h1>NicoCMS | Control Panel</h1>

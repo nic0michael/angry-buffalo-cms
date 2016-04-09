@@ -32,10 +32,11 @@ grails.project.dependency.resolution = {
         mavenCentral()
 
         // uncomment these (or add new ones) to enable remote dependency resolution from public Maven repositories
-//        mavenRepo "http://snapshots.repository.codehaus.org"
+        //mavenRepo "http://snapshots.repository.codehaus.org"
         //mavenRepo "http://repository.codehaus.org"
         //mavenRepo "http://download.java.net/maven/2/"
         //mavenRepo "http://repository.jboss.com/maven2/"
+
 
         mavenRepo "https://repo.grails.org/grails/plugins"
         mavenRepo 'http://repo.spring.io/milestone'
@@ -50,7 +51,6 @@ grails.project.dependency.resolution = {
     dependencies {
         // specify dependencies here under either 'build', 'compile', 'runtime', 'test' or 'provided' scopes e.g.
 
-        // runtime 'mysql:mysql-connector-java:5.1.22'
         runtime 'mysql:mysql-connector-java:5.1.22'
     }
 
@@ -65,22 +65,11 @@ grails.project.dependency.resolution = {
         //runtime ":yui-minify-resources:0.1.5"
 
         build ":tomcat:$grailsVersion"
-
         runtime ":database-migration:1.3.2"
-
         compile ':cache:1.0.1'
 //        compile "org.grails.plugins:ckeditor:4.5.4.0"
         compile ":ckeditor:4.4.1.0"  // http://stefanogualdi.github.io/grails-ckeditor/docs/index.html
                                      // http://docs.cksource.com/ckeditor_api/symbols/CKEDITOR.config.html
-
-                                     // http://stefanogualdi.github.io/grails-ckeditor/
-                                     // https://github.com/stefanogualdi/grails-ckeditor/
-                                     // https://jira.grails.org/browse/GPCKEDITOR
-        // compile ":recaptcha:0.6.9"   // http://grails.org/plugin/recaptcha
-        //                              use :   install-plugin recaptcha
-        //                              https://grails.org/version/ReCaptcha+Plugin/8
-
         compile ":export:1.6"
-
     }
 }

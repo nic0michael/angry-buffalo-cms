@@ -18,7 +18,7 @@
 <h1>&nbsp;&nbsp;&nbsp;Angry Buffalo CMS | Simple Administration Panel</h1>
 
 <tag:isAdvancedAdmin  expanded="${session.expanded}">
-<tag:redirectDetailedAdministrationPage/>
+    <tag:redirectDetailedAdministrationPage/>
 </tag:isAdvancedAdmin>
 
 <table width="650">
@@ -33,7 +33,7 @@
         </TR>
 
         <tag:notInitialized>
-        <TR VALIGN=TOP ALIGN=LEFT>
+            <TR VALIGN=TOP ALIGN=LEFT>
 
                 <TD>
                     <table  WIDTH=50 HEIGHT=50 class="buttonHeading" onMouseOver="this.className='buttonMouseOverHeading'" onMouseOut="this.className='buttonHeading'" border="0">
@@ -43,7 +43,7 @@
                     </table>
                 </TD>
 
-        </TR>
+            </TR>
         </tag:notInitialized>
 
         <TR VALIGN=TOP ALIGN=LEFT>

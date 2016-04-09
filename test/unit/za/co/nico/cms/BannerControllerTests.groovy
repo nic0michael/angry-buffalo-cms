@@ -1,7 +1,6 @@
 package za.co.nico.cms
 
 
-
 import grails.test.mixin.*
 import org.junit.*
 
@@ -12,6 +11,6 @@ import org.junit.*
 class BannerControllerTests {
 
     void testSomething() {
-       fail "Implement me"
+        fail "Implement me"
     }
 }

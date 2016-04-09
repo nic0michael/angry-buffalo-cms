@@ -14,7 +14,7 @@
 <html>
 <head>
     <meta name="layout" content="main"/>
-  <title>Category Manager</title>
+    <title>Category Manager</title>
 </head>
 <body>
 
@@ -30,55 +30,55 @@
         <td>&nbsp;&nbsp;</td>
         <td>
 
-    <g:form id="form_860091" controller="categories" action="categoryEditor" method="post">
+            <g:form id="form_860091" controller="categories" action="categoryEditor" method="post">
 
-        <g:actionSubmitImage value="Add" action="add"
-                             src="${resource(dir: 'images', file: 'ButtonAdd55.jpg')}"  /> &nbsp;&nbsp;
-        <g:actionSubmitImage value="Edit" action="editText"
-                             src="${resource(dir: 'images', file: 'ButtonEdit55.jpg')}" />  &nbsp;&nbsp;
-        <g:actionSubmitImage value="Delete" action="delete"
-                             src="${resource(dir: 'images', file: 'ButtonDelete55.jpg')}" />&nbsp;&nbsp;
-        <a href="../user/administration"><img src="${resource(dir: 'images', file: 'CancelButton55.jpg')}"/></a>
+                <g:actionSubmitImage value="Add" action="add"
+                                     src="${resource(dir: 'images', file: 'ButtonAdd55.jpg')}"  /> &nbsp;&nbsp;
+                <g:actionSubmitImage value="Edit" action="editText"
+                                     src="${resource(dir: 'images', file: 'ButtonEdit55.jpg')}" />  &nbsp;&nbsp;
+                <g:actionSubmitImage value="Delete" action="delete"
+                                     src="${resource(dir: 'images', file: 'ButtonDelete55.jpg')}" />&nbsp;&nbsp;
+                <a href="../user/administration"><img src="${resource(dir: 'images', file: 'CancelButton55.jpg')}"/></a>
 
-        <ul >
+                <ul >
 
-            <ul id="li_2" >
+                    <ul id="li_2" >
 
-            <div> <br>
-                <h2>The following Categories are defined :</h2>
+                        <div> <br>
+                            <h2>The following Categories are defined :</h2>
 
-<%
-        for(Categories category : categories) {
-%>
-                <!-- ${category.categoryId} ||  -->
-                <input type="radio" id="" name="categoryId" class="element radio"  value="${category.categoryId}" />
-                <label class="choice" for="textContentId">${category.toString()}</label><br>
-<%
-        }
-%>
-                <label class="description" for="element_2"><br>Select Category and press Edit/Delete or just press Add </label>
-            </div>
-        </ul>
+                            <%
+                                for(Categories category : categories) {
+                            %>
+                            <!-- ${category.categoryId} ||  -->
+                            <input type="radio" id="" name="categoryId" class="element radio"  value="${category.categoryId}" />
+                            <label class="choice" for="textContentId">${category.toString()}</label><br>
+                            <%
+                                }
+                            %>
+                            <label class="description" for="element_2"><br>Select Category and press Edit/Delete or just press Add </label>
+                        </div>
+                    </ul>
 
-            %{--<ul id="li_2b" >--}%
-                %{--<label class="description" for="element_2"><br>Select Operation to perform</label>--}%
-                %{--<div>--}%
+                    %{--<ul id="li_2b" >--}%
+                    %{--<label class="description" for="element_2"><br>Select Operation to perform</label>--}%
+                    %{--<div>--}%
                     %{--<select class="element select medium" id="element_2b" name="element_2">--}%
-                        %{--<option value="" selected="selected">Selection please</option>--}%
-                        %{--<option value="EDIT" >Edit this Category</option>--}%
-                        %{--<option value="ADD" >Add a New Category</option>--}%
+                    %{--<option value="" selected="selected">Selection please</option>--}%
+                    %{--<option value="EDIT" >Edit this Category</option>--}%
+                    %{--<option value="ADD" >Add a New Category</option>--}%
                     %{--</select>--}%
-                %{--</div>--}%
-            %{--</ul>--}%
-            %{--<br>--}%
+                    %{--</div>--}%
+                    %{--</ul>--}%
+                    %{--<br>--}%
 
-            %{--<li class="buttons">--}%
-                %{--<input type="hidden" name="form_id" value="860091" />--}%
+                    %{--<li class="buttons">--}%
+                    %{--<input type="hidden" name="form_id" value="860091" />--}%
 
-                %{--<input id="saveForm" class="button_text" type="submit" name="submit" value="Submit" />--}%
-            %{--</li>--}%
-        </ul>
-    </g:form>
+                    %{--<input id="saveForm" class="button_text" type="submit" name="submit" value="Submit" />--}%
+                    %{--</li>--}%
+                </ul>
+            </g:form>
 
         </td>
         <td>&nbsp;&nbsp;</td>

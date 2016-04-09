@@ -15,7 +15,7 @@
 <html>
 <head>
     <meta name="layout" content="main"/>
-  <title>Article(Page) Manager</title>
+    <title>Article(Page) Manager</title>
 
 </head>
 <body>
@@ -52,20 +52,20 @@
                     %>
                     <label class="description" for="pageId"><br>Select Article and press Edit/Delete or just press Add </label>
                     %{--<ul id="li_2b" >--}%
-                        %{--<label class="description" for="operation"><br>Select Operation to perform</label>--}%
-                        %{--<div>--}%
-                            %{--<select class="element select medium" id="operation" name="operation">--}%
-                                %{--<option value="" selected="selected">Selection please</option>--}%
-                                %{--<option value="EDIT" >Edit this Article(Page)</option>--}%
-                                %{--<option value="ADD" >Add a New Article(Page)</option>--}%
-                            %{--</select>--}%
-                        %{--</div>--}%
+                    %{--<label class="description" for="operation"><br>Select Operation to perform</label>--}%
+                    %{--<div>--}%
+                    %{--<select class="element select medium" id="operation" name="operation">--}%
+                    %{--<option value="" selected="selected">Selection please</option>--}%
+                    %{--<option value="EDIT" >Edit this Article(Page)</option>--}%
+                    %{--<option value="ADD" >Add a New Article(Page)</option>--}%
+                    %{--</select>--}%
+                    %{--</div>--}%
                     %{--</ul>--}%
 
                 </fieldset>
-                %{--<fieldset class="buttons">--}%
-                    %{--<input type="submit" name="create" class="save" value="Submit" id="create" />--}%
-                %{--</fieldset>--}%
+            %{--<fieldset class="buttons">--}%
+            %{--<input type="submit" name="create" class="save" value="Submit" id="create" />--}%
+            %{--</fieldset>--}%
             </g:form>
         </td>
         <td></td>

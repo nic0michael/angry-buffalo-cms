@@ -15,6 +15,8 @@ class MenuController {
         String pageId= params.pageId
         boolean isSideMenu= params.isSideMenu
         boolean isTopMenu= params.isTopMenu
+        String languageIdSt=params.language
+        Language language=Language.findByLanguageName(languageIdSt)
 
         Page page=Page.findByPageId(pageId)
         println("menuId :->${menuId}<- | operation :${operation}")
@@ -25,12 +27,14 @@ class MenuController {
             menu.page= page
             menu.isTopMenu= isTopMenu
             menu.isSideMenu= isSideMenu
+            menu.language=language
             menu.save(flush: true)
             println("saved EDITED menuId ${menuId}")
 
         } else if (operation.equalsIgnoreCase("ADD")&& menu==null){
             Menu nmu= new Menu(
-                    menuId            :menuId
+                    language: language
+                    ,menuId            :menuId
                     , label             :label
                     , page              :page
                     , isTopMenu         :isTopMenu
@@ -63,6 +67,11 @@ class MenuController {
         chain(action: "menuManager")
     }
 
+    def cacheContent(){
+        new HomepageController().cacheContent();
+        chain(action: "menuManager")
+    }
+
     def scaffold = true
     def menuManager(){
 
@@ -87,7 +96,8 @@ class MenuController {
         boolean isTopMenu= params.isTopMenu
         String pageId= params.pageId
         String urlPageIdParameter=params.label
-
+        String languageIdSt=params.language
+        Language language=Language.findByLanguageName(languageIdSt)
         Page page=Page.findByPageId(pageId)
         println("persisting Menu | menuId :->${menuId}<- | operation :${operation}")
 
@@ -99,11 +109,12 @@ class MenuController {
             menu.isTopMenu= isTopMenu
             menu.isSideMenu= isSideMenu
             menu.urlPageIdParameter=urlPageIdParameter
+            menu.language=language
             menu.save(flush: true)
             println("saved EDITED menu: ${menu.toString()}")
 
         } else if (operation.equalsIgnoreCase("ADD")){
-            new Menu(menuId: menuId,urlPageIdParameter:urlPageIdParameter,label: label,page: page,isTopMenu: isTopMenu,isSideMenu: isSideMenu).save(flush: true)
+            new Menu(language: language, menuId: menuId,urlPageIdParameter:urlPageIdParameter,label: label,page: page,isTopMenu: isTopMenu,isSideMenu: isSideMenu).save(flush: true)
             Menu menu= Menu.findByMenuId(menuId)
             println("saved NEW menu: ${menu.toString()}")
         } else{

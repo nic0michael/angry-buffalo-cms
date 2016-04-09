@@ -17,7 +17,7 @@ class UserController {
 //        println(ExternalProperties.getUsername() )
 //        println(ExternalProperties.getPassword() )
         int randonNr=utils.randomNumber(10)
-         [randonNr:randonNr]
+        [randonNr:randonNr]
     }
 
 
@@ -42,6 +42,26 @@ class UserController {
         String ipAddress=request.getRemoteAddr()
         String ip=request.getHeader("Client-IP")
         int nrFailedAttempts=0
+
+        password  = password.replaceAll("\n", "\\\\n");
+        loginname  = loginname.replaceAll("\n", "\\\\n");
+
+        password  = password.replaceAll("'", "_quote_");
+        loginname  = loginname.replaceAll("'", "_quote_");
+
+        password  = password.replaceAll(""+'"', "_quote_");
+        loginname  = loginname.replaceAll(""+'"', "_quote_");
+
+        password  = password.replaceAll(""+'=', "_equals_");
+        loginname  = loginname.replaceAll(""+'=', "_equals_");
+
+        password  = password.replaceAll(";", "_semicolon_");
+        loginname  = loginname.replaceAll(";", "_semicolon_");
+
+        password  = password.replaceAll("--", "_double_dash_");
+        loginname  = loginname.replaceAll("--", "_double_dash_");
+
+
         if(ipAddress==null||ipAddress.isEmpty()){
             ipAddress=ip
         }
@@ -134,11 +154,31 @@ class UserController {
 
     void sqlInjectionTrap(String str) throws Exception{
         String test= str.toUpperCase()
-        if (test.contains("INSERT") || test.contains("UPDATE") || test.contains("DELETE")
-                || test.contains("DROP") || test.contains("SELECT")
-                ){
+        validateForIllegalInjectionCharacters(test)
+        if (test.contains("INSERT")
+                || test.contains("EXEC")
+                || test.contains("UPDATE")
+                || test.contains("DELETE")
+                || test.contains("INSERT")
+                || test.contains("ALTER")
+                || test.contains("DROP")
+                || test.contains("CREATE")
+                || test.contains("SHUTDOWN")
+                || test.contains("SELECT")){
             println("SQl injection detected")
             throw new Exception("SQL injection detected")
+        }
+    }
+
+    void validateForIllegalInjectionCharacters(String str) throws Exception{
+        if(str!=null&&!str.isEmpty()) {
+
+            for (int i=0;i<str.length();i++){
+                char ch=str.charAt(i);
+                if(ch=='"'||ch==''''''||ch=='+'||ch=='='){
+                    throw new Exception("SQL injection detected")
+                }
+            }
         }
     }
 

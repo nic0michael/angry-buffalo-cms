@@ -40,9 +40,9 @@
                                      src="${resource(dir: 'images', file: 'SaveButton55.jpg')}"  /> &nbsp;&nbsp;
                 <g:actionSubmitImage value="Cancel" action="cancelText"
                                      src="${resource(dir: 'images', file: 'CancelButton55.jpg')}" />  &nbsp;&nbsp;
-                %{--<fieldset class="buttons">--}%
-                    %{--<input type="submit" name="create" class="save" value="Submit" id="create" />--}%
-                %{--</fieldset>--}%
+            %{--<fieldset class="buttons">--}%
+            %{--<input type="submit" name="create" class="save" value="Submit" id="create" />--}%
+            %{--</fieldset>--}%
 
                 <input type="hidden" name="textContentId" value="${textContent?.textContentId}">
                 <input type="hidden" name="textContentType" value="${textContent?.textContentType}">
@@ -76,9 +76,9 @@
 
                 </fieldset>
 
-                %{--<fieldset class="buttons">--}%
-                    %{--<input type="submit" name="create" class="save" value="Submit" id="create2" />--}%
-                %{--</fieldset>--}%
+            %{--<fieldset class="buttons">--}%
+            %{--<input type="submit" name="create" class="save" value="Submit" id="create2" />--}%
+            %{--</fieldset>--}%
             </g:form>
         </td>
         <td></td>

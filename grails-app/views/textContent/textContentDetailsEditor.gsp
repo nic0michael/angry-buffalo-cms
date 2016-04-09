@@ -7,7 +7,7 @@
 --%>
 <%
     List<Page>pages=Page.findAll([sort: "pageId", order: "asc"]) ;
- //   String textContentText= textContent?.textContentText
+    //   String textContentText= textContent?.textContentText
 %>
 <%@ page import="za.co.nico.cms.*; za.co.nico.cms.BasicTagLib" %>
 <%@ page contentType="text/html;charset=UTF-8" %>
@@ -25,23 +25,23 @@
 <g:form controller="textContent" action="textContentSave" method="post">
     <input type="hidden" name="id" value="${textContent?.id}" id="id" />
     <input type="hidden" name="version" value="2" id="version" />
-<table>
-    <tr>
-        <td></td>
-        <td><g:link controller="user" action="Administration"><b>Administration Home Page</b></g:link></td>
-        <td></td>
-    </tr>
-    <tr>
-        <td></td>
-        <td>
+    <table>
+        <tr>
+            <td></td>
+            <td><g:link controller="user" action="Administration"><b>Administration Home Page</b></g:link></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
 
-            <h1>Text Content Details Editor</h1>
+                <h1>Text Content Details Editor</h1>
 
 
-            <g:actionSubmitImage value="Edit" action="saveTextContentDetails"
-                                 src="${resource(dir: 'images', file: 'SaveButton55.jpg')}"  /> &nbsp;&nbsp;
+                <g:actionSubmitImage value="Edit" action="saveTextContentDetails"
+                                     src="${resource(dir: 'images', file: 'SaveButton55.jpg')}"  /> &nbsp;&nbsp;
 
-            <a href="../user/administration"><img src="${resource(dir: 'images', file: 'CancelButton55.jpg')}"/></a>
+                <a href="../user/administration"><img src="${resource(dir: 'images', file: 'CancelButton55.jpg')}"/></a>
 
 
                 <input type="hidden" value="${operation }"  name="operation" id="operation"/>
@@ -110,30 +110,30 @@
 
                 </fieldset>
 
-            <div class="fieldcontain  required">
+                <div class="fieldcontain  required">
 
-                <ckeditor:config
-                        height="550px"
-                        width="95%"
-                        uiColor= '#14B8C4'
-                />
+                    <ckeditor:config
+                            height="550px"
+                            width="95%"
+                            uiColor= '#14B8C4'
+                    />
 
-                <ckeditor:config var="toolbar_Mytoolbar">
-                    [
-                        [ 'Source', '-', 'Bold', 'Italic','Underline',
-                          'Styles','Format','Font','FontSize', 'TextColor', 'BGColor','-','JustifyLeft','JustifyCenter','JustifyRight' ,'-', 'Cut','Copy','Paste','-', 'Link', 'Unlink' , 'Anchor' ,'-','Image','-','Find','Replace','SpellChecker','-','Outdent','Indent' ,'-', 'NumberedList', 'BulletedList','-','Table','HorizontalRule','PageBreak']
-                    ]
-                </ckeditor:config>
+                    <ckeditor:config var="toolbar_Mytoolbar">
+                        [
+                            [ 'Source', '-', 'Bold', 'Italic','Underline',
+                              'Styles','Format','Font','FontSize', 'TextColor', 'BGColor','-','JustifyLeft','JustifyCenter','JustifyRight' ,'-', 'Cut','Copy','Paste','-', 'Link', 'Unlink' , 'Anchor' ,'-','Image','-','Find','Replace','SpellChecker','-','Outdent','Indent' ,'-', 'NumberedList', 'BulletedList','-','Table','HorizontalRule','PageBreak']
+                        ]
+                    </ckeditor:config>
 
-                <ckeditor:editor name="textContentText" toolbar="Mytoolbar">
-                    ${textContentText}
-                </ckeditor:editor>
-            </div>
-        </td>
-        <td></td>
-    </tr>
+                    <ckeditor:editor name="textContentText" toolbar="Mytoolbar">
+                        ${textContentText}
+                    </ckeditor:editor>
+                </div>
+            </td>
+            <td></td>
+        </tr>
 
-</table>
+    </table>
 
 </g:form>
 <g:link controller="user" action="logout">Logout</g:link><br>

@@ -10,7 +10,7 @@
 <html>
 <head>
     <meta name="layout" content="main"/>
-  <title>MenuHierarchy Table Insert</title>
+    <title>MenuHierarchy Table Insert</title>
 </head>
 <body>
 <g:link controller="user" action="Administration">Administration</g:link> <br>
@@ -36,9 +36,9 @@
                 <span class="required-indicator">*</span>
             </label>
             <select id="childId" name="childId" required="" class="many-to-one" >
-    <g:each var="menu" in="${menus}">
-                <option value="${menu?.id}" >${menu?.toString()}</option>
-    </g:each>
+                <g:each var="menu" in="${menus}">
+                    <option value="${menu?.id}" >${menu?.toString()}</option>
+                </g:each>
             </select>
         </div>
 
@@ -55,12 +55,12 @@
         <td align="right" width="20%"><strong>Parent</strong></td>
         <td align="left" width="80%"><strong>Child</strong></td>
     </tr>
-<g:each var="menuHierarchy" in="${menuHierarchies}">
-    <tr>
-        <td align="right" width="20%">${menuHierarchy?.parentPageId}</td>
-        <td align="left" width="80%">${menuHierarchy?.child?.label}</td>
-    </tr>
-</g:each>
+    <g:each var="menuHierarchy" in="${menuHierarchies}">
+        <tr>
+            <td align="right" width="20%">${menuHierarchy?.parentPageId}</td>
+            <td align="left" width="80%">${menuHierarchy?.child?.label}</td>
+        </tr>
+    </g:each>
 </table>
 </body>
 </html>

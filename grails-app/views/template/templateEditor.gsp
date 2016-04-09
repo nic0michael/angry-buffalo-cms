@@ -62,13 +62,13 @@
                     </label>
                     <select id="bottomBannerId" name="bottomBannerId" required="" class="many-to-one" >
                         <option value="${template?.bottomBanner?.bannerId}" selected="selected" >${template?.bottomBanner?.toString()}</option>
-<%
-                        for(Banner banner:banners){
-%>
+                        <%
+                            for(Banner banner:banners){
+                        %>
                         <option value="${banner?.bannerId}"  >${banner?.toString()}</option>
-<%
-                        }
-%>
+                        <%
+                            }
+                        %>
 
                     </select>
                 </div>

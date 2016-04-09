@@ -113,7 +113,7 @@ class HomepageController {
                 return decryptDecode(text);
 
             }
-           println("Render Homepage : pageId : null : Home Page")
+            println("Render Homepage : pageId : null : Home Page")
             sb.append(homePageContent())
 
         } else if(isPageOnMenu( pageId)){                     // http://localhost:8080/NicosCMS/homepage/index?page_id=page1
@@ -411,7 +411,7 @@ class HomepageController {
                 }
             }
         }
-        
+
 
         String filename=swapSpacesWithUnderscore(pageId)+".bin"
         String text=sb.toString()
@@ -423,8 +423,8 @@ class HomepageController {
         text = dateFormat.format(date);
         writeToFile(filename,text)
     }
-    
-    
+
+
 
     String readCachedFileContent(String pageId){
         String filename=swapSpacesWithUnderscore(pageId)+".bin"

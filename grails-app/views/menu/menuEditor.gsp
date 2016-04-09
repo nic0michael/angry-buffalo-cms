@@ -6,6 +6,7 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%
+    List<Language> languages=Language.findAll()
     List<Page> pages = Page.findAll([sort: "pageId", order: "asc"]);
     String menuIdValue = menu?.menuId
     if (menuIdValue == null || menuIdValue.isEmpty()) {
@@ -67,6 +68,27 @@
                 %>
                 </select>
                 </div>
+
+                <div class="fieldcontain  required">
+                    <label for="language">
+                        language :
+                        <span class="required-indicator">*</span>
+                    </label>
+
+                    <select name="language" id="language">
+                        <option value="${menu?.language?.languageName}" selected>${menu?.language?.languageName}</option>
+                        <%
+                            for(Language language:languages){
+                        %>
+                        <option value="${language?.languageName}">${language?.languageName}</option>
+                        <%
+                            }
+                        %>
+                    </select>
+
+
+                </div>
+
 
                 <div class="fieldcontain  required">
                     <label for="menuId">
