@@ -1,0 +1,4 @@
+In intellij top Menu:
+->Run
+    -> Edit Configurations
+        ->[*]Launch Browser
