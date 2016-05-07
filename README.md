@@ -91,10 +91,6 @@ http://localhost:8080/Angry_Buffalo_CMS/admin
 
 nico.michael AT arduino DOT org DOT za
 
-
-# Reference Website
-
-http://greekorthodoxmission.org.zw/
 # Reference Website
 
 http://greekorthodoxmission.org.zw/
