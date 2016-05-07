@@ -211,6 +211,11 @@
             <A href="https://www.base64decode.org/" target="_blank">https://www.base64decode.org/</A><br>
             <A href="http://mylanguages.org/converter.php" target="_blank">mylanguages unicode converter</A><br>
             <A href="http://www.bible-researcher.com/greek-unicode.html"  target="_blank">greek-unicode</A><br>
+            <a href="../documentation/BeginnersDocumantation.pdf" target="_blank">BeginnersDocumantation.pdf</a><br>
+            <tag:isAdmin userId="${session.userId}">
+                <a href="../documentation/EditorsManual.pdf" target="_blank">EditorsManual.pdf</a><br>
+                <a href="../documentation/AdministratratorsManual.pdf" target="_blank">AdministratratorsManual.pdf</a><br>
+            </tag:isAdmin>
             <g:link controller="user" action="logon">Logon</g:link><br>
             <g:link controller="user" action="logout">Logout</g:link><br>
         </td>

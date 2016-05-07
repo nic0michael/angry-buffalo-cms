@@ -250,6 +250,11 @@
         </ul>
     </tag:isAdmin>
     <br>
+    <a href="../documentation/BeginnersDocumantation.pdf" target="_blank">BeginnersDocumantation.pdf</a><br>
+    <tag:isAdmin userId="${session.userId}">
+        <a href="../documentation/EditorsManual.pdf" target="_blank">EditorsManual.pdf</a><br>
+        <a href="../documentation/AdministratratorsManual.pdf" target="_blank">AdministratratorsManual.pdf</a><br>
+    </tag:isAdmin>
     <g:link controller="user" action="logon"><strong>Logon</strong></g:link><br>
     <g:link controller="user" action="logout"><strong>Logout</strong></g:link>
 </div>

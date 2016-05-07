@@ -104,14 +104,7 @@
     </tag:isAdmin>
     <tr>
         <td colspan="5">
-            <a href="../content/help/NicosCMS_EditorsGuide.pdf" target="_blank"><h2><strong>Editors Guide</strong></h2></a><br>
-            <A href="http://www.webbanner24.com/" target="_blank">http://www.webbanner24.com/</A><br>
-            <A href="http://mybannermaker.com/" target="_blank">http://mybannermaker.com/</A><br>
-            <A href="http://www.bannerfans.com/banner_maker.php" target="_blank">http://www.bannerfans.com/banner_maker.php</A><br>
-            <A href="https://www.base64encode.org/" target="_blank">https://www.base64encode.org/</A><br>
-            <A href="https://www.base64decode.org/" target="_blank">https://www.base64decode.org/</A><br>
-            <A href="http://mylanguages.org/converter.php" target="_blank">mylanguages unicode converter</A><br>
-            <A href="http://www.bible-researcher.com/greek-unicode.html"  target="_blank">greek-unicode</A><br>
+            <a href="../documentation/BeginnersDocumantation.pdf" target="_blank">BeginnersDocumantation.pdf</a><br>
             <g:link controller="user" action="logon">Logon</g:link><br>
             <g:link controller="user" action="logout">Logout</g:link><br>
         </td>
