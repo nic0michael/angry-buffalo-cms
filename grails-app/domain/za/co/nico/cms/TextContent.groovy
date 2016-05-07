@@ -1,6 +1,9 @@
 package za.co.nico.cms
 
 class TextContent {
+    static final int NOT_ENCODED=0
+    static final int BASE64=1
+
     String textContentId
     String textContentType
     String textContentText //="Hello this page is under construction <br><br><br>(<b>Default content</b>) "
@@ -8,15 +11,15 @@ class TextContent {
     int homePageOrder
     Page page
     boolean addTofrontPage
-    int encoding
+
+    int encoding=NOT_ENCODED;
     Date lastChangedDate
+    boolean isLocked=false;
 
     static final String HTML='HTML'
     static final String XML='XML'
     static final String TEXT='Text'
 
-    static final int NOT_ENCODED=0
-    static final int BASE64=1
 
     static constraints = {
         textContentId(blank:false, nullable:false, unique:true, maxSize:45)

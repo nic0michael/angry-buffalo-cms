@@ -21,7 +21,8 @@ class TextContentController {
         String pageId         = params.pageId
         String addTofrontPageSt= params.addTofrontPage
         String textContentText= params.textContentText
-        int encoding  =1
+        String isLockedSt=params.isLocked
+        int encoding  =BASE64
 
         int pageOrder         = 0
         int homePageOrder     = 0
@@ -33,8 +34,13 @@ class TextContentController {
         }
         Page page= Page.findByPageId(pageId)
         boolean addTofrontPage=false
+        boolean isLocked=false
         if(addTofrontPageSt!=null){
             addTofrontPage=addTofrontPageSt.equalsIgnoreCase("on")
+        }
+
+        if(isLockedSt!=null){
+            isLocked=isLockedSt.equalsIgnoreCase("on")
         }
 
         println("textContentId :->${textContentId}<- | operation :${operation} addTofrontPageSt:${addTofrontPageSt}")
@@ -55,6 +61,7 @@ class TextContentController {
             }
 
             textContent.addTofrontPage=addTofrontPage
+            textContent.isLocked=isLocked
             textContent.encoding=1
             textContent.lastChangedDate=new Date()
             textContent.save(flush: true)
@@ -146,6 +153,7 @@ class TextContentController {
         String textContentType= params.textContentType
         String pageId         = params.pageId
         String addTofrontPageSt= params.addTofrontPage
+        String isLockedSt=params.isLocked
 
         int pageOrder         = 0
         int homePageOrder     = 0
@@ -188,6 +196,7 @@ class TextContentController {
         String textContentId  = params.textContentId
         String textContentType= params.textContentType
         String textContentText= params.textContentText
+        String isLockedSt=params.isLocked
 
         println("textContentId :->${textContentId}<- | operation :${operation}")
         TextContent textCt= TextContent.findByTextContentId(textContentId)

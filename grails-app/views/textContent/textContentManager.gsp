@@ -9,7 +9,7 @@
 <%@ page import="za.co.nico.cms.BasicTagLib" %>
 <%@ page contentType="text/html;charset=UTF-8" %>
 <%
-    List<TextContent> texts= TextContent.findAll([sort: "textContentId", order: "asc"]) ;
+    List<TextContent> texts= TextContent.findAllByIsLocked(false,[sort: "textContentId", order: "asc"]) ;
 %>
 <html>
 <head>

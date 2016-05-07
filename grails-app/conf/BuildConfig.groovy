@@ -71,5 +71,6 @@ grails.project.dependency.resolution = {
         compile ":ckeditor:4.4.1.0"  // http://stefanogualdi.github.io/grails-ckeditor/docs/index.html
                                      // http://docs.cksource.com/ckeditor_api/symbols/CKEDITOR.config.html
         compile ":export:1.6"
+        compile ':font-awesome-resources:4.3.0.1'
     }
 }

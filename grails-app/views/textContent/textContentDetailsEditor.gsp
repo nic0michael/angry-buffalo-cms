@@ -91,6 +91,14 @@
                         <input type="hidden" name="_addTofrontPage" /><input type="checkbox" name="addTofrontPage" id="addTofrontPage" checked="checked" />
                     </div>
 
+                    <div class="fieldcontain  ">
+                        <label for="isLocked">
+                            Is Locked
+
+                        </label>
+                        <input type="hidden" name="_isLocked" /><input type="checkbox" name="isLocked" id="isLocked"  />
+                    </div>
+
                     <div class="fieldcontain  required">
                         <label for="homePageOrder">
                             Home Page Order

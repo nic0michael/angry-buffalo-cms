@@ -222,6 +222,7 @@ class HomepageController {
                             String text = dateFormat.format(date);
                             writeToFile(filename,text)
                         }
+                        count++
                     }
                 }
             }
