@@ -15,6 +15,7 @@ class TextContent {
     int encoding=NOT_ENCODED;
     Date lastChangedDate
     boolean isLocked=false;
+    Language language
 
     static final String HTML='HTML'
     static final String XML='XML'
@@ -23,7 +24,7 @@ class TextContent {
 
     static constraints = {
         textContentId(blank:false, nullable:false, unique:true, maxSize:45)
-        textContentText(blank:false, nullable:false, maxSize:4096)
+        textContentText(blank:false, nullable:false, maxSize:16384)
         lastChangedDate(blank:false, nullable:false)
         textContentType (blank: false, inList: [  HTML, XML,  TEXT ]    )
         encoding (blank: false, inList: [  BASE64, NOT_ENCODED ]    )
