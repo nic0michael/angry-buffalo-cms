@@ -78,10 +78,13 @@ Nico wanted his CMS project to get arround all of these problems
 
 4) to upgrade the Java JDK version and the Grails JDK version and appropriate pluggins
 
-# Websites
+# Website 
  
 http://www.arduino.org.za/angry-buffalo-cms/
 
+# Download stable version 
+
+http://45.79.151.82/AngryBuffaloCMS/download.html
 
 # To login go to:
  
@@ -90,6 +93,10 @@ http://localhost:8080/Angry_Buffalo_CMS/admin
 # To Join the project send email to
 
 nico.michael AT arduino DOT org DOT za
+
+# Reference Website
+
+http://greekorthodoxmission.org.zw/
 
 # News
 
