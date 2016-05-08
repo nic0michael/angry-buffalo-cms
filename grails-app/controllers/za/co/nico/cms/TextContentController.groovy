@@ -21,6 +21,11 @@ class TextContentController {
         String pageId         = params.pageId
         String addTofrontPageSt= params.addTofrontPage
         String textContentText= params.textContentText
+        String languageIdSt=params.language
+        Language language=Language.findByLanguageName(languageIdSt)
+        if(language.languageName.equalsIgnoreCase("GREEK")){
+            textContentText=fixGreekCharacterUnicodes(textContentText)
+        }
         String isLockedSt=params.isLocked
         int encoding  =BASE64
 
@@ -53,6 +58,7 @@ class TextContentController {
             textContent.pageOrder=pageOrder
             textContent.homePageOrder=homePageOrder
             textContent.page=page
+            textContent.language=language
             textContent.encoding=BASE64
             if (textContent.encoding==BASE64){
                 textContent.textContentText=HomepageController.encryptEncode(textContentText)
@@ -73,6 +79,7 @@ class TextContentController {
             textContent.pageOrder=pageOrder
             textContent.homePageOrder=homePageOrder
             textContent.page=page
+            textContent.language=language
             textContent.encoding=BASE64
             textContent.textContentId=textContentId
             if (textContent.encoding==BASE64){
@@ -138,6 +145,7 @@ class TextContentController {
         TextContent textContent= TextContent.findByTextContentId(textContentId)
         String textContentText
 
+
         if (textContent?.encoding==BASE64){
             textContentText=HomepageController.decryptDecode(textContent?.textContentText)
         } else{
@@ -154,6 +162,9 @@ class TextContentController {
         String pageId         = params.pageId
         String addTofrontPageSt= params.addTofrontPage
         String isLockedSt=params.isLocked
+        String languageIdSt=params.language
+        Language language=Language.findByLanguageName(languageIdSt)
+
 
         int pageOrder         = 0
         int homePageOrder     = 0
@@ -169,6 +180,7 @@ class TextContentController {
         println("textContentId :->${textContentId}<- | operation :${operation} addTofrontPageSt:${addTofrontPageSt}")
 
         TextContent textContent= TextContent.findByTextContentId(textContentId)
+        textContent.language=language
 
         String textContentText
         if (textContent.encoding==BASE64){
@@ -197,9 +209,15 @@ class TextContentController {
         String textContentType= params.textContentType
         String textContentText= params.textContentText
         String isLockedSt=params.isLocked
+        String languageIdSt=params.language
+        Language language=Language.findByLanguageName(languageIdSt)
+        if(language.languageName.equalsIgnoreCase("GREEK")){
+            textContentText=fixGreekCharacterUnicodes(textContentText)
+        }
 
         println("textContentId :->${textContentId}<- | operation :${operation}")
         TextContent textCt= TextContent.findByTextContentId(textContentId)
+        textCt.language=language
 
         if (textCt!=null){
             if (textContentType!=null){
@@ -221,5 +239,37 @@ class TextContentController {
         }
 
         chain(action: "textContentManager")
+    }
+
+
+    String fixGreekCharacterUnicodes(String textContentText){
+
+        if (textContentText==null){return null}
+
+        StringBuilder text=new StringBuilder()
+        for(int i=0;i<textContentText.length();i++){
+            char ch=textContentText.charAt(i)
+            text.append(getGreekOxiCharacters(ch))
+        }
+        return text.toString();
+    }
+
+    String getGreekOxiCharacters(char ch){
+        if(ch=='ά') return "&#7936;"
+        if(ch=='έ') return "&#7952;"
+        if(ch=='ύ') return "&#8016;"
+        if(ch=='ή') return "&#7968;"
+        if(ch=='ό') return "&#8000;"
+        if(ch=='ί') return "&#7984;"
+        if(ch=='ώ') return "&#8032;"
+
+        if(ch=='Ά') return "&#902;"
+        if(ch=='Έ') return "&#904;"
+        if(ch=='Ή') return "&#905;"
+        if(ch=='Ί') return "&#906;"
+        if(ch=='Ύ') return "&#910;"
+        if(ch=='Ώ') return "&#911;"
+
+        return ""+ch;
     }
 }
