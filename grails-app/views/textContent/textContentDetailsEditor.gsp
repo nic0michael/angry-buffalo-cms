@@ -7,6 +7,7 @@
 --%>
 <%
     List<Page>pages=Page.findAll([sort: "pageId", order: "asc"]) ;
+    List<Language> languages=Language.findAll()
     //   String textContentText= textContent?.textContentText
 %>
 <%@ page import="za.co.nico.cms.*; za.co.nico.cms.BasicTagLib" %>
@@ -80,6 +81,25 @@
                             <option value="HTML" >HTML</option>
                             <option value="XML" >XML</option>
                             <option value="Text" >Text</option>
+                        </select>
+                    </div>
+
+
+                    <div class="fieldcontain  required">
+
+                        <label for="addTofrontPage">
+                            Language :
+                        </label>
+
+                        <select name="language" id="language">
+                            <option value="${textContent?.language?.languageName}" selected>${menu?.language?.languageName}</option>
+                            <%
+                                for(Language language:languages){
+                            %>
+                            <option value="${language?.languageName}">${language?.languageName}</option>
+                            <%
+                                }
+                            %>
                         </select>
                     </div>
 
