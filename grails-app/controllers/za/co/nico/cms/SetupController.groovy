@@ -1,5 +1,6 @@
 package za.co.nico.cms
 
+import com.lowagie.text.pdf.codec.Base64
 import za.co.nico.cms.constants.BannerURL
 
 class SetupController {
@@ -159,19 +160,6 @@ class SetupController {
                 "<p>Today we will be going to demonstrate the Grails CMS web server we have been developing to the CMS user Community<br />\n" +
                 "&nbsp;</p><br><br><a href='../admin' target='_blank'>Login</a>"
 
-        TextContent defaultText=new TextContent(textContentId:'DEFAULT_CONTENT',textContentType:'HTML',textContentText:textContent,lastChangedDate:new Date(),encoding:0,pageOrder:1, homePageOrder:1,page:defaultP,addTofrontPage:true).save(flush: true)
-
-        defaultText=TextContent.findByTextContentId('DEFAULT_CONTENT')
-        TextContent homepageText=new TextContent(textContentId:'HOMEPAGE_CONTENT',textContentType:'HTML',textContentText:textContent,lastChangedDate:new Date(),encoding:0,pageOrder:1, homePageOrder:1,page:homePg,addTofrontPage:true).save(flush: true)
-
-        homepageText=TextContent.findByTextContentId('HOMEPAGE_CONTENT')
-
-        println("defaultText: ${defaultText.textContentId}")
-
-        new Setup(setupId:'MASTER_RECORD',siteTemplate:template,homePageText: homepageText,homePageTitle:'My Website | Home Page',siteTitle :'My CMS WebSite',siteCopyright:'Copyright@AngryBuffaloCMS 2016',siteCSSCode:'empty'
-                ,menuBackgroundColour:"#6CA3FF",menuHoverColour:"#ffffff",menuSelectedColour:"#000088",menuColour:"#8aa3ff",enabled:true).save(flush: true)
-        Setup setup =Setup.findBySetupId("MASTER_RECORD")
-
         new Language(languageName: 'Afrikaans' ,internationalization: "afr").save(flush: true)
         new Language(languageName: 'English' ,internationalization: "eng").save(flush: true)
         new Language(languageName: 'French' ,internationalization: "fre").save(flush: true)
@@ -196,6 +184,19 @@ class SetupController {
         new Language(languageName: 'Xhosa' ,internationalization: "xho").save(flush: true)
         new Language(languageName: 'Zulu' ,internationalization: "zul").save(flush: true)
         Language english=Language.findByLanguageName('English')
+
+        TextContent defaultText=new TextContent(textContentId:'DEFAULT_CONTENT',textContentType:'HTML',language: english,textContentText:base64.encode(textContent),lastChangedDate:new Date(),encoding:1,pageOrder:1, homePageOrder:1,page:defaultP,addTofrontPage:true).save(flush: true)
+
+        defaultText=TextContent.findByTextContentId('DEFAULT_CONTENT')
+        TextContent homepageText=new TextContent(textContentId:'HOMEPAGE_CONTENT',textContentType:'HTML',language: english,textContentText:textContent,lastChangedDate:new Date(),encoding:0,pageOrder:1, homePageOrder:1,page:homePg,addTofrontPage:true).save(flush: true)
+
+        homepageText=TextContent.findByTextContentId('HOMEPAGE_CONTENT')
+
+        println("defaultText: ${defaultText.textContentId}")
+
+        new Setup(setupId:'MASTER_RECORD',siteTemplate:template,homePageText: homepageText,homePageTitle:'My Website | Home Page',siteTitle :'My CMS WebSite',siteCopyright:'Copyright@AngryBuffaloCMS 2016',siteCSSCode:'empty'
+                ,menuBackgroundColour:"#6CA3FF",menuHoverColour:"#ffffff",menuSelectedColour:"#000088",menuColour:"#8aa3ff",enabled:true).save(flush: true)
+        Setup setup =Setup.findBySetupId("MASTER_RECORD")
 
         new Menu(language: english, menuId:'MENU_ITEM_PAGE1',label:'&nbsp;Page&nbsp;&nbsp;One&nbsp;',urlPageIdParameter:'page1',page:defaultP,isTopMenu:true,isSideMenu:true).save(flush: true)
         new Menu(language: english,menuId:'MENU_ITEM_PAGE2',label:'&nbsp;Page&nbsp;&nbsp;Two&nbsp;',urlPageIdParameter:'page2',page:defaultP,isTopMenu:true,isSideMenu:true).save(flush: true)
