@@ -129,16 +129,19 @@
                 </td>
             </g:elseif>
 
-            <td>Enter the number on the image here:<br><g:textField name="captcha" /></td>
+            <td>Enter the number on the image here:<br><g:textField name="captcha" />
+                <br><br><br>
+                <tag:notLockedOut ipAddress="${ipAddress}">
+                    <g:submitButton name="login" class="save" value="Login" />
+                </tag:notLockedOut>
+            </td>
             <td></td>
         </tr>
         <tr>
             <td></td>
             <td></td>
             <td>
-                <tag:notLockedOut ipAddress="${ipAddress}">
-                    <g:submitButton name="login" class="save" value="Login" />
-                </tag:notLockedOut>
+
             </td>
 
         </tr>
