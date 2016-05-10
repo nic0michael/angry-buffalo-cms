@@ -140,7 +140,7 @@ class SetupController {
 
 
         Page homPg= new Page(
-                pageId    :'HOME&nbsp;PAGE'
+                pageId    :'HOME_PAGE'
                 ,title     :'Home Page'
                 ,pageUrl   :'url'
                 ,author    :unassignedU
@@ -149,7 +149,7 @@ class SetupController {
                 ,access    :unassignedP
                 ,published :true
         ).save(flush: true)
-        Page homePg=Page.findByPageId('HOME&nbsp;PAGE')
+        Page homePg=Page.findByPageId('HOME_PAGE')
 
         println("defaultP: ${defaultP?.pageId}")
 //        String testContent="Hello this page is under construction <br><br><br>(<b>Default content</b>) "
