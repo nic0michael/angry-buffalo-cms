@@ -203,7 +203,6 @@ class TextContentController {
     }
 
     def textContentSave(){
-
         String operation      = params.operation
         String textContentId  = params.textContentId
         String textContentType= params.textContentType
@@ -217,7 +216,6 @@ class TextContentController {
 
         println("textContentId :->${textContentId}<- | operation :${operation}")
         TextContent textCt= TextContent.findByTextContentId(textContentId)
-        textCt.language=language
 
         if (textCt!=null){
             if (textContentType!=null){
@@ -233,11 +231,11 @@ class TextContentController {
                 textCt.textContentText=textContentText
             }
 
+            textCt.language=language
             textCt.lastChangedDate=new Date()
             textCt.save(flush: true)
             println(""+textCt?.textContentText+" "+textCt?.textContentId+"\n"+textCt.errors)
         }
-
         chain(action: "textContentManager")
     }
 
