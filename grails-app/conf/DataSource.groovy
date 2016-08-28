@@ -14,19 +14,19 @@ environments {
         dataSource {
             dbCreate = "update"
 //            dbCreate = "create-drop" // one of 'create', 'create-drop', 'update', 'validate', ''
-            url = "jdbc:h2:mem:devDbV3_3;MVCC=TRUE;LOCK_TIMEOUT=10000"
+            url = "jdbc:h2:mem:devDbV3_4;MVCC=TRUE;LOCK_TIMEOUT=10000"
         }
     }
     test {
         dataSource {
             dbCreate = "update"
-            url = "jdbc:h2:mem:testDbV3_2;MVCC=TRUE;LOCK_TIMEOUT=10000"
+            url = "jdbc:h2:mem:testDbV3_4;MVCC=TRUE;LOCK_TIMEOUT=10000"
         }
     }
     production {
         dataSource {
             dbCreate = "update"
-            url = "jdbc:h2:prodDbV3_2;MVCC=TRUE;LOCK_TIMEOUT=10000"
+            url = "jdbc:h2:prodDbV3_4;MVCC=TRUE;LOCK_TIMEOUT=10000"
             pooled = true
             properties {
                maxActive = -1
