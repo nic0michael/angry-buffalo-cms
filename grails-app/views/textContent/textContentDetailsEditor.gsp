@@ -92,7 +92,7 @@
                         </label>
 
                         <select name="language" id="language">
-                            <option value="${textContent?.language?.languageName}" selected>${menu?.language?.languageName}</option>
+                            <option value="${textContent?.language?.languageName}" selected>${textContent?.language?.languageName}</option>
                             <%
                                 for(Language language:languages){
                             %>
@@ -100,6 +100,7 @@
                             <%
                                 }
                             %>
+
                         </select>
                     </div>
 
