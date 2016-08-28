@@ -29,6 +29,13 @@
     <tr>
         <td></td>
         <td>
+            <g:link controller="textContent" action="textContentManager" ><b>Text Content Manager</b></g:link>
+        </td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>
             <g:form controller="page" action="articleDetailsEditor"  method="post">
 
                 <g:actionSubmitImage value="Add" action="add"
