@@ -23,7 +23,9 @@ class TextContentController {
         String textContentText= params.textContentText
         String languageIdSt=params.language
         Language language=Language.findByLanguageName(languageIdSt)
-        if(language.languageName.equalsIgnoreCase("GREEK")){
+        println("Language :"+languageIdSt)
+        if(languageIdSt.equalsIgnoreCase("GREEK")){
+            println("Processing Greek text")
             textContentText=fixGreekCharacterUnicodes(textContentText)
         }
         String isLockedSt=params.isLocked
@@ -180,6 +182,7 @@ class TextContentController {
         println("textContentId :->${textContentId}<- | operation :${operation} addTofrontPageSt:${addTofrontPageSt}")
 
         TextContent textContent= TextContent.findByTextContentId(textContentId)
+
         textContent.language=language
 
         String textContentText
@@ -210,6 +213,7 @@ class TextContentController {
         String isLockedSt=params.isLocked
         String languageIdSt=params.language
         Language language=Language.findByLanguageName(languageIdSt)
+        println("Language :"+languageIdSt)
         if(language.languageName.equalsIgnoreCase("GREEK")){
             textContentText=fixGreekCharacterUnicodes(textContentText)
         }
