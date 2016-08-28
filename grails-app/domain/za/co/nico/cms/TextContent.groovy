@@ -24,7 +24,7 @@ class TextContent {
 
     static constraints = {
         textContentId(blank:false, nullable:false, unique:true, maxSize:45)
-        textContentText(blank:false, nullable:false, maxSize:16384)
+        textContentText(blank:false, nullable:false, maxSize:32768)
         lastChangedDate(blank:false, nullable:false)
         textContentType (blank: false, inList: [  HTML, XML,  TEXT ]    )
         encoding (blank: false, inList: [  BASE64, NOT_ENCODED ]    )
