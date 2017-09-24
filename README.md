@@ -67,10 +67,15 @@ Nico wanted his CMS project to get arround all of these problems
 
 9) To save the IP address of the user making a failed login and when that IP has 3 failed loggins to block that user for 3 minutes
 
+10) Use is made of the Boostrap Java Script Framework for the Administration Console.
+
+11) A template is provided (DEFAULT_TEMPLATE) for producing web content with a Bootstrap Menu 
+
 
 # Wish List
  
 1) create Divtemplates to use in addition to the tableTemplate creating wenb pages with Div tags instead of Table Tags (We already have the DivTemplate we have one created by Tonia Michael but have not integrated it yet
+The Default  template has been updated to incoporate  the Bootstrap Menu framework 
 
 2) DONE : The vestigial NicoCMS files to be renamed to ABCms files
 
@@ -97,7 +102,7 @@ http://localhost:8080/Angry_Buffalo_CMS/admin
 
 nico AT nccsolutions DOT co DOT za
 
-# Reference Website
+# Reference Website using this CMS running for a year today
 
 http://greekorthodoxmission.org.zw/
 
