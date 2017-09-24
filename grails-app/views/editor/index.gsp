@@ -7,8 +7,9 @@
 --%>
 <%
     String initialValue="Hello there"
-/* THIS CODE NEEDS TO BE CHANGED
+
     // Toolbar configuration generated automatically by the editor based on config.toolbarGroups.
+    /* THIS DOESN NOT WORK ANY MORE THE PLUGGIN HAS CHANGED
     config.toolbar = [
             { name: 'document', groups: [ 'mode', 'document', 'doctools' ], items: [ 'Source', '-', 'Save', 'NewPage', 'Preview', 'Print', '-', 'Templates' ] },
             { name: 'clipboard', groups: [ 'clipboard', 'undo' ], items: [ 'Cut', 'Copy', 'Paste', 'PasteText', 'PasteFromWord', '-', 'Undo', 'Redo' ] },
@@ -26,8 +27,10 @@
             { name: 'others', items: [ '-' ] },
             { name: 'about', items: [ 'About' ] }
     ];
+    */
 
 // Toolbar groups configuration.
+    /*
     config.toolbarGroups = [
             { name: 'document', groups: [ 'mode', 'document', 'doctools' ] },
             { name: 'clipboard', groups: [ 'clipboard', 'undo' ] },
@@ -45,44 +48,45 @@
             { name: 'others' },
             { name: 'about' }
     ];
-*/
+    */
+
 
 %>
 <%@ page contentType="text/html;charset=UTF-8" %>
 <html>
 <head>
 
-    <title>Page Editor</title>
+  <title>Page Editor</title>
     <ckeditor:resources/>
 </head>
 <body>
 <h1>NicoCMS | Page Editor</h1>
 <g:link controller="user" action="landingPage">Control Panel</g:link>
 <br>
-<g:form action="save">
-    <g:submitButton name="save" class="save" value="Save" />
+ <g:form action="save">
+     <g:submitButton name="save" class="save" value="Save" />
 
-    <ckeditor:config
-            height="350px"
-            width="95%"
-            uiColor= '#14B8C4'
+<ckeditor:config
+        height="350px"
+        width="95%"
+        uiColor= '#14B8C4'
 
 
-    />
+/>
 
-    <ckeditor:config var="toolbar_Mytoolbar">
-        [
-            [ 'Source', '-', 'Bold', 'Italic','Underline',
-              'Styles','Format','Font','FontSize', 'TextColor', 'BGColor','-','JustifyLeft','JustifyCenter','JustifyRight' ,'-', 'Cut','Copy','Paste','-', 'Link', 'Unlink' , 'Anchor' ,'-','Image','-','Find','Replace','SpellChecker','-','Outdent','Indent' ,'-', 'NumberedList', 'BulletedList','-','Table','HorizontalRule','PageBreak']
-        ]
-    </ckeditor:config>
+<ckeditor:config var="toolbar_Mytoolbar">
+    [
+        [ 'Source', '-', 'Bold', 'Italic','Underline',
+          'Styles','Format','Font','FontSize', 'TextColor', 'BGColor','-','JustifyLeft','JustifyCenter','JustifyRight' ,'-', 'Cut','Copy','Paste','-', 'Link', 'Unlink' , 'Anchor' ,'-','Image','-','Find','Replace','SpellChecker','-','Outdent','Indent' ,'-', 'NumberedList', 'BulletedList','-','Table','HorizontalRule','PageBreak']
+    ]
+</ckeditor:config>
 
-    <ckeditor:editor name="myeditor" toolbar="Mytoolbar">
-        ${initialValue}
-    </ckeditor:editor>
-</g:form>
+<ckeditor:editor name="myeditor" toolbar="Mytoolbar">
+    ${initialValue}
+</ckeditor:editor>
+ </g:form>
 
-<ckeditor:fileBrowser>Open file browser</ckeditor:fileBrowser>
+ <ckeditor:fileBrowser>Open file browser</ckeditor:fileBrowser>
 
 
 <g:link controller="user" action="logout">Logout</g:link><br>

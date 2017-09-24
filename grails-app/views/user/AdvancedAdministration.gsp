@@ -1,4 +1,3 @@
-
 <%@ page import="za.co.nico.cms.BasicTagLib" %>
 <!DOCTYPE html>
 <html>
@@ -92,7 +91,8 @@
             %{--<div id="controller-list" role="navigation">--}%
 
 
-            <table  WIDTH=70 HEIGHT=20 class="buttonHeading" onMouseOver="this.className='buttonMouseOverHeading'" onMouseOut="this.className='buttonHeading'" border="0">
+            <table WIDTH=70 HEIGHT=20 class="buttonHeading" onMouseOver="this.className = 'buttonMouseOverHeading'"
+                   onMouseOut="this.className = 'buttonHeading'" border="0">
                 <tr>
                     <td align="center">
                         <strong><g:link controller="user" action="Administration">Administration Panel</g:link></strong>
@@ -101,126 +101,141 @@
             </table>
 
 
-            <table  WIDTH=70 HEIGHT=20 class="buttonHeading" onMouseOver="this.className='buttonMouseOverHeading'" onMouseOut="this.className='buttonHeading'" border="0">
+            <table WIDTH=70 HEIGHT=20 class="buttonHeading" onMouseOver="this.className = 'buttonMouseOverHeading'"
+                   onMouseOut="this.className = 'buttonHeading'" border="0">
                 <tr>
                     <td align="center">
-                        <strong><g:link controller="banner" >Banners Table</g:link></strong>
+                        <strong><g:link controller="banner">Banners Table</g:link></strong>
                     </td>
                 </tr>
             </table>
 
 
-            <table  WIDTH=70 HEIGHT=20 class="buttonHeading" onMouseOver="this.className='buttonMouseOverHeading'" onMouseOut="this.className='buttonHeading'" border="0">
+            <table WIDTH=70 HEIGHT=20 class="buttonHeading" onMouseOver="this.className = 'buttonMouseOverHeading'"
+                   onMouseOut="this.className = 'buttonHeading'" border="0">
                 <tr>
                     <td align="center">
-                        <strong><g:link controller="categories" >Categories Table</g:link></strong>
+                        <strong><g:link controller="categories">Categories Table</g:link></strong>
                     </td>
                 </tr>
             </table>
 
 
-            <table  WIDTH=70 HEIGHT=20 class="buttonHeading" onMouseOver="this.className='buttonMouseOverHeading'" onMouseOut="this.className='buttonHeading'" border="0">
+            <table WIDTH=70 HEIGHT=20 class="buttonHeading" onMouseOver="this.className = 'buttonMouseOverHeading'"
+                   onMouseOut="this.className = 'buttonHeading'" border="0">
                 <tr>
                     <td align="center">
-                        <strong><g:link controller="fileContent" >FileContent Table</g:link></strong>
-                    </td>
-                </tr>
-            </table>
-
-
-
-            <table  WIDTH=70 HEIGHT=20 class="buttonHeading" onMouseOver="this.className='buttonMouseOverHeading'" onMouseOut="this.className='buttonHeading'" border="0">
-                <tr>
-                    <td align="center">
-                        <strong><g:link controller="images" >Images Table</g:link></strong>
-                    </td>
-                </tr>
-            </table>
-
-
-            <table  WIDTH=70 HEIGHT=20 class="buttonHeading" onMouseOver="this.className='buttonMouseOverHeading'" onMouseOut="this.className='buttonHeading'" border="0">
-                <tr>
-                    <td align="center">
-                        <strong><g:link controller="menu" >Menu Table</g:link></strong>
-                    </td>
-                </tr>
-            </table>
-
-            <table  WIDTH=70 HEIGHT=20 class="buttonHeading" onMouseOver="this.className='buttonMouseOverHeading'" onMouseOut="this.className='buttonHeading'" border="0">
-                <tr>
-                    <td align="center">
-                        <strong><g:link controller="menuHierarchy" action="insert" >MenuHierarchy Table Insert</g:link></strong>
-                    </td>
-                </tr>
-            </table>
-
-            <table  WIDTH=70 HEIGHT=20 class="buttonHeading" onMouseOver="this.className='buttonMouseOverHeading'" onMouseOut="this.className='buttonHeading'" border="0">
-                <tr>
-                    <td align="center">
-                        <strong><g:link controller="menuHierarchy"  >MenuHierarchy Tablet</g:link></strong>
-                    </td>
-                </tr>
-            </table>
-
-            <table  WIDTH=70 HEIGHT=20 class="buttonHeading" onMouseOver="this.className='buttonMouseOverHeading'" onMouseOut="this.className='buttonHeading'" border="0">
-                <tr>
-                    <td align="center">
-                        <strong><g:link controller="page" >Articles(Page) Table</g:link></strong>
-                    </td>
-                </tr>
-            </table>
-
-
-            <table  WIDTH=70 HEIGHT=20 class="buttonHeading" onMouseOver="this.className='buttonMouseOverHeading'" onMouseOut="this.className='buttonHeading'" border="0">
-                <tr>
-                    <td align="center">
-                        <strong><g:link controller="permissions" >Permissions Table</g:link></strong>
-                    </td>
-                </tr>
-            </table>
-
-
-            <table  WIDTH=70 HEIGHT=20 class="buttonHeading" onMouseOver="this.className='buttonMouseOverHeading'" onMouseOut="this.className='buttonHeading'" border="0">
-                <tr>
-                    <td align="center">
-                        <strong><g:link controller="setup" >Setup Table</g:link></strong>
-                    </td>
-                </tr>
-            </table>
-
-
-            <table  WIDTH=70 HEIGHT=20 class="buttonHeading" onMouseOver="this.className='buttonMouseOverHeading'" onMouseOut="this.className='buttonHeading'" border="0">
-                <tr>
-                    <td align="center">
-                        <strong><g:link controller="template" >Template Table</g:link></strong>
-                    </td>
-                </tr>
-            </table>
-
-
-            <table  WIDTH=70 HEIGHT=20 class="buttonHeading" onMouseOver="this.className='buttonMouseOverHeading'" onMouseOut="this.className='buttonHeading'" border="0">
-                <tr>
-                    <td align="center">
-                        <strong><g:link controller="textContent" >TextContent Table</g:link></strong>
-                    </td>
-                </tr>
-            </table>
-
-
-            <table  WIDTH=70 HEIGHT=20 class="buttonHeading" onMouseOver="this.className='buttonMouseOverHeading'" onMouseOut="this.className='buttonHeading'" border="0">
-                <tr>
-                    <td align="center">
-                        <strong><g:link controller="user" >Users Table</g:link></strong>
+                        <strong><g:link controller="fileContent">FileContent Table</g:link></strong>
                     </td>
                 </tr>
             </table>
 
 
 
-            <table  WIDTH=70 HEIGHT=20 class="buttonHeading" onMouseOver="this.className='buttonMouseOverHeading'" onMouseOut="this.className='buttonHeading'" border="0">
+            <table WIDTH=70 HEIGHT=20 class="buttonHeading" onMouseOver="this.className = 'buttonMouseOverHeading'"
+                   onMouseOut="this.className = 'buttonHeading'" border="0">
                 <tr>
                     <td align="center">
-                        <strong><g:link controller="userGroups" >UserGroups Table</g:link></strong>
+                        <strong><g:link controller="images">Images Table</g:link></strong>
+                    </td>
+                </tr>
+            </table>
+
+
+            <table WIDTH=70 HEIGHT=20 class="buttonHeading" onMouseOver="this.className = 'buttonMouseOverHeading'"
+                   onMouseOut="this.className = 'buttonHeading'" border="0">
+                <tr>
+                    <td align="center">
+                        <strong><g:link controller="menu">Menu Table</g:link></strong>
+                    </td>
+                </tr>
+            </table>
+
+            <table WIDTH=70 HEIGHT=20 class="buttonHeading" onMouseOver="this.className = 'buttonMouseOverHeading'"
+                   onMouseOut="this.className = 'buttonHeading'" border="0">
+                <tr>
+                    <td align="center">
+                        <strong><g:link controller="menuHierarchy"
+                                        action="insert">MenuHierarchy Table Insert</g:link></strong>
+                    </td>
+                </tr>
+            </table>
+
+            <table WIDTH=70 HEIGHT=20 class="buttonHeading" onMouseOver="this.className = 'buttonMouseOverHeading'"
+                   onMouseOut="this.className = 'buttonHeading'" border="0">
+                <tr>
+                    <td align="center">
+                        <strong><g:link controller="menuHierarchy">MenuHierarchy Table</g:link></strong>
+                    </td>
+                </tr>
+            </table>
+
+            <table WIDTH=70 HEIGHT=20 class="buttonHeading" onMouseOver="this.className = 'buttonMouseOverHeading'"
+                   onMouseOut="this.className = 'buttonHeading'" border="0">
+                <tr>
+                    <td align="center">
+                        <strong><g:link controller="page">Articles(Page) Table</g:link></strong>
+                    </td>
+                </tr>
+            </table>
+
+
+            <table WIDTH=70 HEIGHT=20 class="buttonHeading" onMouseOver="this.className = 'buttonMouseOverHeading'"
+                   onMouseOut="this.className = 'buttonHeading'" border="0">
+                <tr>
+                    <td align="center">
+                        <strong><g:link controller="permissions">Permissions Table</g:link></strong>
+                    </td>
+                </tr>
+            </table>
+
+
+            <table WIDTH=70 HEIGHT=20 class="buttonHeading" onMouseOver="this.className = 'buttonMouseOverHeading'"
+                   onMouseOut="this.className = 'buttonHeading'" border="0">
+                <tr>
+                    <td align="center">
+                        <strong><g:link controller="setup">Setup Table</g:link></strong>
+                    </td>
+                </tr>
+            </table>
+
+
+            <table WIDTH=70 HEIGHT=20 class="buttonHeading" onMouseOver="this.className = 'buttonMouseOverHeading'"
+                   onMouseOut="this.className = 'buttonHeading'" border="0">
+                <tr>
+                    <td align="center">
+                        <strong><g:link controller="template">Template Table</g:link></strong>
+                    </td>
+                </tr>
+            </table>
+
+
+            <table WIDTH=70 HEIGHT=20 class="buttonHeading" onMouseOver="this.className = 'buttonMouseOverHeading'"
+                   onMouseOut="this.className = 'buttonHeading'" border="0">
+                <tr>
+                    <td align="center">
+                        <strong><g:link controller="textContent">TextContent Table</g:link></strong>
+                    </td>
+                </tr>
+            </table>
+
+
+            <table WIDTH=70 HEIGHT=20 class="buttonHeading" onMouseOver="this.className = 'buttonMouseOverHeading'"
+                   onMouseOut="this.className = 'buttonHeading'" border="0">
+                <tr>
+                    <td align="center">
+                        <strong><g:link controller="user">Users Table</g:link></strong>
+                    </td>
+                </tr>
+            </table>
+
+
+
+            <table WIDTH=70 HEIGHT=20 class="buttonHeading" onMouseOver="this.className = 'buttonMouseOverHeading'"
+                   onMouseOut="this.className = 'buttonHeading'" border="0">
+                <tr>
+                    <td align="center">
+                        <strong><g:link controller="userGroups">UserGroups Table</g:link></strong>
                     </td>
                 </tr>
             </table>
@@ -232,38 +247,88 @@
     <g:link controller="user" action="logon"><strong>Logon</strong></g:link><br>
     <g:link controller="user" action="logout"><strong>Logout</strong></g:link>
 
-
 </div>
 <div id="page-body" role="main">
     <h1>Angry Buffalo CMS | Advanced Administration Panel</h1> <br>
-    <g:link controller="user" action="Administration"><strong>Return to the Administration Panel</strong></g:link><br><br>
-    <p>Please note this Administration Panel is only for Database Administration<br>If you are not a Database Administrator <g:link controller="user" action="Administration">click here to return</g:link><br><br></p>
+
+    <div>
+
+%{--White--}%
+<div class="btn-group">
+    <button type="button" class="btn btn-default"><g:link controller="user"
+                                                          action="Administration">Administration Panel</g:link></button>
+</div>
+
+%{--Blue--}%
+<div class="btn-group">
+    <button type="button" class="btn btn-primary">Advanced Administration</button>
+    <button type="button" class="btn btn-primary dropdown-toggle"
+            data-toggle="dropdown">
+        <span class="caret"></span>
+        <span class="sr-only">Toggle Dropdown</span>
+    </button>
+    <ul class="dropdown-menu" role="menu">
+        <li><g:link controller="user" action="Administration">1)&nbsp;Administration</g:link></li>
+        <li><g:link controller="user" action="AdvancedAdministration">2)&nbsp;Advanced Administration</g:link></li>
+        <li><g:link controller="user" action="controlPanel">3)&nbsp;Control Panel</g:link></li>
+        <li><g:link controller="homepage" action="cacheContent">4)&nbsp;Cache the Content</g:link></li>
+        <li><g:link controller="user" action="logout">5)&nbsp;Logout</g:link></li>
+    </ul>
+</div>
+
+
+
+
+%{--White--}%
+    <div class="btn-group">
+        <button type="button" class="btn btn-default">Editor's Functions</button>
+        <button type="button" class="btn btn-default dropdown-toggle"
+                data-toggle="dropdown">
+            <span class="caret"></span>
+            <span class="sr-only">Toggle Dropdown</span>
+        </button>
+        <ul class="dropdown-menu" role="menu">
+            <li><g:link controller="homepage" action="index" target="_blank">1)View Content</g:link></li>
+            <li><g:link controller="categories" action="categoryManager">2)&nbsp;Category Manager</g:link></li>
+            <li><g:link controller="page" action="articleManager">3)&nbsp;Article Manager</g:link></li>
+            <li><g:link controller="textContent" action="textContentManager">4)&nbsp;Text ContentManager</g:link></li>
+            <li><g:link controller="menu" action="menuManager">5)&nbsp;Menu Manager</g:link></li>
+            <li><g:link controller="menuHierarchy" action="menuSave">6)&nbsp;Menu Hierarchy Manager</g:link></li>
+            <li><g:link controller="page" action="frontPageManager">7)&nbsp;FrontPage Manager</g:link></li>
+            <li><g:link controller="images" action="imageManager">8)&nbsp;Image Manager</g:link></li>
+            <li><g:link controller="banner" action="bannerManager">9)&nbsp;Banner Manager</g:link></li>
+            <li><g:link controller="template" action="templateManager">10)&nbsp;Template Manager</g:link></li>
+        </ul>
+    </div>
+
+
+
+    </div>
+    <br>
+
+    <p>Please note this Administration Panel is only for Database Administration<br>If you are not a Database Administrator <g:link
+            controller="user" action="Administration">click here to return</g:link><br><br></p>
     However if you are a Database Administrator the click the menu button with the name of the table you wish to administrate<br><br>
     <tag:isAdmin userId="${session.userId}">
         <h2>Available Controllers:</h2>
 
         <p>Please note the following links are only for the System Administrator<br></p>
         <ul>
-            <g:each var="c" in="${grailsApplication.controllerClasses.sort { it.fullName } }">
+            <g:each var="c" in="${grailsApplication.controllerClasses.sort { it.fullName }}">
                 <li class="controller"><g:link controller="${c.logicalPropertyName}">${c.fullName}</g:link></li>
             </g:each>
         </ul>
     </tag:isAdmin>
     <br>
-    <a href="../documentation/BeginnersDocumantation.pdf" target="_blank">BeginnersDocumantation.pdf</a><br>
-    <tag:isAdmin userId="${session.userId}">
-        <a href="../documentation/EditorsManual.pdf" target="_blank">EditorsManual.pdf</a><br>
-        <a href="../documentation/AdministratratorsManual.pdf" target="_blank">AdministratratorsManual.pdf</a><br>
-    </tag:isAdmin>
     <g:link controller="user" action="logon"><strong>Logon</strong></g:link><br>
     <g:link controller="user" action="logout"><strong>Logout</strong></g:link>
-</div>
+    </div>
 
-<tag:isNotAuthenticated  userId="${session.userId}">
-    <tag:redirectLogonPage/>
-</tag:isNotAuthenticated>
+    <tag:isNotAuthenticated userId="${session.userId}">
+        <tag:redirectLogonPage/>
+    </tag:isNotAuthenticated>
 
-</body>
-</html>
+    </body>
+    </html>
 
 

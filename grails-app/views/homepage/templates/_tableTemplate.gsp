@@ -5,7 +5,7 @@
     String topBanner      =hc.get("topBanner"      )
     String bottomBanner   =hc.get("bottomBanner"   )
     String siteTitle      =hc.get("siteTitle"      )
-    String pageContent    =hc.get("pageContent"    )
+    String pageContent    =hc.get("retrievePageContent"    )
     String siteCopyright  =hc.get("siteCopyright"  )
     int len=0
     if(pageContent!=null){
@@ -43,11 +43,11 @@
 
 
 /*.buttonActiveHeading{*/
-/*border-left:  solid LightBlue;*/
-/*border-bottom:  solid Black;*/
-/*border-right :   solid Gray;*/
-/*border-top :   solid DarkGray;*/
-/*background-color: #132baa;*/
+    /*border-left:  solid LightBlue;*/
+    /*border-bottom:  solid Black;*/
+    /*border-right :   solid Gray;*/
+    /*border-top :   solid DarkGray;*/
+    /*background-color: #132baa;*/
 /*}*/
 
 .buttonHeading{
@@ -71,12 +71,20 @@
 </style>
 
 
-<!-- bottomBanner= ${bottomBanner} -->
-<!-- topBanner= ${topBanner} -->
+<!-- bottomBanner= ${bottomBanner}  -->
+<!-- topBanner= ${topBanner} ||  ${request.contextPath}${topBanner}  -->
 <!-- params.page_id ${params.page_id} -->
-<!-- pageContent length ${len} -->
+<!-- retrievePageContent length ${len} -->
 <!-- menuBackgroundColour : ${hc?.get("menuBackgroundColour")} -->
-
+<%
+    String siteId=hc?.get("siteId")
+    String SITE_ID=hc?.get("SITE_ID")
+    if(SITE_ID!=null){
+        siteId=SITE_ID
+    }
+%>
+<!-- siteId : ${hc?.get("siteId")} -->
+<!-- SITE_ID : ${hc?.get("SITE_ID")} -->
 
 <table style="width:1024px;" cellpadding="0" cellspacing="0">
     <tr>
@@ -93,48 +101,10 @@
                             <tr>
                                 <td><br><br><br><br><br></td>
                             </tr>
-                            <tr>
+                            <tr><!-- TOP MENU  siteId ${siteId} ::: ${hc?.get("siteId")} -->
 
                                 <td>
-                                    <table> <!--TOP MENU  -->
-                                        <tr>
-                                            <td>
-                                                <table WIDTH=90 HEIGHT=30 class="buttonHeading"
-                                                       onMouseOver="this.className = 'buttonMouseOverHeading'"
-                                                       onMouseOut="this.className = 'buttonHeading'" border="0">
-                                                    <tr>
-                                                        <td align="center"><a href="index" class="topMenuClass">Home_Page</a></td>
-                                                    </tr>
-                                                </table>
-                                            </td>
-                                        <td>
-                                            <g:each in="${menus}" var="menu">
-                                                <%
-                                                    String isOnTopMenu="FALSE"
-                                                    try {
-                                                        if (menu?.isTopMenu) {
-                                                            isOnTopMenu = "TRUE"
-
-                                                        }
-                                                    }catch(Exception e){}
-                                                %>
-                                                <tag:isTopMenuItem isOnTopMenu="${isOnTopMenu}">
-                                                    <td>
-                                                        <table WIDTH=90 HEIGHT=30 class="buttonHeading"
-                                                               onMouseOver="this.className = 'buttonMouseOverHeading'"
-                                                               onMouseOut="this.className = 'buttonHeading'" border="0">
-                                                            <tr>
-                                                                <td align="center"><a href="index?page_id=${menu?.urlPageIdParameter}"
-                                                                                      class="topMenuClass">${menu?.label}</a></td>
-                                                            </tr>
-                                                        </table>
-                                                    </td>
-                                                </tag:isTopMenuItem>
-                                            </g:each>
-                                        </td>
-                                        </tr>
-                                    </table>
-
+                                    <tag:bootstrapTopMenu  siteUrl="${hc?.get("siteUrl")}" pageId="${hc?.get("pageId")}" siteId="${hc?.get("SITE_ID") }"></tag:bootstrapTopMenu>
                                 </td>
                             </tr>
                         </table>
@@ -145,51 +115,14 @@
 
         </td>
     </tr>
-
-    <tr>
+    <tr><!-- SIDE MENU -->
         <td style="background-color:${hc.get("menuColour")}; width:15%;vertical-align:top;">
-            <br><b>&nbsp;Menu</b><br>
-            <table>
-                <tr>
-                    <td valign="bottom">
-                        <table WIDTH=90 HEIGHT=30 class="buttonHeading"
-                               onMouseOver="this.className = 'buttonMouseOverHeading'"
-                               onMouseOut="this.className = 'buttonHeading'" border="0">
-                            <tr>
-                                <td align="center"><a href="index" class="topMenuClass">Home_Page</a></td>
-                            </tr>
-                        </table>
-                    </td>
-                </tr>
-            <!-- SIDE MENU -->
-                <g:each in="${menus}" var="menu" >
-                    <%
-                        String isOnSideMenu="FALSE"
-                        try{
-                            if(menu?.isSideMenu){
-                                isOnSideMenu="TRUE"
-                            }
-                        } catch(Exception e){}
-                    %>
-                    <tag:isSideMenuItem isOnSideMenu="${isOnSideMenu}">
-                        <tr>
-                            <td>
-                                <table WIDTH=90 HEIGHT=30 class="buttonHeading"
-                                       onMouseOver="this.className = 'buttonMouseOverHeading'"
-                                       onMouseOut="this.className = 'buttonHeading'" border="0">
-                                    <tr>
-                                        <td align="center"><a href="index?page_id=${menu?.urlPageIdParameter}"
-                                                              class="topMenuClass">${menu?.label}</a></td>
-                                    </tr>
-                                </table>
-                            </td>
-                        </tr>
-                    </tag:isSideMenuItem>
-                </g:each>
-            </table>
+            <br>
+            <tag:bootstrapSideMenu pageId="${hc?.get("pageId")}"></tag:bootstrapSideMenu>
+            <br><br>
         </td>
         <td style="background-color:#eeeeee;height:550px;width:85%;vertical-align:top;">
-            <!-- pageContent inserted here -->
+<!-- retrievePageContent inserted here -->
             ${pageContent}
         </td>
     </tr>

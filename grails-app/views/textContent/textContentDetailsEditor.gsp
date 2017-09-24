@@ -6,8 +6,7 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%
-    List<Page>pages=Page.findAll([sort: "pageId", order: "asc"]) ;
-    List<Language> languages=Language.findAll()
+    List<Page> pages = Page.findAll([sort: "pageId", order: "asc"]);
     //   String textContentText= textContent?.textContentText
 %>
 <%@ page import="za.co.nico.cms.*; za.co.nico.cms.BasicTagLib" %>
@@ -19,13 +18,15 @@
     <title>Text Content Details Editor</title>
     <ckeditor:resources/>
 </head>
+
 <body>
 <h1>Angry Buffalo CMS | Text Content Details Editor</h1>
-<h3>Operation :${operation }</h3>
+
+<h3>Operation :${operation}</h3>
 
 <g:form controller="textContent" action="textContentSave" method="post">
-    <input type="hidden" name="id" value="${textContent?.id}" id="id" />
-    <input type="hidden" name="version" value="2" id="version" />
+    <input type="hidden" name="id" value="${textContent?.id}" id="id"/>
+    <input type="hidden" name="version" value="2" id="version"/>
     <table>
         <tr>
             <td></td>
@@ -38,14 +39,15 @@
 
                 <h1>Text Content Details Editor</h1>
 
-
                 <g:actionSubmitImage value="Edit" action="saveTextContentDetails"
-                                     src="${resource(dir: 'images', file: 'SaveButton55.jpg')}"  /> &nbsp;&nbsp;
+                                     src="${resource(dir: 'images', file: 'SaveButton55.jpg')}"/> &nbsp;&nbsp;
 
-                <a href="../user/administration"><img src="${resource(dir: 'images', file: 'CancelButton55.jpg')}"/></a>
+                <g:actionSubmitImage value="Cancel" action="cancelTextContentDetails"
+                                     src="${resource(dir: 'images', file: 'CancelButton55.jpg')}"/>  &nbsp;&nbsp;
 
 
-                <input type="hidden" value="${operation }"  name="operation" id="operation"/>
+                <input type="hidden" value="${operation}" name="operation" id="operation"/>
+                <input type="hidden" name="pageOrder" value="0" required="" id="pageOrder"/>
                 <fieldset class="form">
 
                     <div class="fieldcontain  required">
@@ -53,22 +55,25 @@
                             Select Article for this Page
                             <span class="required-indicator">*</span>
                         </label>
-                        <select id="pageId" name="pageId" required="" class="many-to-one" >
-                            <option value="${textContent?.page?.pageId}" selected="selected" >${textContent?.toString()}</option>
+                        <select id="pageId" name="pageId" required="" class="many-to-one">
+                            <option value="${textContent?.page?.pageId}"
+                                    selected="selected">${textContent?.toString()}</option>
                             <%
 
-                                for(Page page:pages){
+                                for (Page page : pages) {
                             %>
-                            <option value="${page?.pageId}" >${page?.toString()}</option>
-                            <%                       }
+                            <option value="${page?.pageId}">${page?.toString()}</option>
+                            <% }
 
-                            %>                        </select>
+                            %></select>
                     </div>
+
                     <div class="fieldcontain  required">
                         <label for="textContentId">Page short name<br>(Text Content Id)
                             <span class="required-indicator">*</span>
                         </label>
-                        <input type="text" name="textContentId" maxlength="15" required="" value="${textContent?.textContentId}" id="textContentId" />
+                        <input type="text" name="textContentId" maxlength="15" required=""
+                               value="${textContent?.textContentId}" id="textContentId"/>
                     </div>
 
                     <div class="fieldcontain  required">
@@ -76,31 +81,12 @@
                             Text Content Type
                             <span class="required-indicator">*</span>
                         </label>
-                        <select name="textContentType" required="" id="textContentType" >
-                            <option value="${textContent?.textContentType}" selected="selected" >${textContent?.textContentType}</option>
-                            <option value="HTML" >HTML</option>
-                            <option value="XML" >XML</option>
-                            <option value="Text" >Text</option>
-                        </select>
-                    </div>
-
-
-                    <div class="fieldcontain  required">
-
-                        <label for="addTofrontPage">
-                            Language :
-                        </label>
-
-                        <select name="language" id="language">
-                            <option value="${textContent?.language?.languageName}" selected>${textContent?.language?.languageName}</option>
-                            <%
-                                for(Language language:languages){
-                            %>
-                            <option value="${language?.languageName}">${language?.languageName}</option>
-                            <%
-                                }
-                            %>
-
+                        <select name="textContentType" required="" id="textContentType">
+                            <option value="${textContent?.textContentType}"
+                                    selected="selected">${textContent?.textContentType}</option>
+                            <option value="HTML">HTML</option>
+                            <option value="XML">XML</option>
+                            <option value="Text">Text</option>
                         </select>
                     </div>
 
@@ -109,33 +95,27 @@
                             Add To Front Page
 
                         </label>
-                        <input type="hidden" name="_addTofrontPage" /><input type="checkbox" name="addTofrontPage" id="addTofrontPage" checked="checked" />
-                    </div>
-
-                    <div class="fieldcontain  ">
-                        <label for="isLocked">
-                            Is Locked
-
-                        </label>
-                        <input type="hidden" name="_isLocked" /><input type="checkbox" name="isLocked" id="isLocked"  />
+                        <input type="hidden" name="_addTofrontPage"/><input type="checkbox" name="addTofrontPage"
+                                                                            id="addTofrontPage" checked="checked"/>
                     </div>
 
                     <div class="fieldcontain  required">
-                        <label for="homePageOrder">
-                            Home Page Order
-                            <span class="required-indicator">*</span>
-                        </label>
-                        <input type="number" name="homePageOrder" value="${textContent?.homePageOrder}" required="" id="homePageOrder" />
+                    <label for="homePageOrder">
+                    Home Page Order
+                    <span class="required-indicator">*</span>
+                    </label>
+                    <input type="number" name="homePageOrder" value="${textContent?.homePageOrder}" required="" id="homePageOrder" />
                     </div>
 
 
-                    <div class="fieldcontain  required">
-                        <label for="pageOrder">
-                            Page Order
-                            <span class="required-indicator">*</span>
-                        </label>
-                        <input type="number" name="pageOrder" value="${textContent?.pageOrder}" required="" id="pageOrder" />
-                    </div>
+                    %{--<div class="fieldcontain  required">--}%
+                        %{--<label for="pageOrder">--}%
+                            %{--Page Order--}%
+                            %{--<span class="required-indicator">*</span>--}%
+                        %{--</label>--}%
+                        %{--<input type="number" name="pageOrder" value="${textContent?.pageOrder}" required=""--}%
+                               %{--id="pageOrder"/>--}%
+                    %{--</div>--}%
 
                 </fieldset>
 
@@ -144,8 +124,7 @@
                     <ckeditor:config
                             height="550px"
                             width="95%"
-                            uiColor= '#14B8C4'
-                    />
+                            uiColor='#14B8C4'/>
 
                     <ckeditor:config var="toolbar_Mytoolbar">
                         [

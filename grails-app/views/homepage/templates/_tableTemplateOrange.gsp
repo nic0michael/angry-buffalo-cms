@@ -81,7 +81,7 @@
             </table>
         </td>
         <td style="background-color:#eeeeee;height:550px;width:400px;vertical-align:top;">
-            ${homepage?.pageContent(pageId)}
+            ${homepage?.retrievePageContent(pageId)}
         </td>
     </tr>
 

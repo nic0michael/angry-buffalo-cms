@@ -5,6 +5,7 @@ class Page {
     String title
     String pageUrl
     User author
+    Site site
     Categories category
     Template template
     Permissions access

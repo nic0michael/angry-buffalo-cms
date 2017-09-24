@@ -1,27 +1,43 @@
+<%@ page import="za.co.nico.cms.HomepageController" %>
 <%--
   Created by IntelliJ IDEA.
   User: NMichael
   Date: 2014/06/28
   Time: 8:46 PM
   To change this template use File | Settings | File Templates.
+
+
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap-theme.css" rel="stylesheet">
+
+    <script src="js/bootstrap.js"></script>
 --%>
 
 <html>
 <head>
     <title>${homePageTitle}</title>
+    <link href="${resource(dir: 'css', file: 'bootstrap.css')}" rel="stylesheet">
+    <link href="${resource(dir: 'css', file: 'bootstrap-theme.css')}" rel="stylesheet">
+    <script src="${resource(dir: 'js', file: 'jquery.js')}"></script>
+    <script src="${resource(dir: 'js', file: 'bootstrap.js')}"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
+
 <body>
-<!-- templateGspFile : ${templateGspFile} -->
+
+
 <%
-    String ipAddress=request.getRemoteAddr()
-    String ip=request.getHeader("Client-IP")
-    if(ipAddress==null||ipAddress.isEmpty()){
-        ipAddress=ip
-    }
-    session.setAttribute("ipAddress",ipAddress);
+    String SITE_ID="DEFAULT_SITE";
+    String siteId=SITE_ID
+    hc.put("SITE_ID", "DEFAULT_SITE")
+    hc.put("siteUrl", "index")
 
     if(templateGspFile==null || templateGspFile.length()<3 ) {
 %>
+<!-- ----/// siteId : ${siteId}-->
+<!-- ----/// templateGspFile : ${templateGspFile} -->
+
+
 <g:render template="templates/tableTemplate" var="hc"  ></g:render>
 
 <%
@@ -110,6 +126,7 @@
 <%
     }
 %>
+
 
 %{--${hc.contentForPageOnMenu(thePageId)}--}%
 </body>

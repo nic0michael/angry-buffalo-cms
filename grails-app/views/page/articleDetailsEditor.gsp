@@ -38,7 +38,6 @@
                             <span class="required-indicator">*</span>
                         </label>
                         <input type="text" name="pageId" maxlength="15" required="" value="${page?.pageId}" id="pageId" />
-                        &nbsp;(Keep this short  like this : MY_ARTICLE_NICKNAME)
                     </div>
 
                     <div class="fieldcontain  ">
@@ -49,6 +48,14 @@
                         <input type="text" name="pageUrl" value="${page?.pageUrl}" id="pageUrl" />
                     </div>
 
+                    <div class="fieldcontain  ">
+                        <label for="title">
+                            Title
+
+                        </label>
+                        <input type="text" name="title" value="${page?.title}" id="title" />
+                    </div>
+
                     <div class="fieldcontain  required">
                         <label for="permissionId">
                             Access
@@ -56,14 +63,14 @@
                         </label>
                         <select id="permissionId" name="permissionId" required="" class="many-to-one" >
                             <option value="${page?.access?.permissionId}" selected="selected" >${page?.access?.toString()}</option>
-                            <%
-                                List<Permissions> permissions =Permissions.findAll()
-                                for(Permissions permission:permissions){
-                            %>
+<%
+                List<Permissions> permissions =Permissions.findAll()
+                for(Permissions permission:permissions){
+%>
                             <option value="${permission.permissionId}" >${permission.toString()}</option>
-                            <%
-                                }
-                            %>
+<%
+                }
+%>
                         </select>
                     </div>
 
@@ -74,14 +81,14 @@
                         </label>
                         <select id="userId" name="userId" required="" class="many-to-one" >
                             <option value="${page?.author?.userId}" selected="selected" >${page?.author?.toString()}</option>
-                            <%
-                                List<User>authors =User.findAll()
-                                for(User author:authors){
-                            %>
+<%
+               List<User>authors =User.findAll()
+               for(User author:authors){
+%>
                             <option value="${author?.userId}" >${author?.toString()}</option>
-                            <%
-                                }
-                            %>
+<%
+               }
+%>
                         </select>
                     </div>
 
@@ -92,14 +99,14 @@
                         </label>
                         <select id="templateId" name="templateId" required="" class="many-to-one" >
                             <option value="${page?.template?.templateId}" selected="selected" >${page?.template?.toString()}</option>
-                            <%
-                                List<Template>templates =Template.findAll()
-                                for(Template template:templates){
-                            %>
+<%
+                List<Template>templates =Template.findAll()
+                for(Template template:templates){
+%>
                             <option value="${template.templateId}" >${template?.toString()}</option>
-                            <%
-                                }
-                            %>
+<%
+                }
+%>
                         </select>
                     </div>
 
@@ -110,11 +117,29 @@
                         </label>
                         <select id="categoryId" name="categoryId" required="" class="many-to-one" >
                             <option value="${page?.category?.categoryId}" selected="selected" >${page?.category?.toString()}</option>
-                            <%
+<%
                                 List<Categories>categories =Categories.findAll()
                                 for(Categories category:categories){
-                            %>
+%>
                             <option value="${category?.categoryId}" >${category?.toString()}</option>
+<%
+                                }
+%>
+                        </select>
+                    </div>
+
+                    <div class="fieldcontain  required">
+                        <label for="siteId">
+                            Site
+                            <span class="required-indicator">*</span>
+                        </label>
+                        <select id="siteId" name="siteId" required="" class="many-to-one" >
+                            <option value="${page?.site?.siteId}" selected="selected" >${page?.site?.toString()}</option>
+                            <%
+                                List<Site> sites =Site.findAll()
+                                for(Site site:sites){
+                            %>
+                            <option value="${site.siteId}" >${site.toString()}</option>
                             <%
                                 }
                             %>
@@ -129,19 +154,10 @@
                         <input type="hidden" name="_published" /><input type="checkbox" name="published" checked="checked" id="published"  />
                     </div>
 
-                    <div class="fieldcontain  ">
-                        <label for="title">
-                            Title
-
-                        </label>
-                        <input type="text" name="title" value="${page?.title}" id="title" />
-                        &nbsp; Keep this long its displayed on the top of the page
-                    </div>
 
                 </fieldset>
                 <fieldset class="buttons">
-                    <input type="submit" name="create" class="save" value="Submit" id="create" />&nbsp;&nbsp;
-                    <a href="../user/administration"><img src="${resource(dir: 'images', file: 'CancelButton55.jpg')}"/></a>
+                    <input type="submit" name="create" class="save" value="Submit" id="create" />
                 </fieldset>
             </g:form>
         </td>

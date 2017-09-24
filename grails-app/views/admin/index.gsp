@@ -9,9 +9,9 @@
 <%@ page contentType="text/html;charset=UTF-8" %>
 <html>
 <head>
-    <title>admin</title>
+  <title>admin</title>
 </head>
 <body>
-admin
+  admin
 </body>
 </html>

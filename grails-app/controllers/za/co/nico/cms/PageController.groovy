@@ -52,6 +52,7 @@ class PageController {
         String title  = params.title
         String pageUrl  = params.pageUrl
         String templateId   = params.templateId
+        String siteId =params.siteId
 
         String userId   = params.userId
         String categoryId= params.categoryId
@@ -65,6 +66,7 @@ class PageController {
         Categories category=Categories.findByCategoryId(categoryId)
         Permissions access=Permissions.findByPermissionId(permissionId)
         Template template=Template.findByTemplateId(templateId)
+        Site site=Site.findBySiteId(siteId)
 
         boolean published =false;
         if (publishedSt!=null){
@@ -72,6 +74,7 @@ class PageController {
         }
 
         if (operation.equalsIgnoreCase("EDIT") && page!=null) {
+            page.site=site
             page.title=title
             page.pageUrl=pageUrl
             page.published=published
@@ -83,7 +86,7 @@ class PageController {
             println("Saved existing page ${page.pageId}")
 
         }  else if (operation.equalsIgnoreCase("ADD") && page==null) {
-            Page pg=new Page(pageId:pageId,title:title,pageUrl:pageUrl,author:author,category:category,template:template,access:access,published:published).save(flush: true)
+            Page pg=new Page(site: site, pageId:pageId,title:title,pageUrl:pageUrl,author:author,category:category,template:template,access:access,published:published).save(flush: true)
             println("Saved new new page ${pageId}")
             println("Verified new new page ${pg?.pageId}")
         }

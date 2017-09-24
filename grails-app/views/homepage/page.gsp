@@ -1,3 +1,4 @@
+
 <%--
   Created by IntelliJ IDEA.
   User: NMichael
@@ -9,18 +10,19 @@
 <html>
 <head>
     <title>${hc.homePageTitle()}</title>
+    <link rel="stylesheet" href="${resource(dir: 'css', file: 'bootstrap.min.css')}" type="text/css">
+    <script type="text/javascript" src="${resource(dir: 'js', file: 'bootstrap.min.js')}" />
 </head>
 <body>
+
 <%
-    String ipAddress=request.getRemoteAddr()
-    String ip=request.getHeader("Client-IP")
-    if(ipAddress==null||ipAddress.isEmpty()){
-        ipAddress=ip
-    }
-    session.setAttribute("ipAddress",ipAddress);
+    String SITE_ID="DEFAULT_SITE";
+    String siteId=SITE_ID
 
     if(templateGspFile==null || templateGspFile.length()<3 ) {
 %>
+<!-- siteId : ${siteId}-->
+<!-- templateGspFile : ${templateGspFile} -->
 <g:render template="templates/tableTemplate" var="hc"  ></g:render>
 
 <%

@@ -1,21 +1,23 @@
 package za.co.nico.cms
 
 class MenuHierarchy {
-    String parentPageId
+    Menu parent
     Menu child
 
     static constraints = {
-        parentPageId(blank:false, nullable:false) //, unique:true)
-        child(blank:false, nullable:false,unique: ['parentPageId'])
+        parent(blank:false, nullable:false)
+        child(blank:false, nullable:false,unique:true)
     }
 
-    public MenuHierarchy(String parentPageId,Menu child){
-        this.parentPageId=parentPageId
-        this.child=child
-    }
+
 
     public MenuHierarchy(Menu parent,Menu child){
-        this.parentPageId=parent?.page?.pageId
+        this.parent=parent
         this.child=child
     }
+
+    String toString(){
+        return "Child: "+child.menuId+" parent: "+parent.menuId
+    }
+
 }

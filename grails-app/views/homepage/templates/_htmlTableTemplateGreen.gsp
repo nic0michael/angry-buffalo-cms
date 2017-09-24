@@ -25,7 +25,7 @@
     </div>
 
     <div id="content" style="background-color:#FFFFFF;height:85%;width:550px;float:left;">
-        ${homepage?.pageContent(pageId)}
+        ${homepage?.retrievePageContent(pageId,site)}
     </div>
 
     <div id="footer" style="background-color:#8ddd84;clear:both;text-align:center;">

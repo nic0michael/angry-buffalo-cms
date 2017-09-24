@@ -89,7 +89,7 @@
 
     <tag:isAdmin userId="${session.userId}">
         <div id="controller-list">
-            %{--<div id="controller-list" role="navigation">--}%
+        %{--<div id="controller-list" role="navigation">--}%
 
 
             <table  WIDTH=70 HEIGHT=20 class="buttonHeading" onMouseOver="this.className='buttonMouseOverHeading'" onMouseOut="this.className='buttonHeading'" border="0">
@@ -210,37 +210,68 @@
 
             <br>
             <br>
-            <g:link controller="user" action="Administration"><b>Administration</b></g:link><br>
         </div>
     </tag:isAdmin>
     <g:link controller="user" action="logon"><strong>Logon</strong></g:link><br>
     <g:link controller="user" action="logout"><strong>Logout</strong></g:link>
 
-%{--<ul>--}%
-%{--<li>App version: <g:meta name="app.version"/></li>--}%
-%{--<li>Grails version: <g:meta name="app.grails.version"/></li>--}%
-%{--<li>Groovy version: ${GroovySystem.getVersion()}</li>--}%
-%{--<li>JVM version: ${System.getProperty('java.version')}</li>--}%
-%{--<li>Reloading active: ${grails.util.Environment.reloadingAgentEnabled}</li>--}%
-%{--<li>Controllers: ${grailsApplication.controllerClasses.size()}</li>--}%
-%{--<li>Domains: ${grailsApplication.domainClasses.size()}</li>--}%
-%{--<li>Services: ${grailsApplication.serviceClasses.size()}</li>--}%
-%{--<li>Tag Libraries: ${grailsApplication.tagLibClasses.size()}</li>--}%
-%{--</ul>--}%
-%{--<tag:isAdmin userId="${session.userId}">--}%
-%{--<h1>Installed Plugins</h1>--}%
-%{--<ul>--}%
-%{--<g:each var="plugin" in="${applicationContext.getBean('pluginManager').allPlugins}">--}%
-%{--<li>${plugin.name} - ${plugin.version}</li>--}%
-%{--</g:each>--}%
-%{--</ul>--}%
-%{--</tag:isAdmin>--}%
 </div>
 <div id="page-body" role="main">
     <h1>NicoCMS | Control Panel</h1>
 
+    <div>
+
+        %{--White--}%
+        <div class="btn-group">
+            <button type="button" class="btn btn-default"><g:link controller="user" action="Administration">Administration Panel</g:link></button>
+        </div>
+
+        %{--Blue--}%
+        <div class="btn-group">
+            <button type="button" class="btn btn-primary">Control Panel</button>
+            <button type="button" class="btn btn-primary dropdown-toggle"
+                    data-toggle="dropdown">
+                <span class="caret"></span>
+                <span class="sr-only">Toggle Dropdown</span>
+            </button>
+            <ul class="dropdown-menu" role="menu">
+                <li><g:link controller="user" action="Administration">1)&nbsp;Administration</g:link></li>
+                <li><g:link controller="user" action="AdvancedAdministration">2)&nbsp;Advanced Administration</g:link></li>
+                <li><g:link controller="user" action="controlPanel">3)&nbsp;Control Panel</g:link></li>
+                <li><g:link controller="homepage" action="cacheContent">4)&nbsp;Cache the Content</g:link></li>
+                <li><g:link controller="user" action="logout">5)&nbsp;Logout</g:link></li>
+            </ul>
+        </div>
+
+
+
+
+        %{--White--}%
+        <div class="btn-group">
+            <button type="button" class="btn btn-default">Editor's Functions</button>
+            <button type="button" class="btn btn-default dropdown-toggle"
+                    data-toggle="dropdown">
+                <span class="caret"></span>
+                <span class="sr-only">Toggle Dropdown</span>
+            </button>
+            <ul class="dropdown-menu" role="menu">
+                <li><g:link controller="homepage" action="index" target="_blank">1)View Content</g:link></li>
+                <li><g:link controller="categories" action="categoryManager">2)&nbsp;Category Manager</g:link></li>
+                <li><g:link controller="page" action="articleManager">3)&nbsp;Article Manager</g:link></li>
+                <li><g:link controller="textContent" action="textContentManager">4)&nbsp;Text ContentManager</g:link></li>
+                <li><g:link controller="menu" action="menuManager">5)&nbsp;Menu Manager</g:link></li>
+                <li><g:link controller="menuHierarchy" action="menuSave">6)&nbsp;Menu Hierarchy Manager</g:link></li>
+                <li><g:link controller="page" action="frontPageManager">7)&nbsp;FrontPage Manager</g:link></li>
+                <li><g:link controller="images" action="imageManager">8)&nbsp;Image Manager</g:link></li>
+                <li><g:link controller="banner" action="bannerManager">9)&nbsp;Banner Manager</g:link></li>
+                <li><g:link controller="template" action="templateManager">10)&nbsp;Template Manager</g:link></li>
+            </ul>
+        </div>
+
+
+
+    </div>
     <tag:isAdmin userId="${session.userId}">
-        <g:link controller="user" action="Administration"><strong>Administration</strong></g:link><br>
         <h2>Available Controllers:</h2>
         <br>
         <ul>

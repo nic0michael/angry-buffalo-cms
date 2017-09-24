@@ -14,7 +14,7 @@
 <html>
 <head>
     <meta name="layout" content="main"/>
-    <title>Banner Editor</title>
+  <title>Banner Editor</title>
 </head>
 <body>
 
@@ -34,78 +34,78 @@
         <td>&nbsp;&nbsp;</td>
         <td>
 
-            <g:form controller="banner" action="bannerSave" method="post">
-                <input type="hidden" value="${operation }"  name="operation" id="operation"/>
-            %{--<input type="hidden" name="id" value="1" id="id" />--}%
-            %{--<input type="hidden" name="version" value="0" id="version" />--}%
-                <fieldset class="form">
+<g:form controller="banner" action="bannerSave" method="post">
+    <input type="hidden" value="${operation }"  name="operation" id="operation"/>
+    %{--<input type="hidden" name="id" value="1" id="id" />--}%
+    %{--<input type="hidden" name="version" value="0" id="version" />--}%
+    <fieldset class="form">
 
 
 
 
-                    <div class="fieldcontain  required">
-                        <label for="bannerId">
-                            Banner Id
-                            <span class="required-indicator">*</span>
-                        </label>
-                        <input type="text" name="bannerId" maxlength="35" required="" value="${banner?.bannerId }" id="bannerId" />
-                    </div>
+        <div class="fieldcontain  required">
+            <label for="bannerId">
+                Banner Id
+                <span class="required-indicator">*</span>
+            </label>
+            <input type="text" name="bannerId" maxlength="35" required="" value="${banner?.bannerId }" id="bannerId" />
+        </div>
 
-                    <div class="fieldcontain  ">
-                        <label for="bannerCssClass">
-                            Banner Css Class
+        <div class="fieldcontain  ">
+            <label for="bannerCssClass">
+                Banner Css Class
 
-                        </label>
-                        <input type="text" name="bannerCssClass" value="${banner?.bannerCssClass}" id="bannerCssClass" />
-                    </div>
+            </label>
+            <input type="text" name="bannerCssClass" value="${banner?.bannerCssClass}" id="bannerCssClass" />
+        </div>
 
-                    <div class="fieldcontain  ">
-                        <label for="bannerTitle">
-                            Banner Title
+        <div class="fieldcontain  ">
+            <label for="bannerTitle">
+                Banner Title
 
-                        </label>
-                        <input type="text" name="bannerTitle" value="${banner?.bannerTitle }" id="bannerTitle" />
-                    </div>
+            </label>
+            <input type="text" name="bannerTitle" value="${banner?.bannerTitle }" id="bannerTitle" />
+        </div>
 
-                    <div class="fieldcontain  required">
-                        <label for="imageId">
-                            Image
-                            <span class="required-indicator">*</span>
-                        </label>
-                        <select id="imageId" name="imageId" required="" class="many-to-one" >
-                            <option value="${banner?.image?.imageId}" selected="selected" >${banner?.image?.toString() }</option>
-                            <%
-                                for(Images image:images){
-                            %>
-                            <option value="${image?.imageId}" >${image?.toString()}</option>
-                            <%
-                                }
-                            %>
-                        </select>
-                    </div>
+        <div class="fieldcontain  required">
+            <label for="imageId">
+                Image
+                <span class="required-indicator">*</span>
+            </label>
+            <select id="imageId" name="imageId" required="" class="many-to-one" >
+                <option value="${banner?.image?.imageId}" selected="selected" >${banner?.image?.toString() }</option>
+<%
+                for(Images image:images){
+%>
+                <option value="${image?.imageId}" >${image?.toString()}</option>
+<%
+                }
+%>
+            </select>
+        </div>
 
-                    <div class="fieldcontain  ">
-                        <label for="published">
-                            Published
+        <div class="fieldcontain  ">
+            <label for="published">
+                Published
 
-                        </label>
-                        <input type="hidden" name="_published" /><input type="checkbox" name="published" checked="checked" id="published"  />
-                    </div>
+            </label>
+            <input type="hidden" name="_published" /><input type="checkbox" name="published" checked="checked" id="published"  />
+        </div>
 
-                    <div class="fieldcontain  ">
-                        <label for="useSiteTitle">
-                            Use Site Title
+        <div class="fieldcontain  ">
+            <label for="useSiteTitle">
+                Use Site Title
 
-                        </label>
-                        <input type="hidden" name="_useSiteTitle" /><input type="checkbox" name="useSiteTitle" checked="checked" id="useSiteTitle"  />
-                    </div>
+            </label>
+            <input type="hidden" name="_useSiteTitle" /><input type="checkbox" name="useSiteTitle" checked="checked" id="useSiteTitle"  />
+        </div>
 
 
-                </fieldset>
-                <fieldset class="buttons">
-                    <input type="submit" name="create" class="save" value="Submit" id="create" />
-                </fieldset>
-            </g:form>
+    </fieldset>
+    <fieldset class="buttons">
+        <input type="submit" name="create" class="save" value="Submit" id="create" />
+    </fieldset>
+</g:form>
         </td>
         <td>&nbsp;&nbsp;</td>
     </tr>

@@ -1,6 +1,5 @@
 package za.co.nico.cms
 
-import com.lowagie.text.pdf.codec.Base64
 import za.co.nico.cms.constants.BannerURL
 
 class SetupController {
@@ -34,9 +33,9 @@ class SetupController {
         }
 
         UserGroups unassignedUG =new UserGroups(
-                userGroupId:'UNASSIGNED_UG'
-                ,access:unassignedP
-                ,lastChanged :new Date()  ).save(flush: true)
+            userGroupId:'UNASSIGNED_UG'
+            ,access:unassignedP
+            ,lastChanged :new Date()  ).save(flush: true)
 
         UserGroups editorsUG =new UserGroups(
                 userGroupId:'EDITORS_UG'
@@ -96,8 +95,6 @@ class SetupController {
         a1= new Images(imageId:'USERBANNER_3_720X90' ,imageTitle:'bottom banner image' ,imageFileName:BannerURL.USERBANNER_3_720X90_FILE    ,imagePath:BannerURL.USERBANNER_3_720X90_URL  ,published:true).save(flush: true)
         a1=  new Images(imageId:'NICOS_CMS_BANNER'     ,imageTitle:'bottom banner image',imageFileName:BannerURL.NICOSCMSBANNER_FILE  ,imagePath:BannerURL.NICOSCMSBANNER_URL  ,published:true).save(flush: true)
 
-
-
 //        Images TOP_BANNER_IMAGE =Images.findByImageId('LIGHT_GREEN_720X220')
 //        Images BOTTOM_BANNER_IMAGE =Images.findByImageId('LIGHT_GREEN_720X90')
         Images TOP_BANNER_IMAGE =Images.findByImageId('NICOS_CMS_BANNER')
@@ -126,11 +123,37 @@ class SetupController {
 
         Template template=Template.findByTemplateId('DEFAULT_TEMPLATE')
 
+        Site defaultSite=new Site(
+                siteId:"DEFAULT_SITE"
+                , siteName:"DEFAULT_SITE"
+                , description:"DEFAULT_SITE"
+                , htmlPage:"index"
+        ).save(flush: true)
+
+
+        Site site2=new Site(
+                siteId:"SECOND_SITE"
+                , siteName:"SECOND_SITE"
+                , description:"SECOND_SITE"
+                , htmlPage:"index2"
+        ).save(flush: true)
+
+
+        Site site3=new Site(
+                siteId:"THIRD_SITE"
+                , siteName:"THIRD_SITE"
+                , description:"THIRD_SITE"
+                , htmlPage:"index3"
+        ).save(flush: true)
+
+
+
         Page pg= new Page(
                 pageId    :'DEFAULT_PAGE'
                 ,title     :'Default Page'
                 ,pageUrl   :'url'
                 ,author    :unassignedU
+                ,site: defaultSite
                 ,category  :defaultC
                 ,template  :template
                 ,access    :unassignedP
@@ -144,6 +167,7 @@ class SetupController {
                 ,title     :'Home Page'
                 ,pageUrl   :'url'
                 ,author    :unassignedU
+                ,site: defaultSite
                 ,category  :defaultC
                 ,template  :template
                 ,access    :unassignedP
@@ -151,61 +175,69 @@ class SetupController {
         ).save(flush: true)
         Page homePg=Page.findByPageId('HOME_PAGE')
 
+
+
+
+        Page secondSiteHomPg= new Page(
+                pageId    :'SECOND_SITE_HOME_PAGE'
+                ,title     :'Home Page'
+                ,pageUrl   :'url'
+                ,author    :unassignedU
+                ,site: defaultSite
+                ,category  :defaultC
+                ,template  :template
+                ,access    :unassignedP
+                ,published :true
+        ).save(flush: true)
+        Page secondSiteHomePg=Page.findByPageId('SECOND_SITE_HOME_PAGE')
+
+
+
         println("defaultP: ${defaultP?.pageId}")
 //        String testContent="Hello this page is under construction <br><br><br>(<b>Default content</b>) "
         String textContent="""<p>This is a <span style=\"font-size:14px\"><span style=\"font-family:comic sans ms,cursive\"><strong>Content Managed&nbsp;Server</strong></span></span>&nbsp; (CMS) all the web pages displayed on this website are not hand written by a human but&nbsp;are generated from content stored in the database</p>\n""" +
                 "\n" +
                 "<h1>Congratulations you have successfully installed Angry BuffaloCMS</h1>\n" +
-                "\n<br><br>Now you need to log in and add content to the site<br><br>"+
-                "<p>Today we will be going to demonstrate the Grails CMS web server we have been developing to the CMS user Community<br />\n" +
-                "&nbsp;</p><br><br><a href='../admin' target='_blank'>Login</a>"
 
-        new Language(languageName: 'Afrikaans' ,internationalization: "afr").save(flush: true)
-        new Language(languageName: 'English' ,internationalization: "eng").save(flush: true)
-        new Language(languageName: 'French' ,internationalization: "fre").save(flush: true)
-        new Language(languageName: 'German' ,internationalization: "ger").save(flush: true)
-        new Language(languageName: 'Greek' ,internationalization: "gre").save(flush: true)
-        new Language(languageName: 'Ancient Greek' ,internationalization: "grc").save(flush: true)
-        new Language(languageName: 'Hebrew' ,internationalization: "heb").save(flush: true)
-        new Language(languageName: 'Hindi' ,internationalization: "hin").save(flush: true)
-        new Language(languageName: 'Italian' ,internationalization: "ita").save(flush: true)
-        new Language(languageName: 'Japanese' ,internationalization: "jpn").save(flush: true)
-        new Language(languageName: 'Latin' ,internationalization: "lat").save(flush: true)
-        new Language(languageName: 'Portuguese' ,internationalization: "por").save(flush: true)
-        new Language(languageName: 'Romanian' ,internationalization: "run").save(flush: true)
-        new Language(languageName: 'Russian' ,internationalization: "rus").save(flush: true)
-        new Language(languageName: 'Serbian' ,internationalization: "srp").save(flush: true)
-        new Language(languageName: 'Spanish' ,internationalization: "spa").save(flush: true)
-        new Language(languageName: 'Swahili' ,internationalization: "swa").save(flush: true)
-        new Language(languageName: 'Southern Sotho' ,internationalization: "sot").save(flush: true)
-        new Language(languageName: 'Tsonga' ,internationalization: "tso").save(flush: true)
-        new Language(languageName: 'Tswana' ,internationalization: "tsn").save(flush: true)
-        new Language(languageName: 'Venda' ,internationalization: "ven").save(flush: true)
-        new Language(languageName: 'Xhosa' ,internationalization: "xho").save(flush: true)
-        new Language(languageName: 'Zulu' ,internationalization: "zul").save(flush: true)
-        Language english=Language.findByLanguageName('English')
+                "<p>Angry BuffaloCMS is a fork on the OpenSource Project : Nico'sCMS but its configured to run on a server with very low Resource requirement\n" +
+                "<br>This CMS is configured to use a built-in database H2 and will run on a small web server with only 1GB of RAM</p><br><br><a href='../admin' target='_blank'>Login</a>" +
+                "\n<br><br>Now you need to log in and add content to the site<br><br>"
+        String textContent2="Txt2_"+textContent
 
-        TextContent defaultText=new TextContent(textContentId:'DEFAULT_CONTENT',textContentType:'HTML',language: english,textContentText:base64.encode(textContent),lastChangedDate:new Date(),encoding:1,pageOrder:1, homePageOrder:1,page:defaultP,addTofrontPage:true).save(flush: true)
-
+        TextContent defaultText=new TextContent(textContentId:'DEFAULT_CONTENT',textContentType:'HTML',textContentText:"Txt_"+textContent,lastChangedDate:new Date(),encoding:0,pageOrder:1, homePageOrder:1,page:defaultP,addTofrontPage:true).save(flush: true)
         defaultText=TextContent.findByTextContentId('DEFAULT_CONTENT')
-        TextContent homepageText=new TextContent(textContentId:'HOMEPAGE_CONTENT',textContentType:'HTML',language: english,textContentText:textContent,lastChangedDate:new Date(),encoding:0,pageOrder:1, homePageOrder:1,page:homePg,addTofrontPage:true).save(flush: true)
 
+        TextContent homepageText=new TextContent(textContentId:'HOMEPAGE_CONTENT',textContentType:'HTML',textContentText:textContent,lastChangedDate:new Date(),encoding:0,pageOrder:1, homePageOrder:1,page:homePg,addTofrontPage:true).save(flush: true)
         homepageText=TextContent.findByTextContentId('HOMEPAGE_CONTENT')
 
         println("defaultText: ${defaultText.textContentId}")
 
-        new Setup(setupId:'MASTER_RECORD',siteTemplate:template,homePageText: homepageText,homePageTitle:'My Website | Home Page',siteTitle :'My CMS WebSite',siteCopyright:'Copyright@AngryBuffaloCMS 2016',siteCSSCode:'empty'
+        new Setup(setupId:'MASTER_RECORD',enableCaching: false,siteTemplate:template,homePageText: homepageText,homePageTitle:'My Website | Home Page',siteTitle :'My CMS WebSite',siteCopyright:'Copyright@AngryBuffaloCMS 2016',siteCSSCode:'empty'
                 ,menuBackgroundColour:"#6CA3FF",menuHoverColour:"#ffffff",menuSelectedColour:"#000088",menuColour:"#8aa3ff",enabled:true).save(flush: true)
         Setup setup =Setup.findBySetupId("MASTER_RECORD")
 
-        new Menu(language: english, menuId:'MENU_ITEM_PAGE1',label:'&nbsp;Page&nbsp;&nbsp;One&nbsp;',urlPageIdParameter:'page1',page:defaultP,isTopMenu:true,isSideMenu:true).save(flush: true)
-        new Menu(language: english,menuId:'MENU_ITEM_PAGE2',label:'&nbsp;Page&nbsp;&nbsp;Two&nbsp;',urlPageIdParameter:'page2',page:defaultP,isTopMenu:true,isSideMenu:true).save(flush: true)
+
+
+        new Menu(menuId:'MENU_ITEM_PAGE1',site: defaultSite,label:'Page 1',urlPageIdParameter:'page1',page:defaultP,isTopMenu:true,isSideMenu:true).save(flush: true)
+        new Menu(menuId:'MENU_ITEM_PAGE2',site: defaultSite,label:'Page 2',urlPageIdParameter:'page2',page:defaultP,isTopMenu:true,isSideMenu:true).save(flush: true)
+        new Menu(menuId:'MENU_ITEM_HOMEPAGE2',site: site2,label:'Page 3',urlPageIdParameter:'homepage2',page:defaultP,isTopMenu:true,isSideMenu:true).save(flush: true)
 
         Menu menu=Menu.findByMenuId('MENU_ITEM_PAGE1')
+        menu.makeMenuUrl()
+        menu.makePageFileName()
+        menu.save(flush: true)
 
-        Encryption encryption=new Encryption()
-        encryption.writeEncryptionKey(Encryption.ENCRYPTION_KEY_1)
-        encryption.writeEncryptionKey(Encryption.ENCRYPTION_KEY_2)
+        Menu menu2=Menu.findByMenuId('MENU_ITEM_PAGE2')
+        menu2.makeMenuUrl()
+        menu2.makePageFileName()
+        menu2.save(flush: true)
+
+        Menu menu3=Menu.findByMenuId('MENU_ITEM_HOMEPAGE2')
+        menu3.makeMenuUrl()
+        menu3.makePageFileName()
+        menu3.save(flush: true)
+
+
 
 
         chain(controller: "user", action: "Administration")

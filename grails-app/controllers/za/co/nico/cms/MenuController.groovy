@@ -1,9 +1,8 @@
 package za.co.nico.cms
 
-import groovy.xml.Entity
-
 class MenuController {
 //    def index() { }
+    def scaffold = true
 
     def cancelMenuDetails(){
         chain(controller: "menu", action: "menuManager")
@@ -12,35 +11,62 @@ class MenuController {
         String operation=  params.operation
         String menuId= params.menuId
         String label= params.label
+        String isSideMenuSt= params.isSideMenu
+        String isTopMenuSt= params.isTopMenu
         String pageId= params.pageId
-        boolean isSideMenu= params.isSideMenu
-        boolean isTopMenu= params.isTopMenu
-        String languageIdSt=params.language
-        Language language=Language.findByLanguageName(languageIdSt)
+        String siteId=params.siteId
+        String menuOrderSt=params.menuOrder
+        String menuURL=params.menuURL
+        String pageFileName=params.pageFileName
 
+
+
+        int menuOrder=menuOrderSt.toInteger()
+        Site site=Site.findBySiteId(siteId)
         Page page=Page.findByPageId(pageId)
+        boolean isTopMenu =false
+        boolean isSideMenu=false
+        if(isSideMenuSt!=null){
+            isSideMenu=isSideMenuSt.equals("on")
+        }
+        if(isTopMenuSt!=null){
+            isTopMenu=isTopMenuSt.equals("on")
+        }
+
         println("menuId :->${menuId}<- | operation :${operation}")
         Menu menu= Menu.findByMenuId(menuId)
 
+
         if (operation.equalsIgnoreCase("EDIT")&& menu!=null){
+            menu.menuOrder=menuOrder
+            menu.site=site
             menu.label= label
             menu.page= page
             menu.isTopMenu= isTopMenu
             menu.isSideMenu= isSideMenu
-            menu.language=language
+            if(menuURL!=null && menuURL.length()>3){
+                menu.menuURL=menuURL
+            }else {
+                menu.makeMenuUrl()
+            }
+            menu.makePageFileName()
             menu.save(flush: true)
             println("saved EDITED menuId ${menuId}")
 
         } else if (operation.equalsIgnoreCase("ADD")&& menu==null){
             Menu nmu= new Menu(
-                    language: language
-                    ,menuId            :menuId
+                    menuOrder: menuOrder
+                    ,site: site
+                    , menuId            :menuId
                     , label             :label
                     , page              :page
                     , isTopMenu         :isTopMenu
                     , isSideMenu        :isSideMenu
-                    ,urlPageIdParameter :menuId
+                    ,urlPageIdParameter :'index'
             )
+
+            nmu.makeMenuUrl( )
+            nmu.makePageFileName()
             nmu.save(flush: true)
             println("saved NEW menuId ${nmu?.menuId}")
         }
@@ -67,12 +93,7 @@ class MenuController {
         chain(action: "menuManager")
     }
 
-    def cacheContent(){
-        new HomepageController().cacheContent();
-        chain(action: "menuManager")
-    }
 
-    def scaffold = true
     def menuManager(){
 
     }
@@ -90,35 +111,41 @@ class MenuController {
     def menuSave(){
 
         String operation=  params.operation
-        String menuId= params.menuId // menuId
+        String menuId= params.menuId
         String label= params.label
-        boolean isSideMenu= params.isSideMenu
-        boolean isTopMenu= params.isTopMenu
+        String isSideMenuSt= params.isSideMenu
+        String isTopMenuSt= params.isTopMenu
         String pageId= params.pageId
-        String urlPageIdParameter=params.label
-        String languageIdSt=params.language
-        Language language=Language.findByLanguageName(languageIdSt)
+        String siteId=params.siteId
+        String menuURL=params.menuURL
+
+        Site site=Site.findBySiteId(siteId)
         Page page=Page.findByPageId(pageId)
-        println("persisting Menu | menuId :->${menuId}<- | operation :${operation}")
+        boolean isTopMenu =false
+        boolean isSideMenu=false
+        if(isSideMenuSt!=null){
+            isSideMenu=isSideMenuSt.equals("on")
+        }
+        if(isTopMenuSt!=null){
+            isTopMenu=isTopMenuSt.equals("on")
+        }
 
+        println("menuId :->${menuId}<- | operation :${operation}")
+        Menu menu= Menu.findByMenuId(menuId)
 
-        if (operation.equalsIgnoreCase("EDIT")){
-            Menu menu= Menu.findByMenuId(menuId)
+        if (operation.equalsIgnoreCase("EDIT")&& menu!=null){
             menu.label= label
             menu.page= page
             menu.isTopMenu= isTopMenu
             menu.isSideMenu= isSideMenu
-            menu.urlPageIdParameter=urlPageIdParameter
-            menu.language=language
+            menu.menuURL=menuURL
             menu.save(flush: true)
-            println("saved EDITED menu: ${menu.toString()}")
+            println("saved EDITED menuId ${menuId}")
 
-        } else if (operation.equalsIgnoreCase("ADD")){
-            new Menu(language: language, menuId: menuId,urlPageIdParameter:urlPageIdParameter,label: label,page: page,isTopMenu: isTopMenu,isSideMenu: isSideMenu).save(flush: true)
-            Menu menu= Menu.findByMenuId(menuId)
-            println("saved NEW menu: ${menu.toString()}")
-        } else{
-            println("Unknown menu Opreation : ${operation}")
+        } else if (operation.equalsIgnoreCase("ADD")&& menu==null){
+            new Menu(menuId: menuId,label: label,page: page,isTopMenu: isTopMenu,isSideMenu: isSideMenu).save(flush: true)
+            menu= Menu.findByMenuId(menuId)
+            println("saved NEW menuId ${menuId}")
         }
 
         chain(controller: "menu", action: "menuManager")

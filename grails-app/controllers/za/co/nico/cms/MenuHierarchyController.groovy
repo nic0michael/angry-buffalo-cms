@@ -11,12 +11,12 @@ class MenuHierarchyController {
     }
 
     def menuSave(){
-        String parentPageId=  params.parentPageId
-        String menuIdStr= params.childId
-        if (parentPageId!=null && menuIdStr!=null){
-            int menuId = menuIdStr.toInteger()
-            Menu child =Menu.findById(menuId)
-            MenuHierarchy menuHierarchy=new MenuHierarchy( parentPageId,child).save(flush: true)
+        String parentMenuId=  params.parentMenuId
+        String childMenuId= params.childMenuId
+        if (parentMenuId!=null && childMenuId!=null){
+            Menu parent= Menu.findByMenuId(parentMenuId)
+            Menu child =Menu.findByMenuId(childMenuId)
+            MenuHierarchy menuHierarchy=new MenuHierarchy( parent,child).save(flush: true)
         }
         chain(controller: "menuHierarchy", action: "insert")
     }

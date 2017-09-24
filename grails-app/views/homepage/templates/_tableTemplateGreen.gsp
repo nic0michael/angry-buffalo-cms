@@ -54,9 +54,9 @@
                     <td valign="bottom" align="left">
                         [<a href="index" class="topMenuClass">Home Page</a>]
 
-                        <g:each in="${menus}" var="menu" >
-                            &nbsp;[<a href="index?page_id=${menu?.urlPageIdParameter}" class="topMenuClass">${menu?.label }</a>]
-                        </g:each>
+                    <g:each in="${menus}" var="menu" >
+                        &nbsp;[<a href="index?page_id=${menu?.urlPageIdParameter}" class="topMenuClass">${menu?.label }</a>]
+                    </g:each>
                     </td>
                 </tr>
             </table>
@@ -73,15 +73,15 @@
                         [<a href="index" class="topMenuClass">Home Page</a>]
                     </td>
                 </tr>
-                <g:each in="${menus}" var="menu" >
-                    <tr>
-                        <td>[<a href="index?page_id=${menu?.urlPageIdParameter}" class="topMenuClass">${menu?.label }</a>]</td>
-                    </tr>
-                </g:each>
+                    <g:each in="${menus}" var="menu" >
+                        <tr>
+                           <td>[<a href="index?page_id=${menu?.urlPageIdParameter}" class="topMenuClass">${menu?.label }</a>]</td>
+                        </tr>
+                    </g:each>
             </table>
         </td>
         <td style="background-color:#eeeeee;height:550px;width:400px;vertical-align:top;">
-            ${homepage?.pageContent(pageId)}
+            ${homepage?.retrievePageContent(pageId)}
         </td>
     </tr>
 

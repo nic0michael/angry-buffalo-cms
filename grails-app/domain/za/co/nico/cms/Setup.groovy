@@ -13,6 +13,7 @@ class Setup {
     Template siteTemplate
     TextContent homePageText
     boolean enabled
+    boolean enableCaching
     static constraints = {
         setupId(blank:false, nullable:false, unique:true, maxSize:25)
         siteTitle(blank:false, nullable:false)
